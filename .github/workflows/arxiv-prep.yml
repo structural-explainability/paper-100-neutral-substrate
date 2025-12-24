@@ -102,6 +102,6 @@ jobs:
         uses: actions/upload-artifact@v6 # OBS: v6 current as of Dec 2025
         with:
           name: compiled-pdf
-          path: arxiv_src/artifacts/se100_the_ontological_neutrality_theorem.pdf
+          path: ./*.pdf
           retention-days: 7
           if-no-files-found: error
