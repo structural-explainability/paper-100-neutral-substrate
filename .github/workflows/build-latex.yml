@@ -45,6 +45,15 @@ jobs:
           package-file: .github/tl_packages
           cache: true
 
+      - name: Confirm TeX binaries available
+        run: |
+          set -e
+          which pdflatex
+          pdflatex --version
+          which latexmk
+          latexmk --version
+          kpsewhich authblk.sty
+
       # WHY: Validate LaTeX compiles without errors so ready for arXiv prep
       # OBS: PDF is built but not saved as artifact
       - name: Build PDF to validate LaTeX
