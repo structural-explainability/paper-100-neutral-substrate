@@ -79,6 +79,22 @@ jobs:
           path: arxiv-source.zip
           if-no-files-found: error # WHY: Fail if packaging didn't work
 
+      # WHY: Debugging step to verify contents of staging area
+      - name: Debug list files
+        shell: bash
+        run: |
+          set -e
+          echo "PWD: $(pwd)"
+          echo "Top-level:"
+          ls -la
+          echo
+          echo "Recursive listing (first 200 lines):"
+          ls -R | sed -n '1,200p'
+          echo
+          echo "Find PDFs:"
+          find . -type f -name "*.pdf" -print
+
+
       # WHY: Provide a compiled PDF for manual verification before arXiv submission
       # OBS: This PDF is NOT included in the arXiv source zip
       # OBS: Allows manual confirmation that the staged bundle compiles as expected
