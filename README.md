@@ -13,6 +13,7 @@
 ## Paper
 
 - [PDF](./se100_the_ontological_neutrality_theorem.pdf)
+- Status: Submitted to journal; under review.
 
 ## Repository Structure
 
