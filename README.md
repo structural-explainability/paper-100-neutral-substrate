@@ -50,10 +50,6 @@ Windows:
 .\tools\build\build.ps1
 ```
 
-## Related
-
-- [Civic Interconnect](https://github.com/structural-explainability/structural-explainability)
-
 ## Annotations
 
 This repository uses the [Structural Explainability Annotation Standard](./ANNOTATIONS.md) for self-documenting configuration.
