@@ -5,9 +5,9 @@
 [![Check Links](https://github.com/structural-explainability/structural-explainability-paper-100-neutral-substrate/actions/workflows/links.yml/badge.svg)](https://github.com/structural-explainability/structural-explainability-paper-100-neutral-substrate/actions/workflows/links.yml)
 [![ArXiv Prep](https://github.com/structural-explainability/structural-explainability-paper-100-neutral-substrate/actions/workflows/arxiv-prep.yml/badge.svg)](https://github.com/structural-explainability/structural-explainability-paper-100-neutral-substrate/actions/workflows/arxiv-prep.yml)
 
-> This paper derives necessary design constraints for ontological substrates 
-> intended to support stable reference under persistent disagreement, 
-> showing that causal and normative commitments must be externalized 
+> This paper derives necessary design constraints for ontological substrates
+> intended to support stable reference under persistent disagreement,
+> showing that causal and normative commitments must be externalized
 > to preserve substrate neutrality.
 
 ## Paper
@@ -52,7 +52,7 @@ Windows:
 
 ## Annotations
 
-This repository uses the [Structural Explainability Annotation Standard](./ANNOTATIONS.md) for self-documenting configuration.
+[ANNOTATIONS.md](./ANNOTATIONS.md)
 
 ## Citation
 
