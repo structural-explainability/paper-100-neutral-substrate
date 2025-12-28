@@ -1,6 +1,10 @@
 # Annotations
 
-<!-- WHY: This repository documents decisions using Civic Interconnect Contextual Evidence & Explanations (CEE). -->
+<!--
+WHY: This repository uses the Structural Explainability Annotation Standard
+to document decisions, constraints, and alternatives directly alongside
+code and configuration.
+-->
 
-This repository uses the Civic Interconnect annotation standard defined in:
-https://github.com/civic-interconnect/civic-interconnect/ANNOTATIONS.md
+This repository uses the annotation standard defined at:
+<https://github.com/structural-explainability/.github/blob/main/ANNOTATIONS.md>
