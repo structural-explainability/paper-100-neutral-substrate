@@ -95,6 +95,14 @@ dist/
 *.egg
 *.egg-info/
 *.whl
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
 
 # WHY: Tooling caches should not be tracked.
 .coverage
