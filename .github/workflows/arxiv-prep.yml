@@ -82,7 +82,7 @@ jobs:
       # WHY: Download this artifact to upload to arxiv.org
       # OBS: Artifact available for download from Actions tab after workflow runs
       - name: D4) Upload arXiv source artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: arxiv-source
           path: arxiv-source.zip
@@ -107,7 +107,7 @@ jobs:
       # OBS: This PDF is NOT included in the arXiv source zip
       # OBS: Allows manual confirmation that the staged bundle compiles as expected
       - name: D6) Upload compiled PDF (CI check)
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: compiled-pdf
           path: ./*.pdf
