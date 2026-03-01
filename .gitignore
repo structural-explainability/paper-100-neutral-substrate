@@ -17,6 +17,8 @@
 logs/
 PRIVATE_NOTES.md
 PRIVATE-NOTES.md
+REVIEWER_COMMENTS.md
+REVIEWER_RESPONSE.md
 
 # WHY: Temporary and swap files are machine-local noise and create meaningless diffs.
 *.swo
