@@ -3,18 +3,6 @@
 
 \documentclass[11pt]{article}
 
-% ============================================================
-% Annotation visibility toggle
-% Build annotated PDF by defining \ANNOTATED (e.g., via latexmk flag).
-% Requires xcolor loaded first, then use \textcolor and \color commands.
-% ============================================================
-\newif\ifShowAnnotations
-\ifdefined\ANNOTATED
-  \ShowAnnotationstrue
-\else
-  \ShowAnnotationsfalse
-\fi
-
 % Encoding and font setup for cross-platform reproducibility
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
@@ -22,6 +10,8 @@
 % Improve readability for dense theoretical material
 \usepackage{setspace}
 \onehalfspacing
+% \usepackage{caption}
+% \captionsetup[table]{font=small,skip=4pt}
 
 % Mathematical notation and table formatting for formal semantics
 \usepackage{amsmath, amssymb}
@@ -78,6 +68,8 @@
 % Bibliography management and hyperlink support
 \usepackage{url}
 \usepackage{natbib}
+\bibpunct{(}{)}{;}{a}{}{ }
+
 % load hyperref before bookmark to avoid warnings
 \usepackage{hyperref}
 \usepackage{bookmark}
@@ -120,34 +112,6 @@
   \end{tcolorbox}
 }
 
-% ============================================================
-% Annotations (REQ / WHY / OBS) scan-friendly
-% ============================================================
-\newcommand{\AnnColor}{gray} % xcolor color name
-\newlength{\AnnHangIndent}
-\setlength{\AnnHangIndent}{1.8em} % hanging indent amount
-
-% Single annotation line/block:
-% - small gray text
-% - bold label REQ(P0) then content
-% - hanging indent for scanning
-\newcommand{\AnnInline}[3]{%
-  \ifShowAnnotations
-    \par\begingroup
-      \footnotesize
-      \color{\AnnColor}%
-      \noindent
-      \hangindent=\AnnHangIndent
-      \hangafter=1
-      \textbf{#1(#2):}~#3\par
-    \endgroup
-    \vspace{0.15\baselineskip}%
-  \fi
-}
-\newcommand{\REQ}[2]{\AnnInline{REQ}{#1}{#2}}
-\newcommand{\WHY}[2]{\AnnInline{WHY}{#1}{#2}}
-\newcommand{\OBS}[2]{\AnnInline{OBS}{#1}{#2}}
-
 % Paragraph spacing prioritizes readability over traditional indentation
 \setlength{\parskip}{0.75em}
 \setlength{\parindent}{0em}
@@ -163,46 +127,38 @@
 % ============================================================
 \title{The Ontological Neutrality Theorem:\\
 Why Neutral Ontological Substrates Must Be \\
-Pre-Causal and Pre-Normative}
+Pre-Causal and Pre-Normative (in-progress)}
 % ============================================================
 
 \author{Denise M. Case}
 \affil{Northwest Missouri State University, Computer Science and Information Systems, Maryville, MO, USA}
-
-
 \date{\today} %TODO: change to \date{} when submitting to arxiv
 
 \begin{document}
-
 \maketitle
 \vspace{-1em}
 
-% Explicitly mark preprint status
-\begin{tcolorbox}[colback=gray!5, colframe=black!20, boxrule=0.3pt]
-  \textbf{Preprint.}
-  This work has not yet undergone peer review and is provided for open discussion and feedback.
-\end{tcolorbox}
-
 \begin{abstract}
-  Modern data systems must support accountability
-  across persistent legal, political, and analytic disagreement.
-  This requirement imposes strict constraints
-  on the design of any ontology intended to function as a shared substrate.
-  We establish an impossibility result for ontological neutrality:
-  neutrality, understood as interpretive non-commitment and stability
-  under incompatible extensions, is incompatible with the inclusion of
-  causal or normative commitments at the foundational layer.
-  Any ontology that asserts causal or deontic conclusions
-  as ontological facts cannot serve as a neutral substrate across divergent
-  frameworks without revision or contradiction.
-  It follows that neutral ontological substrates
-  must be pre-causal and pre-normative,
-  representing entities, together with identity and persistence conditions,
-  while externalizing interpretation, evaluation, and explanation.
-  This paper does not propose a specific ontology or protocol;
-  rather, it establishes the necessary design constraints
-  for any system intended to maintain a shared,
-  stable representation of reality across conflicting interpretive frameworks.
+Modern data systems must support accountability
+across persistent legal, political, and analytic disagreement.
+This requirement imposes strict constraints
+on the design of any ontology intended to function as a shared substrate.
+We establish an impossibility result for ontological neutrality:
+neutrality, understood as interpretive non-commitment and stability
+under incompatible extensions, is incompatible with asserting
+causal or normative commitments at the substrate layer.
+Any ontology that asserts causal or normative conclusions
+at the substrate layer cannot serve as a neutral substrate across divergent
+frameworks without revision or contradiction.
+It follows that neutral ontological substrates
+must be pre-causal and pre-normative at the foundational layer,
+representing entities, together with identity and persistence conditions,
+while externalizing causal and normative interpretation, evaluation, and explanation
+to extension layers.
+This paper does not propose a specific ontology or protocol;
+rather, it establishes the necessary design constraints
+for any system intended to maintain a shared and
+stable representation across conflicting interpretive frameworks.
 \end{abstract}
 
 % =============================================================================
@@ -210,20 +166,23 @@ Pre-Causal and Pre-Normative}
 % =============================================================================
 
 \bigskip
-\noindent\textbf{Statement of Result (Preview).}
+\noindent\textbf{Preview of Main Result.}
 \emph{Let $\mathcal{O}$ be an ontology intended to function
   as a neutral substrate across diverse interpretive frameworks.
   Then $\mathcal{O}$ satisfies the requirements of neutrality
   if and only if its foundational Level of Abstraction
-  excludes causal and normative primitives.}
+  does not assert causal or normative conclusions
+  as substrate-layer ontological facts.}
 
 \medskip
 \noindent
 Informally: Neutrality is not achieved by
-finding uncontested causes,
-but by externalizing the category of causation entirely.
-To be a substrate for disagreement, an ontology must be
-pre-causal and pre-normative.
+identifying universally accepted causes or norms,
+but by refraining from asserting causal or normative conclusions
+at the substrate level.
+A neutral ontology must remain pre-causal and pre-normative
+at its foundational layer, while allowing causal and normative
+interpretations to be represented in extension layers.
 
 \medskip
 \noindent
@@ -235,14 +194,8 @@ The formal statement and proof appear in Section~\ref{sec:impossibility}.
   accountability;
   neutrality constraints;
   extension stability;
-  deontic and causal commitment
+  causal and normative commitment
 }
-
-\ifShowAnnotations
-  \clearpage
-  \input{sections/00_contract}
-  \clearpage
-\fi
 
 \input{sections/01_intro}           % Introduction: Accountability, Disagreement, and Neutral Substrates
 \input{sections/02_related}         % Related Work
@@ -250,7 +203,6 @@ The formal statement and proof appear in Section~\ref{sec:impossibility}.
 \input{sections/04_impossibility}   % The Impossibility of Causal and Normative Substrates
 \input{sections/05_implications}    % Implications for Ontology Design
 \input{sections/06_conclusion}      % Conclusion
-
 
 \section*{Statements and Declarations}
 
@@ -280,13 +232,7 @@ Not applicable.
 
 \appendix
 \clearpage
-
 \input{sections/99_appendixG}   % Glossary
-
-\ifShowAnnotations
-  \clearpage
-  \input{sections/99_appendixZ}   % Trace (internal)
-\fi
 
 \bibliographystyle{plainnat}
 \bibliography{bibliography/bibliography}

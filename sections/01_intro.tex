@@ -4,31 +4,31 @@
 \label{sec:introduction}
 
 Data systems operate in environments characterized
-by persistent disagreement~\cite{rawls1993political,sunstein1996legal}.
+by persistent disagreement~\citep{rawls1993political,sunstein1996legal}.
 Legal interpretations diverge across jurisdictions and
-over time~\cite{dworkin1986law,hart1961concept,berman2007pluralism};
+over time~\citep{dworkin1986law,hart1961concept,berman2007pluralism};
 political actors contest responsibility
-and intent~\cite{bovens2007accountability,hood2011blame};
+and intent~\citep{bovens2007accountability,hood2011blame};
 analytic frameworks disagree about causation, attribution,
-and relevance~\cite{pearl2009causality,woodward2003making}.
-These disagreements are not anomalies to be resolved prior to data representation.
-They are structural features of modern industry and society
-that any accountability-oriented system must accommodate.
+and relevance~\citep{pearl2009causality,woodward2003making}.
+These disagreements are not anomalies to be resolved prior to data representation;
+they are structural features of modern institutional environments
+that accountability-oriented systems must accommodate.
 
 Accountability, in this context,
 requires more than the collection of records or
-the publication of datasets~\cite{fox2007transparency,bovens2014oxford}.
+the publication of datasets~\citep{fox2007transparency,bovens2014oxford}.
 It requires the ability to refer stably to
 entities, actions, and institutional artifacts
 while allowing competing explanations, evaluations,
-and judgments to coexist~\cite{gruber1993translation,smith2010ontology}.
+and judgments to coexist~\citep{gruber1993translation,smith2010ontology}.
 A system that collapses disagreement by embedding a single interpretation
 into its foundational representations undermines
 accountability rather than supporting it,
 as it forecloses contestation and
-revision~\cite{bowker1999sorting,winner1980artifacts}.
+revision~\citep{bowker1999sorting,winner1980artifacts}.
 
-This paper is concerned with the implications
+This paper examines the implications
 of this requirement for ontology design.
 Specifically, it addresses the conditions under which an ontology
 can function as a neutral substrate for accountability:
@@ -39,7 +39,7 @@ such a substrate must support the coexistence of
 divergent interpretations
 without requiring revision of the substrate itself.
 This requires a careful selection of the
-Level of Abstraction (LoA)~\cite{floridi2008levels}
+Level of Abstraction (LoA)~\citep{floridi2008levels}
 at which the substrate operates.
 Following Floridi, we argue that an LoA is
 defined by the set of observables it makes available;
@@ -47,24 +47,43 @@ for a substrate to remain neutral,
 it must operate at an LoA that excludes
 explanatory or evaluative observables.
 
-The central claim of this paper is that this form of neutrality
-imposes strict design constraints.
+This form of neutrality imposes strict design constraints.
 In particular, ontologies that assert causal or normative conclusions
 at the foundational layer cannot satisfy the requirements
 of interpretive non-commitment and extension stability that neutrality
-demands~\cite{hacking1999social,cartwright1979causal,star1996ecology,guarino2009ontology}.
-When causal relations or deontic judgments are embedded as ontological facts,
+demands~\citep{hacking1999social,cartwright1979causal,star1996ecology,guarino2009ontology}.
+When causal relations or normative judgments are embedded as ontological facts,
 the substrate necessarily privileges one framework over others,
 rendering it incompatible with at least some admissible interpretations.
 
 Rather than proposing an ontology or protocol,
-this paper establishes these constraints at a meta-level.
+this paper establishes these constraints at the meta-level.
 It formalizes neutrality in terms of interpretive non-commitment and stability
 under incompatible extensions, and shows that these requirements
 are incompatible with causal or normative commitments at the substrate layer.
-The result is an impossibility claim:
-no ontology that embeds contested causal or deontic conclusions
+The result is a structural constraint:
+no ontology that embeds contested causal or normative conclusions
 can serve as a neutral substrate for accountability across disagreement.
+
+This is not a claim that neutrality is impossible in general,
+but that neutrality becomes impossible when
+causal or normative commitments
+are included at the foundational layer.
+Neutrality remains possible only if the substrate itself is
+pre-causal and pre-normative.
+
+Persistent disagreement means:
+\begin{itemize}
+  \item Extensions may introduce incompatible causal accounts.
+\item Extensions may introduce incompatible normative attributions.
+\item Extensions cannot be forced into convergence.
+\item Substrate revision is not permitted to resolve interpretive conflict.
+\end{itemize}
+
+The central contribution of this paper is therefore a structural impossibility result:
+it identifies a structural condition that any ontology must satisfy
+in order to function as a neutral substrate across incompatible
+interpretive frameworks.
 
 The remainder of the paper proceeds as follows.
 Section~\ref{sec:related} reviews related work in ontology design,
