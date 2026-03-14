@@ -3,13 +3,23 @@
 \section{Formal Requirements for Ontological Neutrality}
 \label{sec:requirements}
 
+The neutrality requirements introduced in this section
+operate across several conceptual layers.
+Logical propositions provide the basic contents of representation.
+Ontologies assert some propositions as commitments.
+Interpretive frameworks reason over those commitments and
+derive conclusions about events, responsibilities, or explanations.
+A neutral substrate constrains which propositions may be asserted
+as ontological commitments so that multiple frameworks
+may derive incompatible conclusions without forcing revision of the substrate.
+
 The notion of neutrality used in this paper
 is deliberately narrow and operational.
-It is not intended to capture moral neutrality, political impartiality,
-or epistemic skepticism in a general sense.
-Rather, neutrality is defined with respect to the functional role an ontology
-is expected to play in explanation and accountability systems:
-serving as a shared substrate across divergent interpretive frameworks.
+It does not refer to moral neutrality, political impartiality,
+or epistemic skepticism.
+Rather, neutrality is defined relative to the functional role an ontology
+plays when it is used
+as a shared substrate across divergent interpretive frameworks.
 
 An ontological substrate is neutral, in the sense relevant here,
 if it satisfies two requirements.
@@ -29,7 +39,6 @@ Extension stability is a global consistency condition:
 even a substrate that is silent on contested predicates
 can fail neutrality if it encodes background axioms
 that conflict with some admissible interpretive framework.
-
 
 %-------------------------------------------------------
 \subsection{Interpretive Non-Commitment}
@@ -65,7 +74,7 @@ it does not adjudicate among them.
 With this notion in hand, we can state the first requirement precisely.
 
 \begin{definition}[Framework-Variant Proposition]
-  A proposition $p$ is \emph{framework-variant}
+  A proposition $p$ whose truth depends on the interpretive framework is \emph{framework-variant}
   if there exist admissible frameworks
   $\mathcal{F}_1, \mathcal{F}_2 \in \mathbb{F}$
   such that
@@ -100,13 +109,18 @@ obligatory, forbidden, or permitted,
 it necessarily privileges one normative framework over others.
 Similarly, if it asserts that one event caused another,
 it privileges a particular causal model or explanatory framework.
+This does not imply that causation is subjective or unreal.
+Rather, causal conclusions depend on explanatory frameworks
+(e.g., statistical, mechanistic, or legal standards of causation)
+that may legitimately differ across admissible frameworks.
 In both cases, the ontology ceases to be neutral with respect to interpretation.
 
 Interpretive non-commitment does not require the ontology
 to ignore normative or causal discourse altogether.
 Rather, it requires that the substrate operate
 at a Level of Abstraction (LoA)~\citep{floridi2008levels,floridi2011philosophy}
-that excludes explanatory or evaluative observables.
+that excludes explanatory or evaluative observables,
+including causal and normative predicates.
 In this framework, an LoA consists of a set of observables;
 neutrality is achieved by selecting an LoA
 where the observables are restricted to
@@ -159,15 +173,14 @@ normative, or explanatory conclusions, is expected and permitted;
 what is prohibited is embedding substrate-layer commitments
 that require revision when such disagreement arises.
 
-In practice, data systems are not static.
-New legal interpretations emerge, analytic models are revised,
-and political judgments are contested and overturned.
-A neutral substrate,
-in order to satisfy extension stability,
-must be able to accommodate such changes
+In practice, interpretive frameworks evolve over time:
+legal interpretations change, analytic models are revised,
+and political judgments are contested.
+A neutral substrate
+must accommodate such developments
 without requiring revision of its foundational commitments.
-Interpretive disagreement should result in additional structure
-layered atop the substrate, not in modification of the substrate itself.
+Disagreement should therefore produce additional interpretive layers
+rather than modification of the substrate itself.
 
 Extension stability is violated when
 the introduction of a new interpretive framework
@@ -217,7 +230,7 @@ existence, identity, or classification.
 It must take substantive positions on what kinds of entities exist,
 how they are distinguished, and what criteria govern their persistence.
 These commitments are necessary for accountability
-and do not vary across interpretive frameworks
+and do not vary across admissible interpretive frameworks
 in the same way that causal or normative conclusions do.
 Unless otherwise noted, all entailment is with respect to
 classical first-order logic with equality.
@@ -226,11 +239,15 @@ Neutrality is therefore scoped specifically to interpretive commitments:
 those aspects of representation whose truth depends on
 legal, normative, causal, or analytic frameworks
 that may legitimately disagree.
+This restriction concerns what the substrate may assert,
+not whether causal or normative relations exist in the world.
+Such relations may be represented and reasoned about within
+interpretive frameworks layered above the substrate.
 The exclusion of such commitments from the substrate
 is not a matter of preference or conservatism;
 it is a functional requirement derived from
 the role the ontology is intended to play
-as a neutral substrate.
+as a neutral substrate across divergent interpretive frameworks.
 
 The design of a neutral substrate requires
 distinguishing between the Level of Abstraction (LoA) and

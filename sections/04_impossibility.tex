@@ -3,18 +3,23 @@
 \section{The Impossibility of Causal and Normative Commitments in a Neutral Ontological Substrate}
 \label{sec:impossibility}
 
+Because interpretive frameworks derive conclusions
+while ontologies assert commitments,
+embedding framework-contestable propositions as substrate commitments
+produces incompatibility with some admissible framework.
+The following argument formalizes this constraint.
+
 This section shows that the neutrality requirements
 defined in Section~\ref{sec:requirements}
-are incompatible with asserting causal or normative conclusions
+are incompatible with asserting causal or normative commitments
 as substrate-layer ontological facts.
-The argument is structural rather than empirical:
-it does not depend on particular domains, datasets, or historical cases,
-but on the logical relationship
-between interpretive disagreement and ontological assertion.
+The argument is structural and logical rather than empirical:
+it follows from the interaction
+between interpretive disagreement and substrate-level ontological assertion.
 All necessity and impossibility claims in this section
 are relative to those requirements.
 
-\subsection{Neutrality as Invariance Across LoAs}
+\subsection{Neutrality as Compatibility Across Admissible Frameworks}
 
 By definition, a neutral ontological substrate must remain compatible
 with multiple admissible interpretive frameworks,
@@ -48,12 +53,13 @@ must operate.
 For a substrate to be neutral,
 its foundational commitments must remain invariant
 across all admissible interpretive frameworks.
-If the substrate asserts conclusions whose truth
+If the substrate asserts a proposition whose truth
 depends on a particular causal or normative interpretation,
-then there exist admissible frameworks that deny those conclusions.
+then there exist admissible frameworks that derive the negation of that proposition.
 Because neutrality requires the substrate to remain logically
 consistent when extended by every admissible framework,
-such assertions necessarily produce inconsistency with
+asserting such a proposition at the substrate layer
+necessarily produces inconsistency with
 at least one admissible framework extension.
 The neutrality condition is therefore violated.
 
@@ -129,7 +135,7 @@ Rather, it shows that causal attribution
 cannot be asserted as a substrate-layer fact
 without committing the ontology
 to a particular causal model.
-Because causal attribution is inherently model-dependent,
+Because causal attribution depends on background modeling assumptions,
 asserting such relations at the foundational layer
 constitutes a structural commitment
 to a particular counterfactual or mechanistic logic.
@@ -163,7 +169,10 @@ One might attempt to preserve neutrality by
 reifying causal or normative statements,
 representing them as claims, reports, or assertions
 rather than as direct ontological facts.
-This move is necessary but not sufficient.
+One might attempt to preserve neutrality by reifying causal or normative statements,
+representing them as claims, reports, or assertions rather than as direct ontological facts.
+Such reification is necessary for representing interpretive discourse,
+but it is not sufficient to preserve neutrality.
 
 Reification allows the ontology to represent discourse about the world
 without asserting conclusions about the world itself.
@@ -219,19 +228,17 @@ The preceding observations yield the central result of this paper.
 \end{theorem}
 
 Here a \emph{causal or normative commitment} refers to the assertion
-of a causal relation or normative conclusion as a substrate-layer fact
+of a causal relation or normative proposition as a substrate-layer fact
 (e.g., that event $A$ caused event $B$, or that an action constituted a violation),
-rather than the representation of such claims as interpretive assertions or reports.
+rather than the representation of such propositions as interpretive assertions or reports.
 
 \begin{proof}
 \textbf{(Only if.)}
 Suppose $\mathcal{S}$ asserts a causal or normative commitment $p$
 as a substrate-layer fact.
-Causal and normative commitments are framework-contestable:
-there exist admissible interpretive frameworks that affirm
-the claim and others that reject it.
-For commitments whose truth depends on causal or normative interpretation,
-admissible frameworks may legitimately disagree about whether the claim holds.
+Causal and normative commitments are framework-contestable,
+meaning that admissible frameworks may legitimately disagree
+about whether such propositions hold.
 In particular, there exist frameworks
 $\mathcal{F}_1, \mathcal{F}_2 \in \mathbb{F}$
 such that $\mathcal{F}_1 \vdash p$ and
@@ -244,13 +251,15 @@ $\mathcal{S} \cup \mathcal{F} \not\vdash \bot$.
 
 Since $\mathcal{S}$ asserts $p$ and
 $\mathcal{F}_2 \vdash \neg p$,
-we obtain
+it follows that
 \[
-\mathcal{S} \cup \mathcal{F}_2 \vdash p \land \neg p,
+\mathcal{S} \cup \mathcal{F}_2 \vdash p
+\quad\text{and}\quad
+\mathcal{S} \cup \mathcal{F}_2 \vdash \neg p,
 \]
 and therefore
 \[
-\mathcal{S} \cup \mathcal{F}_2 \vdash \bot.
+\mathcal{S} \cup \mathcal{F}_2 \vdash p \land \neg p.
 \]
 To restore consistency, either:
 \begin{enumerate}
@@ -263,8 +272,8 @@ In either case, $\mathcal{S}$ fails to satisfy neutrality.
 
 \medskip
 \textbf{(If.)}
-Suppose $\mathcal{S}$ refrains from asserting causal and normative commitments
- at the substrate level and instead represents only
+Suppose $\mathcal{S}$ refrains from asserting causal or normative commitments
+at the substrate level and instead represents only
 framework-invariant referential structures,
 such as entities and their identity conditions.
 Under this restriction,
@@ -272,7 +281,7 @@ interpretive frameworks may introduce causal or normative
 conclusions as extensions without contradicting the substrate,
 because those conclusions are not fixed by the foundational layer.
 Thus, for all $\mathcal{F} \in \mathbb{F}$,
-$\mathcal{S} \cup \mathcal{F}$ introduces no contradiction,
+$\mathcal{S} \cup \mathcal{F}$ remains consistent,
 satisfying both interpretive non-commitment and extension stability.
 
 \medskip
