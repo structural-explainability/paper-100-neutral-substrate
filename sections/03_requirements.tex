@@ -3,15 +3,42 @@
 \section{Formal Requirements for Ontological Neutrality}
 \label{sec:requirements}
 
-The neutrality requirements introduced in this section
-operate across several conceptual layers.
-Logical propositions provide the basic contents of representation.
-Ontologies assert some propositions as commitments.
-Interpretive frameworks reason over those commitments and
-derive conclusions about events, responsibilities, or explanations.
-A neutral substrate constrains which propositions may be asserted
-as ontological commitments so that multiple frameworks
-may derive incompatible conclusions without forcing revision of the substrate.
+This section formalizes the two neutrality requirements
+introduced in Section~\ref{sec:introduction}.
+All formal results in subsequent sections are conditional
+on the definitions stated here.
+Unless otherwise noted, all entailment ($\vdash$) is with respect to
+classical first-order logic with equality.
+
+The conceptual architecture is summarized below.
+
+\begin{center}
+\begin{minipage}{\linewidth}
+\centering
+\noindent
+\textbf{Conceptual Architecture of Neutral Substrates}
+
+\vspace{6pt}
+
+\begin{tabular}{c}
+Interpretive Frameworks \\
+(causal and normative reasoning; competing conclusions) \\
+$\uparrow$ \\
+Ontology Commitments \\
+(asserted propositions about shared referents) \\
+$\uparrow$ \\
+Neutral Substrate \\
+(constraints on foundational commitments) \\
+$\uparrow$ \\
+Shared Referents \\
+(entities, events, institutional artifacts)
+\end{tabular}
+
+\end{minipage}
+\end{center}
+
+The formal requirements governing this architecture are stated in the
+subsections that follow.
 
 The notion of neutrality used in this paper
 is deliberately narrow and operational.
@@ -214,10 +241,6 @@ is achieved through periodic revision or replacement of ontological commitments.
 Stability under extension is a necessary condition
 for interoperability across time, jurisdictions, and analytic communities.
 
-This property is sometimes called \emph{monotonicity}:
-the substrate grows by addition of interpretive layers,
-never by retraction of foundational assertions.
-
 %-------------------------------------------------------
 \subsection{Scope of Neutrality}
 \label{subsec:scope}
@@ -232,8 +255,6 @@ how they are distinguished, and what criteria govern their persistence.
 These commitments are necessary for accountability
 and do not vary across admissible interpretive frameworks
 in the same way that causal or normative conclusions do.
-Unless otherwise noted, all entailment is with respect to
-classical first-order logic with equality.
 
 Neutrality is therefore scoped specifically to interpretive commitments:
 those aspects of representation whose truth depends on
@@ -252,9 +273,9 @@ as a neutral substrate across divergent interpretive frameworks.
 The design of a neutral substrate requires
 distinguishing between the Level of Abstraction (LoA) and
 the Level of Organization (LoO) as referenced above.
-While the LoA determines the set of available observables
-(e.g., excluding causal predicates),
-the LoO characterizes the architectural hierarchy of the system.
+The LoO characterizes the architectural hierarchy of the system:
+the ordering of layers by direction of dependence,
+such that higher layers may extend but not revise lower ones.
 
 A further scope condition applies.
 The neutrality requirements assume that entity existence and identity conditions
@@ -268,7 +289,7 @@ or the domain does not admit a neutral substrate in the sense defined here.
 This is not a defect of the framework but a boundary condition:
 neutrality presupposes a shared ontological ground on which interpretation can vary.
 
-We propose that the neutral substrate occupies the primary LoO,
+The neutral substrate occupies the primary LoO,
 providing the raw entity and identity conditions
 upon which higher-level, interpretive LoOs are organized.
 This ordering reflects the direction of dependence
@@ -288,11 +309,7 @@ not a lack of content, but a categorical constraint:
 to remain stable under pluralistic interpretation,
 a foundational ontology must be
 strictly pre-causal and pre-normative.
-In the next section, we provide a
-formal impossibility argument
+
+In the next section, we establish the central impossibility result
 showing why any violation of these categorical exclusions
 renders a substrate inherently non-neutral.
-
-This condition constrains which kinds of commitments
-may appear at the substrate layer, a consequence examined
-in Section~\ref{sec:impossibility}.
