@@ -11,7 +11,7 @@
 cff-version: "1.2.0"
 type: article
 
-title: "The Ontological Neutrality Theorem: Why Neutral Ontological Substrates Must Be Pre-Causal and Pre-Normative"
+title: "The Ontological Neutrality Theorem: Structural Constraints for Neutral Substrates Under Persistent Interpretive Disagreement"
 version: "v0.1.0"
 date-released: "2025-12-24"
 
@@ -26,10 +26,14 @@ url: "https://github.com/structural-explainability/paper-100-neutral-substrate"
 license: CC-BY-4.0
 
 abstract: >
-  This paper derives necessary design constraints for ontological substrates
-  intended to support stable reference under persistent disagreement,
-  showing that causal and normative commitments must be externalized
-  to preserve substrate neutrality.
+  This paper establishes a necessary and sufficient condition
+  for ontological neutrality: a substrate satisfies interpretive
+  non-commitment and extension stability if and only if its
+  foundational layer excludes causal and normative commitments.
+  Neutral substrates must be pre-causal and pre-normative,
+  representing entities with identity and persistence conditions
+  while externalizing causal and normative interpretation
+  to higher organizational layers.
 
 keywords:
   - formal ontology
@@ -41,5 +45,8 @@ keywords:
   - causal commitment
   - normative commitment
   - structural explainability
+  - interpretive non-commitment
+  - pre-causal
+  - pre-normative
 
 message: "If using this work, please cite it as described in this file."

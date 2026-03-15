@@ -9,10 +9,8 @@
 [![ArXiv Prep](https://github.com/structural-explainability/paper-100-neutral-substrate/actions/workflows/arxiv-prep.yml/badge.svg?branch=main)](https://github.com/structural-explainability/paper-100-neutral-substrate/actions/workflows/arxiv-prep.yml)
 [![DOI](https://img.shields.io/badge/DOI-10.48550/arXiv.2601.14271-blue)](https://doi.org/10.48550/arXiv.2601.14271)
 
-> This paper derives necessary design constraints for ontological substrates
-> intended to support stable reference under persistent disagreement,
-> showing that causal and normative commitments must be externalized
-> to preserve substrate neutrality.
+> This paper derives necessary structural constraints for ontological substrates
+> intended to support stable reference under persistent disagreement.
 
 ## Paper
 

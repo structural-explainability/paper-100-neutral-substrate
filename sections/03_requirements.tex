@@ -13,28 +13,30 @@ classical first-order logic with equality.
 The conceptual architecture is summarized below.
 
 \begin{center}
-\begin{minipage}{\linewidth}
-\centering
-\noindent
-\textbf{Conceptual Architecture of Neutral Substrates}
 
-\vspace{6pt}
-
-\begin{tabular}{c}
-Interpretive Frameworks \\
+\begin{tabular}{|c|}
+\hline
+\textbf{Interpretive Frameworks} \\
 (causal and normative reasoning; competing conclusions) \\
-$\uparrow$ \\
-Ontology Commitments \\
-(asserted propositions about shared referents) \\
-$\uparrow$ \\
-Neutral Substrate \\
-(constraints on foundational commitments) \\
-$\uparrow$ \\
-Shared Referents \\
-(entities, events, institutional artifacts)
+\hline
 \end{tabular}
 
-\end{minipage}
+$\uparrow$
+\vspace{3pt}
+{\small extends but does not revise}
+\vspace{3pt}
+
+\vspace{3pt}
+
+\begin{tabular}{|c|}
+\hline
+\textbf{Neutral Substrate} \\
+Ontological primitives: types, identity conditions, \\
+and persistence conditions for entities, occurrences, \\
+and institutional artifacts \\
+\hline
+\end{tabular}
+
 \end{center}
 
 The formal requirements governing this architecture are stated in the
@@ -76,8 +78,8 @@ The first requirement,
 under this definition of neutrality,
 is interpretive non-commitment.
 An ontology satisfies this requirement
-if it does not assert conclusions
-whose truth values vary across admissible interpretive frameworks.
+if it does not assert any proposition
+whose truth value can vary across admissible interpretive frameworks.
 
 Admissibility is determined by the domain of application,
 not by the substrate.
@@ -90,6 +92,7 @@ The substrate must accommodate all such frameworks;
 it does not adjudicate among them.
 
 \begin{definition}[Admissible Framework]
+  \label{def:admissible-framework}
   A framework $\mathcal{F}$ is \emph{admissible} if it is internally consistent
   ($\mathcal{F} \not\vdash \bot$)
   and represents a legitimate interpretive stance within the domain of application.
@@ -101,6 +104,8 @@ it does not adjudicate among them.
 With this notion, the first requirement can be stated precisely.
 
 \begin{definition}[Framework-Variant Proposition]
+  \label{def:framework-variant}
+  Let $\mathcal{S}$ denote the substrate ontology whose neutrality properties are under analysis.
   A proposition $p$ whose truth depends on the interpretive framework is \emph{framework-variant}
   if there exist admissible frameworks
   $\mathcal{F}_1, \mathcal{F}_2 \in \mathbb{F}$
@@ -112,9 +117,11 @@ With this notion, the first requirement can be stated precisely.
 
 
 \begin{definition}[Interpretive Non-Commitment]
+  \label{def:interpretive-non-commitment}
   An ontology $\mathcal{S}$ satisfies \emph{interpretive non-commitment}
-  if there is no proposition $p$ such that $\mathcal{S} \vdash p$
-  and the truth of $p$ varies across admissible interpretive frameworks.
+  if it does not assert any framework-variant proposition:
+  there is no proposition $p$ such that $\mathcal{S} \vdash p$
+  and $p$ is framework-variant with respect to $\mathbb{F}$.
 \end{definition}
 
 Accountability systems routinely involve disagreements
@@ -175,6 +182,7 @@ An ontology satisfies this requirement if it remains consistent
 when extended by incompatible interpretive frameworks.
 
 \begin{definition}[Extension Stability]
+  \label{def:extension-stability}
   An ontology $\mathcal{S}$ satisfies \emph{extension stability}
   if for all admissible frameworks $\mathcal{F} \in \mathbb{F}$,
   $\mathcal{S} \cup \mathcal{F} \not\vdash \bot$.
@@ -223,13 +231,13 @@ $\mathcal{S} \cup \mathcal{F}_2 \not\vdash \bot$.
 The substrate need not reconcile the frameworks with each other;
 it must simply avoid assertions that either framework rejects.
 
-Now suppose $\mathcal{S}$ embeds a causal or normative conclusion $c$
+Now suppose $\mathcal{S}$ embeds a causal or normative commitment $c$
 that $\mathcal{F}_1$ accepts but $\mathcal{F}_2$ rejects
 (i.e., $\mathcal{F}_2 \vdash \neg c$).
 Then $\mathcal{S} \cup \mathcal{F}_2 \vdash c \land \neg c \vdash \bot$:
 the combination is inconsistent, and $\mathcal{S}$ must be revised.
 
-This demonstrates that embedding any causal or deontic conclusion,
+This demonstrates that embedding any causal or normative commitment at the substrate layer,
 regardless of current consensus,
 introduces latent instability.
 Such a substrate cannot function as a permanent neutral foundation,
@@ -272,10 +280,32 @@ as a neutral substrate across divergent interpretive frameworks.
 
 The design of a neutral substrate requires
 distinguishing between the Level of Abstraction (LoA) and
-the Level of Organization (LoO) as referenced above.
+the Level of Organization (LoO).
+Formally, the LoA of the substrate is identified with the set of
+predicate symbols available at the foundational layer.
+Neutrality requires that this set be restricted to
+framework-invariant referential structure:
+predicate symbols governing entity existence, identity, and persistence conditions.
+Predicate symbols whose extension depends on causal or normative
+interpretation are excluded from the foundational LoA
+but remain available to interpretive frameworks
+operating at higher organizational layers.
+The substrate records observations about entities and occurrences;
+causal and normative interpretation of those observations
+is deferred to extensions.
+
 The LoO characterizes the architectural hierarchy of the system:
 the ordering of layers by direction of dependence,
 such that higher layers may extend but not revise lower ones.
+The neutral substrate occupies the primary LoO,
+providing the entity and identity conditions
+upon which higher-level interpretive layers are organized.
+Identity is established at the substrate layer
+before any interpretive framework is applied;
+explanation and interpretation operate on entities
+whose existence and identity are already fixed.
+This ensures that changes in higher-level organizational logic
+do not propagate downward to revise the foundational substrate.
 
 A further scope condition applies.
 The neutrality requirements assume that entity existence and identity conditions
@@ -289,27 +319,16 @@ or the domain does not admit a neutral substrate in the sense defined here.
 This is not a defect of the framework but a boundary condition:
 neutrality presupposes a shared ontological ground on which interpretation can vary.
 
-The neutral substrate occupies the primary LoO,
-providing the raw entity and identity conditions
-upon which higher-level, interpretive LoOs are organized.
-This ordering reflects the direction of dependence
-required for neutrality:
-identity is established at the substrate layer
-before any interpretive framework is applied.
-Explanation and interpretation operate on entities
-whose existence and identity are already fixed.
-This ensures that changes in higher-level organizational logic
-do not propagate downward to corrupt the foundational substrate.
-
 Together, interpretive non-commitment and
 extension stability define the
 functional boundaries of a neutral substrate.
 These requirements establish that neutrality is
 not a lack of content, but a categorical constraint:
 to remain stable under pluralistic interpretation,
-a foundational ontology must be
+a foundational ontology satisfies both requirements if and only if it is
 strictly pre-causal and pre-normative.
 
-The next section establishes the central impossibility result
-showing why any violation of these categorical exclusions
-renders a substrate inherently non-neutral.
+The next section establishes the central result:
+a substrate satisfies both neutrality requirements
+if and only if its foundational layer excludes
+causal and normative commitments.

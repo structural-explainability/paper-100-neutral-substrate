@@ -1,10 +1,8 @@
 % !TeX root = se100_the_ontological_neutrality_theorem.tex
-
 \section{Implications for Ontology Design}
 \label{sec:implications}
 
-
-The impossibility result established in Section~\ref{sec:impossibility}
+The result established in Section~\ref{sec:formal-dev}
 does not prescribe a particular ontology.
 Rather, it constrains the design space of any ontology
 intended to function as a neutral substrate for accountability.
@@ -24,9 +22,9 @@ any assertions that entail propositions
 whose truth values vary across admissible frameworks.
 In particular, the substrate must not embed:
 \begin{itemize}
-  \item normative conclusions, such as obligations, permissions, prohibitions, violations, or compliance determinations;
-  \item causal conclusions, such as assertions that one event caused, produced, or was responsible for another;
-  \item evaluative judgments that privilege one legal, political, or analytic stance over others.
+  \item normative commitments, such as obligations, permissions, prohibitions, violations, or compliance determinations;
+  \item causal commitments, such as assertions that one event caused, produced, or was responsible for another;
+  \item evaluative commitments, such as judgments that privilege one legal, political, or analytic stance over others.
 \end{itemize}
 
 These exclusions do not deny the importance of such concepts for accountability.
@@ -39,7 +37,6 @@ Actors, events, institutional artifacts, jurisdictions,
 and records may all be represented without committing to how they are interpreted or evaluated.
 The substrate may therefore be rich in entities and identity structure
 while remaining silent on contested interpretations.
-
 
 %-----------------------------------------------------
 \subsection{What the Substrate Must Provide}
@@ -91,16 +88,14 @@ Such commitments do not vary with interpretive stance
 in the way causal or normative conclusions do,
 and therefore do not threaten neutrality.
 
-
 %-----------------------------------------------------
 \subsection{Externalizing Interpretation Without Loss}
 %-----------------------------------------------------
 
-
 A common concern is that excluding causal and normative commitments
 from the substrate renders the ontology incapable of supporting
 explanation, evaluation, or judgment.
-The impossibility result shows that the opposite is true:
+The result shows that the opposite is true:
 such functions must be externalized in order to be supported robustly.
 
 Interpretation is accommodated by organizing the system
@@ -182,43 +177,36 @@ This observation reinforces the central conclusion:
 neutrality is not achieved by representational cleverness alone,
 but by disciplined exclusion of interpretive commitments from the foundational layer.
 
-
 %-----------------------------------------------------
-\subsection{Summary of Design Constraints}
+\subsection{Summary of Structural Constraints}
 %-----------------------------------------------------
 
-The implications of the impossibility result can be summarized succinctly.
-Any ontology intended to serve as a neutral substrate for accountability must:
+The structural constraints established by the theorem can be summarized succinctly.
+Any ontology satisfying the neutrality requirements must:
 
 \begin{itemize}
   \item restrict the foundational LoA to
-        invariant observables (entities and identity conditions)
-        while excluding interpretive predicates;
-
-  \item prohibit the assertion of causal and normative
-        conclusions as substrate-layer facts;
-
-  \item preserve the LoO hierarchy to support interpretation,
-        evaluation, and explanation exclusively through externalized,
-        higher-level organizational layers;
-
-  \item maintain monotonicity by remaining stable and unrevised
-        under the addition of mutually incompatible interpretive frameworks.
+        framework-invariant observables:
+        predicate symbols governing entity existence,
+        identity, and persistence conditions;
+  \item assert no proposition at the substrate layer
+        whose truth conditions depend on causal or normative
+        interpretation, regardless of current consensus
+        among admissible frameworks;
+  \item preserve the LoO hierarchy so that interpretation,
+        evaluation, and explanation are supported exclusively
+        through externalized higher-level organizational layers
+        that extend but do not revise the substrate;
+  \item satisfy extension stability by remaining consistent
+        under extension by mutually incompatible interpretive frameworks,
+        without revision of substrate-layer commitments.
 \end{itemize}
 
 These constraints do not define an ontology,
-but they sharply delimit what any such ontology can be.%
-\footnote{For illustration, consider a substrate that asserts
-  \textit{Agent A's action caused Outcome B}.
-  Under Framework $\mathcal{F}_1$ (a proximate-cause legal standard),
-  this holds.
-  Under Framework $\mathcal{F}_2$ (a but-for counterfactual model),
-  it does not.
-  The substrate must be revised to accommodate $\mathcal{F}_2$,
-  violating extension stability.
-  A pre-causal substrate would represent
-  Agent A, the action, and Outcome B as entities,
-  leaving causal attribution to the interpretive layer.}
+but they sharply delimit what any such ontology can be.
+The interaction between these constraints is illustrated
+in Example~\ref{ex:incident}.
+
 The following section concludes by
 situating these constraints as boundary conditions
 on any ontology intended to function as

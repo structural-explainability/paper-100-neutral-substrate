@@ -17,9 +17,9 @@ purpose = "To make explicit the boundaries, responsibilities, and expectations o
 name = "se100_the_ontological_neutrality_theorem"
 org  = "structural-explainability"
 kind = "paper"
-status = "explanatory"
+status = "under-review"
 since = "2025"
-summary = "Applied ontology paper establishing neutrality constraints for shared substrates."
+summary = "Applied ontology paper establishing structural constraints for neutral substrates under persistent interpretive disagreement."
 
 [layer]
 space = "SE"
@@ -36,17 +36,22 @@ artifacts = [
     "LICENSE",
     "README.md",
     "SE_MANIFEST.toml",
-    "paper/*.tex"
+    "paper/*.tex",
+    "glossary/*.tex"
 ]
 
 [scope]
 includes = [
-  "theoretical justification for neutrality",
-  "impossibility argument for causal or normative substrate commitment",
+  "formal requirements for ontological neutrality",
+  "necessary and sufficient conditions for neutral substrate design",
+  "structural constraint on causal and normative commitments at the foundational layer",
+  "illustrative example of interpretive disagreement in incident investigation",
+  "glossary of key terms",
 ]
 excludes = [
   "normative specification text",
   "implementation requirements",
+  "domain ontology design",
 ]
 
 [citation]

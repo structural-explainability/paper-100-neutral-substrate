@@ -1,116 +1,194 @@
 \subsection*{Core Ontology Concepts}
+\textit{General ontological vocabulary used in the formal framework.}
 
 \begin{description}[style=nextline,leftmargin=1.5cm]
+  %\begin{description}[style=sameline, leftmargin=3cm, font=\bfseries]
+  %\begin{description}[style=unboxed, leftmargin=1.5cm, parsep=2pt, itemsep=2pt]
 
-    \item[Applied Ontology]
-          The use of ontological methods to structure and analyze real-world domains
-          for practical purposes.
 
-    \item[Boundary Condition]
-          A precondition that must hold for a framework or result to apply.
-          In this paper, the central boundary condition is that
-          entity existence and identity conditions must be invariant
-          across admissible frameworks within the domain.
-          Domains where identity is itself contested
-          do not admit neutral substrates in the sense defined here.
-          Boundary conditions delimit scope;
-          they are not defects but explicit constraints on applicability.
+  \item[Boundary Condition]
+        A precondition that must hold for a framework or result to apply.
+        In this paper, the central boundary condition is that
+        entity existence and identity conditions must be invariant
+        across admissible frameworks within the domain.
+        Domains where identity is itself contested
+        do not admit neutral substrates in the sense defined here.
+        Boundary conditions delimit scope;
+        they are not defects but explicit constraints on applicability.
 
-    \item[Embedding]
-          The act of asserting a claim as a foundational fact within an ontology,
-          such that it becomes part of the substrate-layer representation.
-          Embedded content is treated as true by the ontology itself,
-          not merely recorded as a claim made by some agent.
-          Contrast with \emph{Reification}.
+  \item[Commitment]
+        A proposition asserted by an ontology as holding at the substrate level,
+        independently of any particular interpretive framework.
+        Commitments are the content of ontological assertions:
+        what the ontology treats as true, not merely what has been claimed
+        by external agents or frameworks.
+        The central constraint of this paper is that
+        causal and normative propositions may not appear
+        as substrate-layer commitments.
+        Contrast with \emph{Conclusion}.
 
-    \item[Epistemic Ontology]
-          Ontologies that represent knowledge about the world
-          rather than the world directly.
-          Epistemic ontologies encode claims, beliefs, or assertions
-          as reified entities,
-          allowing representation of diverse perspectives
-          without embedding contested conclusions
-          as substrate-layer commitments.
-          Contrast with \emph{Metaphysical Ontology}.
+  \item[Conclusion]
+        A proposition derived by an interpretive framework
+        from substrate-layer commitments together with
+        the framework's own rules and assumptions.
+        Conclusions belong to interpretive layers, not to the substrate.
+        Contrast with \emph{Commitment}.
 
-    \item[Existence Conditions]
-          The criteria that determine whether an entity is present in a domain.
-          Existence conditions specify what must hold for an entity
-          to be recognized by the ontology,
-          independent of how it is interpreted or evaluated.
+  \item[Embedding]
+        The act of asserting a claim as a foundational fact within an ontology,
+        such that it becomes part of the substrate-layer representation.
+        Embedded content is treated as true by the ontology itself,
+        not merely recorded as a claim made by some agent.
+        Contrast with \emph{Reification}.
 
-    \item[Identity Conditions]
-          The criteria that determine when two references
-          denote the same entity, and what changes an entity
-          can undergo while remaining the same entity.
-          Identity conditions establish persistence and individuation
-          prior to interpretive or causal analysis.
+  \item[Existence Conditions]
+        The criteria that determine whether an entity is present in a domain.
+        Existence conditions specify what must hold for an entity
+        to be recognized by the ontology,
+        independent of how it is interpreted or evaluated.
 
-    \item[Level of Abstraction (LoA)]
-          A perspective defined by a specific set of observables
-          used to represent and analyze a domain.
-          The LoA determines what can be seen or queried;
-          selecting a restricted LoA excludes
-          certain predicates from the representation.
+  \item[Identity Conditions]
+        The criteria that determine when two references
+        denote the same entity, and what changes an entity
+        can undergo while remaining the same entity.
+        Identity conditions establish persistence and individuation
+        prior to interpretive or causal analysis.
 
-    \item[Level of Organization (LoO)]
-          The architectural layer or scale at which entities and relationships
-          are modeled within a system.
-          Levels of Organization are structural rather than scalar:
-          they differ by direction of dependence (e.g., foundational versus interpretive),
-          not by degree, granularity, or complexity.
-          A system may have multiple LoOs arranged hierarchically,
-          with foundational layers supporting higher-order interpretive layers.
+  \item[Level of Abstraction (LoA)]
+        A perspective defined by a specific set of observables
+        used to represent and analyze a domain.
+        The LoA determines what can be seen or queried;
+        selecting a restricted LoA excludes
+        certain predicates from the representation.
 
-    \item[Metaphysical Ontology]
-          An ontology that represents the world directly,
-          asserting what exists and what relations hold
-          as ontological facts.
-          Metaphysical ontologies embed commitments
-          about the structure of reality at the substrate layer.
-          Contrast with \emph{Epistemic Ontology}.
+  \item[Level of Organization (LoO)]
+        The architectural layer or scale at which entities and relationships
+        are modeled within a system.
+        Levels of Organization are structural rather than scalar:
+        they differ by direction of dependence (e.g., foundational versus interpretive),
+        not by degree, granularity, or complexity.
+        A system may have multiple LoOs arranged hierarchically,
+        with foundational layers supporting higher-order interpretive layers.
 
-    \item[Observables]
-          The set of properties, relations, or predicates
-          that an ontology makes available for representation and query.
-          An ontology's Level of Abstraction is defined by its observables;
-          neutrality requires restricting observables to those
-          invariant across admissible frameworks.
+  \item[Observables]
+        The set of properties, relations, or predicates
+        that an ontology makes available for representation and query.
+        An ontology's Level of Abstraction is defined by its observables;
+        neutrality requires restricting observables to those
+        invariant across admissible frameworks.
 
-    \item[Ontological Assertion]
-          A statement embedded in an ontology as a foundational fact.
-          Ontological assertions carry ontological commitment:
-          they represent the ontology's position on what exists or holds,
-          not merely what has been claimed by external agents.
+  \item[Ontological Assertion]
+        The act of embedding a commitment in an ontology as a foundational fact.
+        See \emph{Commitment}, \emph{Embedding}.
 
-    \item[Ontology]
-          A formal representation of entities within a domain
-          and the relationships that hold between them,
-          expressed in a logic or schema suitable for inference.
+  \item[Ontological Primitive]
+        A term or predicate that an ontology takes as undefined,
+        using it to define or constrain other terms
+        rather than deriving it from prior definitions.
+        In a neutral substrate, the admissible primitives are
+        restricted to those governing entity existence, identity,
+        and persistence conditions;
+        causal and normative predicates are excluded as primitives
+        at the foundational layer.
 
-    \item[Reification]
-          The representation of a claim, assertion, or relation
-          as an entity rather than as a direct ontological fact.
-          Reification allows the ontology to represent discourse
-          about the world without asserting conclusions about the world itself,
-          for example, by representing that an agent asserted
-          a causal or normative claim without embedding that claim
-          as a substrate-layer fact.
-          See also \emph{Epistemic Ontology}.
-          Contrast with \emph{Embedding}.
+  \item[Ontology]
+        A formal representation of entities within a domain
+        and the relationships that hold between them,
+        expressed in a logic or schema suitable for inference.
 
-    \item[Representation]
-          The encoding of information within an ontology.
-          Representation is broader than embedding:
-          an ontology may represent a claim (via reification)
-          without embedding it as a foundational fact.
-          See also \emph{Embedding}, \emph{Reification}.
+  \item[Ontology, Applied]
+        The use of ontological methods to structure and analyze
+        real-world domains for practical purposes.
+        Applied ontology is the field; an applied ontology is
+        an ontology deployed in a specific domain context.
 
-    \item[Substrate]
-          The foundational layer of an ontology,
-          consisting of entities, identity conditions, and persistence criteria.
-          A neutral substrate excludes causal and normative primitives,
-          serving as a stable base for divergent interpretive layers.
-          Also called \emph{substrate layer} or \emph{foundational layer}.
+  \item[Ontology, Domain]
+        An ontology that represents the entities, relations,
+        and constraints specific to a particular subject area,
+        such as legal institutions, biomedical processes,
+        or financial instruments.
+        Domain ontologies are typically built by extending
+        a foundational or upper ontology with domain-specific vocabulary.
+        Contrast with \emph{Ontology, Foundational}.
+
+  \item[Ontology, Epistemic]
+        An ontology that represents knowledge about the world
+        rather than the world directly.
+        Epistemic ontologies encode claims, beliefs, or assertions
+        as reified entities, allowing representation of diverse
+        perspectives without embedding contested conclusions
+        as substrate-layer commitments.
+        Contrast with \emph{Ontology, Metaphysical}.
+
+  \item[Ontology, Foundational]
+        An ontology that provides domain-independent upper-level
+        categories intended to be extended for specific applications.
+        Foundational ontologies define what kinds of things exist
+        (e.g., continuants, occurrents, roles, processes)
+        without committing to domain-specific content.
+        The Basic Formal Ontology (BFO 2.0) is a realist foundational
+        ontology grounded in scientific practice, distinguishing
+        continuants (entities that persist through time) from
+        occurrents (events and processes that unfold over time).
+        The Descriptive Ontology for Linguistic and Cognitive
+        Engineering (DOLCE) takes a cognitive and linguistic
+        orientation, emphasizing conceptualization over realism
+        and supporting situation-based modeling of descriptions
+        and contexts.
+        Also called \emph{Ontology, Upper}.
+        Contrast with \emph{Ontology, Domain}.
+
+  \item[Ontology, Metaphysical]
+        An ontology that represents the world directly,
+        asserting what exists and what relations hold
+        as ontological facts.
+        Metaphysical ontologies embed commitments about the
+        structure of reality at the substrate layer.
+        Contrast with \emph{Ontology, Epistemic}.
+
+  \item[Ontology, Upper]
+        See \emph{Ontology, Foundational}.
+
+  \item[Persistence Conditions]
+        The criteria that determine how an entity
+        continues to exist through change over time.
+        Persistence conditions govern entity tracking
+        across datasets, jurisdictions, and temporal contexts,
+        and are established at the substrate layer
+        prior to interpretive extension.
+
+  \item[Predicate Symbol]
+        A symbol in the ontology's formal vocabulary
+        that denotes a property or relation.
+        The Level of Abstraction of a substrate
+        is identified with the set of predicate symbols
+        available at the foundational layer.
+        Neutrality requires that this set exclude predicate symbols
+        whose extension depends on causal or normative interpretation.
+
+  \item[Reification]
+        The representation of a claim, assertion, or relation
+        as an entity rather than as a direct ontological fact.
+        Reification allows the ontology to represent discourse
+        about the world without asserting conclusions about the world itself,
+        for example, by representing that an agent asserted
+        a causal or normative claim without embedding that claim
+        as a substrate-layer fact.
+        See also \emph{Ontology, Epistemic}.
+        Contrast with \emph{Embedding}.
+
+  \item[Representation]
+        The encoding of information within an ontology.
+        Representation is broader than embedding:
+        an ontology may represent a claim (via reification)
+        without embedding it as a foundational fact.
+        See also \emph{Embedding}, \emph{Reification}.
+
+  \item[Substrate]
+        The foundational layer of an ontology,
+        consisting of entities, identity conditions, and persistence criteria.
+        A neutral substrate excludes causal and normative primitives,
+        serving as a stable base for divergent interpretive layers.
+        Also called \emph{substrate layer} or \emph{foundational layer}.
 
 \end{description}
