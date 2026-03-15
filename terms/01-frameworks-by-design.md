@@ -10,7 +10,7 @@ world / ontology / representation
 
 ## Additional (what commitments must be excluded)
 
-world / multiple ontologies (disagree) / neutral substrate enabling coexistence
+world / multiple ontologies (disagree) / neutral substrate 
 
 ## Types
 

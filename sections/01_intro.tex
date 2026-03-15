@@ -102,11 +102,13 @@ For brevity, this ontology may be referred to as the \emph{substrate}.
 This requires a careful selection of the
 Level of Abstraction (LoA)~\citep{floridi2008levels}
 at which the substrate operates.
-Following Floridi, an LoA is
-defined by the set of observables it makes available;
-for a substrate to remain neutral,
-it must operate at an LoA that excludes
-explanatory or evaluative observables.
+Following Floridi, an LoA is defined by the set of
+observables it makes available for representation.
+In an ontological substrate, these observables correspond
+to the predicate symbols available in the foundational vocabulary.
+For a substrate to remain neutral,
+it must operate at an LoA whose vocabulary excludes
+explanatory or evaluative predicates.
 
 Conceptually, the architecture considered here distinguishes
 between several representational roles, defined precisely in
@@ -127,9 +129,9 @@ A \emph{neutral substrate} constrains which propositions may
 be asserted as commitments so that multiple frameworks may
 derive incompatible conclusions from the same substrate
 without requiring revision of that substrate.
-The key design question is therefore which propositions are
-safe to commit to at the substrate level without privileging
-any particular interpretive framework.
+The key design question is therefore which propositions
+may be safely asserted as substrate-level commitments without
+committing the substrate to any particular interpretive framework.
 
 This form of neutrality imposes strict design constraints.
 In particular, ontologies that assert causal or normative commitments
@@ -138,7 +140,7 @@ of interpretive non-commitment and extension stability that neutrality
 demands~\citep{hacking1999social,cartwright1979causal,star1996ecology,guarino2009ontology}.
 Causal and normative conclusions may be derived by
 interpretive frameworks, but embedding such conclusions
-as substrate-layer commitments privileges one framework over others
+as substrate-layer commitments commits the substrate to a particular framework
 and therefore violates neutrality.
 
 This paper adopts the following design constraint.
@@ -176,8 +178,8 @@ with some admissible interpretive framework,
 violating both requirements.
 In the sufficiency direction,
 a substrate that restricts its foundational layer
-to framework-invariant referential structure with entity existence
-and identity conditions can satisfy both requirements simultaneously,
+to framework-invariant referential structure with explicit
+identity and persistence conditions can satisfy both requirements simultaneously,
 without introducing hidden commitments through
 role predicates or contextual typing.
 Neutrality is therefore possible if and only if the substrate

@@ -16,4 +16,4 @@ Examples include systems designed for:
 
 - shared conceptualization
 - interoperability across heterogeneous systems
-- coexistence of incompatible interpretive frameworks
+- incompatible interpretive frameworks

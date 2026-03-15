@@ -9,10 +9,10 @@
   \item[Boundary Condition]
         A precondition that must hold for a framework or result to apply.
         In this paper, the central boundary condition is that
-        entity existence and identity conditions must be invariant
+        entity identity and persistence conditions must be invariant
         across admissible frameworks within the domain.
         Domains where identity is itself contested
-        do not admit neutral substrates in the sense defined here.
+        do not admit neutral substrates in the sense defined in this paper.
         Boundary conditions delimit scope;
         they are not defects but explicit constraints on applicability.
 
@@ -41,25 +41,30 @@
         not merely recorded as a claim made by some agent.
         Contrast with \emph{Reification}.
 
-  \item[Existence Conditions]
-        The criteria that determine whether an entity is present in a domain.
-        Existence conditions specify what must hold for an entity
-        to be recognized by the ontology,
-        independent of how it is interpreted or evaluated.
-
   \item[Identity Conditions]
         The criteria that determine when two references
-        denote the same entity, and what changes an entity
+        denote the same entity and what changes an entity
         can undergo while remaining the same entity.
-        Identity conditions establish persistence and individuation
-        prior to interpretive or causal analysis.
+        Identity conditions govern individuation
+        within the ontology.
+
+  \item[Identity-and-Persistence Regime]
+        A structured set of identity and persistence conditions
+        governing how a class of entities is individuated and tracked
+        over time within an ontology.
+        An identity-and-persistence regime specifies what counts as the same entity,
+        what changes are compatible with continued identity, and
+        how references to that entity remain stable across
+        datasets, jurisdictions, or observational contexts.
+        In a neutral substrate, such regimes provide the identity and persistence structure
+        upon which interpretive frameworks operate.
 
   \item[Level of Abstraction (LoA)]
-        A perspective defined by a specific set of observables
-        used to represent and analyze a domain.
-        The LoA determines what can be seen or queried;
+        A perspective defined by a specific set of predicate symbols
+        used to represent a domain.
+        The LoA determines what can be represented or queried;
         selecting a restricted LoA excludes
-        certain predicates from the representation.
+        certain predicates from the ontology's vocabulary.
 
   \item[Level of Organization (LoO)]
         The architectural layer or scale at which entities and relationships
@@ -70,13 +75,6 @@
         A system may have multiple LoOs arranged hierarchically,
         with foundational layers supporting higher-order interpretive layers.
 
-  \item[Observables]
-        The set of properties, relations, or predicates
-        that an ontology makes available for representation and query.
-        An ontology's Level of Abstraction is defined by its observables;
-        neutrality requires restricting observables to those
-        invariant across admissible frameworks.
-
   \item[Ontological Assertion]
         The act of embedding a commitment in an ontology as a foundational fact.
         See \emph{Commitment}, \emph{Embedding}.
@@ -86,10 +84,10 @@
         using it to define or constrain other terms
         rather than deriving it from prior definitions.
         In a neutral substrate, the admissible primitives are
-        restricted to those governing entity existence, identity,
-        and persistence conditions;
-        causal and normative predicates are excluded as primitives
-        at the foundational layer.
+        restricted to those governing entity identity
+        and persistence conditions, while
+        causal and normative predicates are excluded
+        from the foundational layer.
 
   \item[Ontology]
         A formal representation of entities within a domain
@@ -184,16 +182,25 @@
         without embedding it as a foundational fact.
         See also \emph{Embedding}, \emph{Reification}.
 
-\item[Substrate]
-      The foundational layer of an ontology that functions as a shared
-      representational base across interpretive frameworks.
-      Formally, the \emph{substrate ontology} is the ontology whose
-      foundational layer provides entities together with identity
-      and persistence conditions.
-      For brevity, this paper refers to that ontology simply as the
-      \emph{substrate}.
-      A neutral substrate excludes causal and normative primitives,
-      serving as a stable base for divergent interpretive layers.
-      Also called \emph{substrate layer} or \emph{foundational layer}.
+  \item[Substrate]
+        The foundational layer of an ontology that functions as a shared
+        representational base across interpretive frameworks.
+        Formally, the \emph{substrate ontology} is the ontology whose
+        foundational layer provides entities together with identity
+        and persistence conditions.
+        For brevity, this paper refers to that ontology simply as the
+        \emph{substrate}.
+        A neutral substrate excludes causal and normative primitives,
+        serving as a stable base for divergent interpretive layers.
+        Also called \emph{substrate layer} or \emph{foundational layer}.
+
+  \item[Vocabulary]
+        The set of symbols available in an ontology for representing
+        entities, properties, and relations.
+        In a formal ontology, the vocabulary consists primarily of
+        predicate symbols together with any constants or functions
+        used in the representation.
+        At a given LoA, the vocabulary determines
+        which distinctions can be expressed.
 
 \end{description}

@@ -5,7 +5,7 @@
 
   \item[Accountability System]
         A data system designed to support explanation, evaluation,
-        and assignment of responsibility across multiple stakeholders.
+        and assignment of responsibility across multiple stakeholders or interpretive perspectives.
         Accountability systems must accommodate persistent disagreement
         about causes, obligations, and interpretations.
 
@@ -52,20 +52,40 @@
         contested conclusions remain within the interpretive layers
         where framework assumptions are explicit and disagreement
         is representable.
-        Reification is one mechanism for externalization;
-        named graphs, contextual modules, and linked interpretive
-        ontologies are others.
+        Reification is one mechanism for externalization.
+        Named graphs, contextual modules, and linked interpretive
+        ontologies provide alternative implementation strategies.
         See \emph{Reification}.
 
+  \item[Framework-Contestable Proposition]
+        A proposition whose truth value may be evaluated differently
+        by admissible interpretive frameworks.
+        Framework-contestable propositions arise when the assessment
+        of a claim depends on causal models or normative standards
+        applied to the same underlying entities and events.
+        In a neutral substrate, such propositions may not be asserted
+        as substrate-layer commitments and must instead be represented
+        within interpretive frameworks.
+        See also \emph{Framework-Variant Proposition}.
+
+  \item[Framework-Invariant Referential Structure]
+        Elements of the substrate's vocabulary whose interpretation
+        remains constant across admissible interpretive frameworks.
+        In this paper, framework-invariant referential structure
+        consists of predicate symbols governing entity identity
+        and persistence conditions.
+        Such predicates may appear as substrate-layer commitments
+        because their interpretation does not depend on a particular
+        interpretive framework.
+        Contrast with \emph{Framework-Variant Proposition}.
+
   \item[Framework-Variant Proposition]
-        A proposition $p$ such that there exist admissible frameworks
-        $\mathcal{F}_1, \mathcal{F}_2 \in \mathbb{F}$ where
-        $\mathcal{S} \cup \mathcal{F}_1 \vdash p$ and
-        $\mathcal{S} \cup \mathcal{F}_2 \vdash \neg p$.
-        Framework-variant propositions may not appear as
-        substrate-layer commitments without violating
-        interpretive non-commitment.
-        Formally defined in Definition~3.2.
+        A proposition whose truth value may differ across admissible
+        interpretive frameworks.
+        Framework-variant propositions may not appear as substrate-layer
+        commitments under the neutrality definition.
+        Formally defined in Definition~\ref{def:framework-variant}.
+        Contrast with \emph{Framework-Invariant Referential Structure}.
 
   \item[Interpretive Framework]
         A coherent set of principles, rules, or assumptions
@@ -76,10 +96,12 @@
         while each remaining internally consistent.
 
   \item[Interpretive Non-Commitment]
-        The requirement that a substrate refrain from asserting conclusions
-        whose truth varies across admissible interpretive frameworks.
+        The requirement that a substrate refrain from asserting
+        causal or normative conclusions as substrate-layer commitments,
+        since their truth may vary across admissible interpretive frameworks.
         An ontology satisfies interpretive non-commitment
-        if it does not privilege one framework's conclusions over another's.
+        if it does not commit the substrate to conclusions
+        whose truth depends on a particular interpretive framework.
         Together with \emph{Extension Stability}, defines \emph{Neutrality}.
 
   \item[Neutral Substrate]
@@ -87,7 +109,7 @@
         enabling stable use across multiple,
         potentially incompatible interpretive frameworks.
         A neutral substrate excludes causal and normative commitments
-        at the foundational layer,
+        from the foundational layer,
         supporting pluralism and accountability.
 
   \item[Neutrality]
@@ -112,7 +134,7 @@
         interpretive frameworks within a single system.
         A neutral substrate supports pluralism
         by providing a shared foundation that does not
-        privilege any single framework.
+        commit the substrate to any single framework.
 
   \item[Semantic Heterogeneity]
         The condition in which multiple ontologies exist for the same domain
