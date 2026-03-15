@@ -3,26 +3,25 @@
 \section{Formal Development of the Ontological Neutrality Theorem}
 \label{sec:formal-dev}
 
-Because interpretive frameworks derive conclusions
-while ontologies assert commitments,
-embedding framework-contestable propositions as substrate commitments
-produces incompatibility with some admissible framework.
-The following argument formalizes this constraint.
+Section~\ref{sec:requirements} defined the two neutrality
+requirements governing a substrate ontology:
+interpretive non-commitment and extension stability.
+This section establishes the relationship between those requirements
+and the structure of the substrate layer.
 
-This section establishes a necessary and sufficient condition
-on substrate design: the neutrality requirements
-defined in Section~\ref{sec:requirements}
-are satisfied if and only if causal and normative commitments
-are excluded from the substrate layer.
+Specifically, it proves that a substrate satisfies the neutrality
+requirements if and only if causal and normative commitments are excluded
+from the substrate.
 The argument is structural and logical rather than empirical:
-it follows from the interaction
-between interpretive disagreement and substrate-level ontological assertion.
+it follows from the interaction between interpretive disagreement
+and substrate-level commitments.
 All necessity and sufficiency claims in this section
-are relative to those requirements.
+are relative to the definitions introduced in
+Section~\ref{sec:requirements}.
 
 \subsection{Neutrality as Compatibility Across Admissible Frameworks}
 
-By definition, a neutral ontological substrate must remain compatible
+By definition, a neutral substrate must remain compatible
 with multiple admissible interpretive frameworks,
 even when those frameworks disagree.
 Compatibility here is understood in a strong sense:
@@ -56,7 +55,8 @@ its foundational commitments must remain invariant
 across all admissible interpretive frameworks.
 If the substrate asserts a proposition whose truth
 depends on a particular causal or normative interpretation,
-then there exist admissible frameworks that derive the negation of that proposition.
+then there exist admissible frameworks that derive
+both that proposition and its negation.
 Because neutrality requires the substrate to remain logically
 consistent when extended by every admissible framework,
 asserting such a proposition at the substrate layer
@@ -69,9 +69,9 @@ causal or normative concepts themselves.
 A neutral substrate may contain vocabulary for representing
 causal or normative claims, provided those claims are represented as
 interpretive assertions rather than asserted as substrate-layer facts.
-What neutrality excludes is the elevation of a particular
-causal or normative conclusion to a foundational commitment of the ontology,
-since such conclusions may be rejected by other admissible frameworks.
+What neutrality excludes is asserting a causal or normative
+proposition as a substrate-level commitment,
+since such propositions may be rejected by some admissible framework.
 
 \subsection{Framework-Contestability and Substrate Incompatibility}
 \label{subsec:general-lemma}
@@ -81,7 +81,7 @@ stated here as a general lemma.
 
 \begin{lemma}[Framework-Contestability Lemma]
 \label{lem:contestability}
-Let $\mathcal{S}$ be an ontology satisfying the neutrality requirements,
+Let $\mathcal{S}$ be a substrate ontology satisfying the neutrality requirements,
 and let $p$ be a proposition whose truth conditions depend on
 the conclusions of an interpretive framework rather than on
 framework-invariant referential structure.
@@ -117,15 +117,15 @@ institutional authorities, temporal scope, and interpretive stance.
 It is therefore a routine and expected feature of accountability systems
 that admissible frameworks disagree about normative conclusions.
 
-By Lemma~\ref{lem:contestability}, asserting any such conclusion
+By Lemma~\ref{lem:contestability}, asserting any such proposition
 as a substrate-layer commitment privileges one normative framework over others.
 Any framework that denies the asserted commitment becomes
 incompatible with the substrate,
 as it cannot be layered atop it without contradiction or revision.
 This incompatibility is not a matter of missing context or insufficient detail;
 it arises from the ontological act of asserting a contested normative
-commitment as a foundational fact.
-As a result, no ontology that asserts normative commitments
+commitment as a foundational fact of the substrate.
+As a result, no substrate that asserts normative commitments
 at the foundational layer can satisfy interpretive non-commitment,
 and when alternative normative interpretations arise,
 as they inevitably do,
@@ -138,24 +138,25 @@ extension stability is violated.
 
 Causal attributions are framework-dependent
 in the sense of Lemma~\ref{lem:contestability}.
-Claims such as \textit{event A caused event B}
+Claims such as \textit{ $e_1$ caused $e_2$}
 depend on background assumptions about causal mechanisms,
 variable selection, counterfactual reasoning, and model scope.
 Distinct causal frameworks may be equally admissible
 while disagreeing about specific causal relationships.
 
 By Lemma~\ref{lem:contestability}, asserting any causal relation
-as a substrate-layer commitment necessarily commits the ontology
+as a substrate-layer commitment necessarily commits the substrate
 to one causal model among many.
 Frameworks that reject that model cannot be layered onto
 the substrate without conflict.
 Importantly, this argument does not rely on the presence
 of an active dispute over a specific event.
-Causal attribution cannot be asserted as a substrate-layer commitment
+Causal attribution cannot be asserted
+as a substrate-layer commitment
 without committing to a particular counterfactual or mechanistic logic:
-as soon as an ontology asserts $A \to B$ as a causal commitment,
-it excludes any framework that treats $A$ and $B$ as merely correlated
-or as having a common cause $Z$.
+as soon as a substrate asserts $\mathsf{Caused}(e_1,e_2)$,
+it excludes any framework that treats $e_1$ and $e_2$ as merely correlated
+or as effects of a common cause $z$.
 
 To be clear, \textit{pre-causal does not mean acausal}.
 The substrate does not deny that causation exists
@@ -272,7 +273,7 @@ not that their contents hold as ontological facts.
 This is precisely the externalization the theorem requires.
 
 Reification preserves interpretive non-commitment
-only if the ontology refrains from simultaneously
+only if the substrate refrains from simultaneously
 asserting the reified content as a substrate-layer truth.
 If causal or normative relations are both asserted
 as substrate-layer facts and reified as claims,
@@ -304,7 +305,7 @@ The preceding observations yield the central result of this paper.
 
 \begin{theorem}[Ontological Neutrality Theorem]
   \label{thm:neutrality}
-  Let $\mathcal{S}$ be an ontology intended to function
+  Let $\mathcal{S}$ be a substrate ontology intended to function
   as a neutral substrate across diverse interpretive frameworks,
   and let $\mathbb{F}$ be the set of admissible interpretive frameworks.
   Then $\mathcal{S}$ satisfies the requirements of neutrality
