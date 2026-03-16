@@ -14,16 +14,21 @@ description = "Declarative claim of repository intent, scope, and role."
 purpose = "To make explicit the boundaries, responsibilities, and expectations of this repository relative to others."
 
 [repo]
-name = "se100_the_ontological_neutrality_theorem"
+name = "paper-100-neutral-substrate"
 org  = "structural-explainability"
 kind = "paper"
 status = "under-review"
-since = "2025"
-summary = "Applied ontology paper establishing structural constraints for neutral substrates under persistent interpretive disagreement."
+since = "2026"
+summary = "Applied ontology paper establishing the Ontological Neutrality Theorem and characterizing neutrality as interpretive non-commitment with extension stability under persistent disagreement."
 
 [layer]
 space = "SE"
 role  = "justification-neutrality"
+
+[result]
+type = "theorem"
+name = "Ontological Neutrality Theorem"
+object = "neutral ontological substrates"
 
 [depends]
 required = []
@@ -42,22 +47,24 @@ artifacts = [
 
 [scope]
 includes = [
-  "formal requirements for ontological neutrality",
-  "necessary and sufficient conditions for neutral substrate design",
-  "structural constraint on causal and normative commitments at the foundational layer",
-  "illustrative example of interpretive disagreement in incident investigation",
-  "glossary of key terms",
+  "formal definition of ontological neutrality",
+  "interpretive non-commitment at the substrate level",
+  "extension stability under incompatible interpretations",
+  "structural constraint excluding causal and normative commitments at the substrate layer",
+  "illustrative example of persistent interpretive disagreement",
+  "glossary of key terms"
 ]
 excludes = [
+  "identity-regime derivations",
   "normative specification text",
   "implementation requirements",
-  "domain ontology design",
+  "domain ontology design"
 ]
 
 [citation]
 cff = "CITATION.cff"
 preferred = "paper"
-bib_hint = "case2025neutrality"
+bib_hint = "case2026neutrality"
 
 [traceability]
 identifier_map = "none"
