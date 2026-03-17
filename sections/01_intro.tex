@@ -6,29 +6,26 @@
 Modern data systems must support accountability
 across persistent legal, political, and analytic disagreement
 regarding the interpretation of events, responsibilities, and explanations.
-%Modern data systems increasingly operate in environments characterized
-%by persistent interpretive disagreement~\citep{rawls1993political,sunstein1996legal}.
 Legal interpretations diverge across jurisdictions and
 over time~\citep{dworkin1986law,hart1961concept,berman2007pluralism};
 political actors contest responsibility
 and intent~\citep{bovens2007accountability,hood2011blame};
-analytic frameworks disagree about causation, attribution,
-and relevance~\citep{pearl2009causality,woodward2003making}.
+analytic frameworks disagree about
+causation and attribution~\citep{woodward2003making}.
 These disagreements are not anomalies to be resolved prior to data representation;
 they are structural features of institutional environments
 that accountability-oriented systems must accommodate
-while maintaining stable reference to shared entities and events.
+while maintaining stable reference to shared entities.
 
 Accountability, in this context,
 requires more than the collection of records or
 the publication of datasets~\citep{fox2007transparency,bovens2014oxford}.
-It requires the ability to refer stably to
-entities, actions, and institutional artifacts
-while allowing competing explanations, evaluations,
-and judgments to coexist~\citep{gruber1993translation,smith2010ontology}.
+It requires the ability to refer stably to entities, occurrences, and
+institutional artifacts~\citep{gruber1993translation,smith2010ontology},
+while allowing competing explanations, evaluations, and judgments to coexist.
 A system that collapses disagreement by embedding a single interpretation
-into its foundational representations undermines
-accountability rather than supporting it,
+into its foundational representations restricts accountability
+in settings characterized by persistent interpretive disagreement,
 as it forecloses contestation and
 revision~\citep{bowker1999sorting,winner1980artifacts}.
 
@@ -87,11 +84,14 @@ of this requirement for ontology design.
 Specifically, it addresses the conditions under which an ontology
 can function as a \emph{neutral substrate} for accountability:
 a shared representational layer that supports stable reference to
-entities, actions, and institutional artifacts while allowing
+entities, occurrences, and institutional artifacts while allowing
 multiple incompatible interpretive frameworks to coexist.
 Under this conception of neutrality, the substrate must remain
 usable across divergent legal, political, and analytic frameworks
 without requiring revision of the substrate itself.
+A neutral substrate, in this sense, is a foundational representation
+that supports such coexistence without embedding the causal or
+normative conclusions on which those frameworks may disagree.
 
 In this paper, a \emph{substrate ontology} is an ontology that serves
 as the shared representational base across interpretive frameworks.
@@ -128,7 +128,7 @@ asserted by the substrate itself.
 A \emph{neutral substrate} constrains which propositions may
 be asserted as commitments so that multiple frameworks may
 derive incompatible conclusions from the same substrate
-without requiring revision of that substrate.
+without requiring revision of the substrate.
 The key design question is therefore which propositions
 may be safely asserted as substrate-level commitments without
 committing the substrate to any particular interpretive framework.
@@ -137,7 +137,11 @@ This form of neutrality imposes strict design constraints.
 In particular, ontologies that assert causal or normative commitments
 at the foundational layer cannot satisfy the requirements
 of interpretive non-commitment and extension stability that neutrality
-demands~\citep{hacking1999social,cartwright1979causal,star1996ecology,guarino2009ontology}.
+demands.
+This constraint is consistent with prior observations that
+classification systems and representational structures
+embed normative and interpretive commitments
+~\citep{bowker1999sorting,hacking1999social}.
 Causal and normative conclusions may be derived by
 interpretive frameworks, but embedding such conclusions
 as substrate-layer commitments commits the substrate to a particular framework

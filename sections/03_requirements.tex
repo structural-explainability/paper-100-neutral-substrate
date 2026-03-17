@@ -10,34 +10,46 @@ on the definitions stated here.
 Unless otherwise noted, all entailment ($\vdash$) is with respect to
 classical first-order logic with equality.
 
-The conceptual architecture is summarized below.
+The conceptual architecture is summarized in Figure~\ref{fig:architecture}.
 
-\begin{center}
+\begin{figure}[!ht]
+\centering
 
-\begin{tabular}{|c|}
-\hline
+\fbox{%
+\begin{minipage}{0.85\linewidth}
+\centering
 \textbf{Interpretive Frameworks} \\
-(causal and normative reasoning; competing conclusions) \\
-\hline
+(causal and normative reasoning; competing conclusions)
+\end{minipage}%
+}
+
+\vspace{12pt}
+
+\begin{tabular}{c@{\hspace{6pt}}l}
+$\uparrow$ & {\small extends, but does not revise substrate commitments}
 \end{tabular}
 
-$\uparrow$
-\vspace{3pt}
-{\small extends but does not revise}
-\vspace{3pt}
+\vspace{12pt}
 
-\vspace{3pt}
-
-\begin{tabular}{|c|}
-\hline
+\fbox{%
+\begin{minipage}{0.85\linewidth}
+\centering
 \textbf{Neutral Substrate} \\
-Ontological primitives: types, identity conditions, \\
-and persistence conditions for entities, occurrences, \\
-and institutional artifacts \\
-\hline
-\end{tabular}
+Framework-invariant referential structure: \\
+identity and persistence conditions for \\
+entities, occurrences, and institutional artifacts
+\end{minipage}%
+}
 
-\end{center}
+\caption{Conceptual architecture of a neutral substrate and interpretive frameworks.}
+\label{fig:architecture}
+\end{figure}
+
+The interface between layers consists of shared reference to
+entities, occurrences, and institutional artifacts,
+together with their identity and persistence conditions;
+interpretive frameworks extend this structure
+without revising substrate-layer commitments.
 
 The formal requirements governing this architecture are stated in the
 subsections that follow.

@@ -18,7 +18,7 @@ without violating neutrality.
 The primary implication is negative but precise.
 A neutral ontological substrate must exclude,
 at the foundational level,
-assertions whose truth may vary across admissible frameworks.
+assertions whose truth is framework-variant across admissible frameworks.
 In particular, the substrate must not embed:
 \begin{itemize}
   \item normative commitments, such as
@@ -33,7 +33,7 @@ In particular, the substrate must not embed:
 
 These exclusions do not deny the importance of such concepts for accountability.
 Rather, they recognize that embedding them as ontological facts
-collapses the distinction between representation and interpretation, undermining neutrality.
+collapses the distinction between representation and interpretation, thereby violating neutrality.
 
 The exclusions apply specifically to asserted conclusions,
 not to the entities or structures that such conclusions refer to.
@@ -62,10 +62,10 @@ The claim that a neutral substrate relies on such framework-invariant structure
 does not assert that all questions of
 entity individuation, persistence, or boundary demarcation
 are framework-independent.
-Many such questions, e.g.,
+Many such questions (e.g.,
 the spatial or temporal granularity of an event,
 the criteria for organizational continuity,
-or the recognition of informal institutions,
+or the recognition of informal institutions)
 are legitimately contested across admissible frameworks.
 Neutrality instead requires that
 the substrate fix only a minimal and domain-appropriate set of
@@ -112,7 +112,7 @@ while higher-order LoOs record the how and why (interpretive claims).
 By maintaining this structural separation,
 multiple, mutually inconsistent interpretive LoOs
 can reside atop the same foundational LoO
-without triggering logical collapse.
+without introducing inconsistency at the substrate layer.
 Disagreement, revision, and contestation are then represented
 by the coexistence of multiple such records,
 rather than by revision of substrate-layer facts.
@@ -124,11 +124,28 @@ while reaching incompatible conclusions.
 The substrate remains unchanged,
 serving as a stable point of reference
 rather than a site of resolution.
+
 This architecture does not diminish the importance of causal reasoning;
-it locates causation within
+it relocates it to
 interpretive layers, where model commitments
 are explicit and conclusions
 may legitimately vary across admissible frameworks.
+
+This structural separation is independent of any
+specific representational technology,
+but imposes a clear constraint on admissible designs.
+Implementations must ensure that causal and normative propositions
+are not asserted as substrate-layer commitments,
+but are instead represented as interpretive assertions
+attributed to particular interpretive contexts.
+
+This condition may be realized through multiple mechanisms,
+including contextual modules (e.g., named graphs),
+reified assertion objects with provenance,
+or linked interpretive ontologies layered above the substrate.
+In each case, the substrate records entities and identity structure,
+while causal and normative claims are externalized as
+interpretive assertions associated with specific frameworks.
 
 %-----------------------------------------------------
 \subsection{Permitted Structural Relations and Excluded Commitments}
@@ -139,7 +156,7 @@ does not entail the exclusion of all structured relations.
 A neutral substrate permits relations that establish
 structural, temporal, or institutional linkage
 without asserting causal efficacy or evaluative force.
-Relations such as containment, delegation, authorization,
+Relations such as containment, delegation,
 temporal occurrence, participation, and applicability
 are admissible insofar as they do not assert
 that one entity caused, justified, or obligated another.
@@ -196,8 +213,8 @@ Any ontology satisfying the neutrality requirements must:
         framework-invariant referential structure:
         predicate symbols governing entity
         identity and persistence conditions;
-  \item assert no proposition at the substrate layer
-        whose truth conditions depend on causal or normative
+  \item assert no framework-variant proposition at the substrate layer
+        in particular none whose truth conditions depend on causal or normative
         interpretation, regardless of current consensus
         among admissible frameworks;
   \item preserve the LoO hierarchy so that interpretation,

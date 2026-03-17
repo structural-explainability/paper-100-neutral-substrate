@@ -11,7 +11,7 @@ and the structure of the substrate layer.
 
 Specifically, it proves that a substrate satisfies the neutrality
 requirements if and only if causal and normative commitments are excluded
-from the substrate.
+from the substrate layer.
 The argument is structural and logical rather than empirical:
 it follows from the interaction between interpretive disagreement
 and substrate-level commitments.
@@ -24,9 +24,9 @@ Section~\ref{sec:requirements}.
 By definition, a neutral substrate must remain compatible
 with multiple admissible interpretive frameworks,
 even when those frameworks disagree.
-Compatibility here is understood in a strong sense:
-the same substrate must remain logically consistent
-when extended by divergent interpretive frameworks,
+Compatibility here is understood in the sense of extension stability:
+the substrate must remain logically consistent
+when extended by each admissible interpretive framework,
 without revision or retraction of substrate-layer assertions.
 
 A framework is \emph{admissible} if it is internally consistent and
@@ -35,7 +35,7 @@ within the domain of application.
 Admissible interpretive frameworks may disagree about
 causal or normative conclusions concerning the same entities or events,
 while remaining internally consistent.
-For example,
+For example, an admissible framework may correspond to
 a recognized legal jurisdiction, an established causal modeling tradition,
 or a coherent normative theory.
 Admissibility is not universality:
@@ -55,7 +55,7 @@ its foundational commitments must remain invariant
 across all admissible interpretive frameworks.
 If the substrate asserts a proposition whose truth
 depends on a particular causal or normative interpretation,
-then there exist admissible frameworks that derive
+then there may exist admissible frameworks that derive
 both that proposition and its negation.
 Because neutrality requires the substrate to remain logically
 consistent when extended by every admissible framework,
@@ -81,7 +81,7 @@ stated here as a general lemma.
 
 \begin{lemma}[Framework-Contestability Lemma]
 \label{lem:contestability}
-Let $\mathcal{S}$ be a substrate ontology satisfying the neutrality requirements,
+Let $\mathcal{S}$ be a substrate ontology intended to satisfy the neutrality requirements,
 and let $p$ be a proposition whose truth conditions depend on
 the conclusions of an interpretive framework rather than on
 framework-invariant referential structure.
@@ -96,7 +96,8 @@ $\mathcal{F}_1 \vdash p$ and $\mathcal{F}_2 \vdash \neg p$.
 If $\mathcal{S} \vdash p$, then $p$ is framework-variant
 (Definition~\ref{def:framework-variant}),
 violating interpretive non-commitment.
-Furthermore, $\mathcal{S} \cup \mathcal{F}_2 \vdash p \land \neg p \vdash \bot$,
+Furthermore, $\mathcal{S} \cup \mathcal{F}_2 \vdash (p \land \neg p),
+\text{hence} \vdash \bot$,
 violating extension stability.
 \end{proof}
 
@@ -156,7 +157,7 @@ Causal attribution cannot be asserted
 as a substrate-layer commitment
 without committing to a particular counterfactual or mechanistic logic:
 as soon as a substrate asserts $\mathsf{Caused}(e_1,e_2)$,
-it excludes any framework that treats $e_1$ and $e_2$ as merely correlated
+it is incompatible with any framework that treats $e_1$ and $e_2$ as merely correlated
 or as effects of a common cause $z$.
 
 To be clear, \textit{pre-causal does not mean acausal}.
@@ -218,10 +219,10 @@ Suppose instead $\mathcal{S}$ embeds the causal commitment
 $\mathsf{Caused}(e_1, e_2)$ at the foundational layer.
 Then $\mathcal{S} \cup \mathcal{F}_2$ must accommodate both
 $\mathsf{Caused}(e_1, e_2)$ (from $\mathcal{S}$) and
-the legal framework's background axiom that
+the legal framework's background axiom (in this instance) that
 mere temporal precedence without established mechanism
 does not constitute causation.
-These commitments are inconsistent:
+These commitments are inconsistent under that framework:
 $\mathcal{S} \cup \mathcal{F}_2 \vdash \bot$.
 To restore consistency, $\mathcal{S}$ must be revised,
 violating extension stability.
@@ -325,10 +326,17 @@ rather than the representation of such propositions as interpretive assertions o
 \textbf{(Only if.)}
 Suppose $\mathcal{S}$ asserts a causal or normative commitment $p$
 as a substrate-layer fact.
-By Lemma~\ref{lem:contestability}, there exist admissible frameworks
+By Lemma~\ref{lem:contestability}, $p$ is framework-variant,
+and therefore there exist admissible frameworks
 $\mathcal{F}_1, \mathcal{F}_2 \in \mathbb{F}$
-such that $\mathcal{F}_1 \vdash p$ and $\mathcal{F}_2 \vdash \neg p$,
-and therefore $\mathcal{S} \cup \mathcal{F}_2 \vdash \bot$.
+such that
+$\mathcal{F}_1 \vdash p$ and
+$\mathcal{F}_2 \vdash \neg p$.
+Since
+$\mathcal{S} \vdash p$ and $\mathcal{F}_2 \vdash \neg p$,
+$\mathcal{S} \cup \mathcal{F}_2 \vdash (p \land \neg p)$,
+and hence
+$\mathcal{S} \cup \mathcal{F}_2 \vdash \bot$.
 To restore consistency, either:
 \begin{enumerate}
   \item[(i)] $\mathcal{F}_2$ must be excluded from $\mathbb{F}$,
@@ -347,9 +355,11 @@ ontological primitives governing entity identity
 and persistence conditions.
 Under this restriction, no causal or normative proposition
 is fixed by the foundational layer.
-Interpretive frameworks may therefore introduce causal or normative
-conclusions as extensions without contradicting $\mathcal{S}$,
-since there is no substrate-layer commitment with which they could conflict.
+Let $\mathcal{F} \in \mathbb{F}$ be an admissible framework.
+Since $\mathcal{S}$ asserts only framework-invariant propositions,
+and $\mathcal{F}$ is internally consistent,
+no proposition asserted by $\mathcal{S}$ is contradicted by $\mathcal{F}$.
+Therefore, $\mathcal{S} \cup \mathcal{F} \not\vdash \bot$.
 This holds even when role predicates or contextual typing are used
 at higher organizational layers, provided such predicates
 are not asserted as substrate-layer facts.
@@ -376,9 +386,8 @@ prior to interpretive extension;
 it does not claim that all domains admit neutral substrates.
 \end{proof}
 
-This result is not contingent on particular modeling choices
-or domain assumptions.
-It follows directly from the functional role
+This result is not contingent on particular modeling choices;
+it follows directly from the functional role
 the substrate is required to play under the neutrality definition.
 Neutrality across disagreement and embedded interpretive commitments
 are structurally incompatible.
