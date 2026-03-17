@@ -44,6 +44,8 @@ Requires a LaTeX distribution with `latexmk` (MiKTeX, TeX Live, or MacTeX):
 
 ```bash
 latexmk -pdf se100_the_ontological_neutrality_theorem.tex
+
+texcount -inc -sum -total se100_the_ontological_neutrality_theorem.tex
 ```
 
 Windows:
