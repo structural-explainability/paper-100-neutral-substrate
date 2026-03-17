@@ -48,7 +48,7 @@ artifacts = [
 [scope]
 includes = [
   "formal definition of ontological neutrality",
-  "interpretive non-commitment at the substrate level",
+  "interpretive non-commitment at the substrate layer",
   "extension stability under incompatible interpretations",
   "structural constraint excluding causal and normative commitments at the substrate layer",
   "illustrative example of persistent interpretive disagreement",
