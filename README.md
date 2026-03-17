@@ -54,6 +54,18 @@ Windows:
 .\tools\build\build.ps1
 ```
 
+## Stats
+
+```text
+Words in text: 10624
+Words in headers: 170
+Words outside text (captions, etc.): 9
+Number of headers: 46
+Number of floats/tables/figures: 1
+Number of math inlines: 136
+Number of math displayed: 0
+```
+
 ## Annotations
 
 [ANNOTATIONS.md](./ANNOTATIONS.md)
@@ -69,3 +81,4 @@ See [CITATION.cff](./CITATION.cff).
 ## SE Manifest
 
 [SE_MANIFEST](./SE_MANIFEST.toml)
+
