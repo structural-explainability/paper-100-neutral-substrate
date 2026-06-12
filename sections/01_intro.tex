@@ -3,37 +3,42 @@
 \section{Introduction: Accountability, Disagreement, and Neutral Substrates}
 \label{sec:introduction}
 
-Modern data systems must support accountability
-across persistent legal, political, and analytic disagreement
-regarding the interpretation of events, responsibilities, and explanations.
+Modern data systems must support stable shared reference
+across persistent legal, political, analytic, causal, and normative disagreement.
 Legal interpretations diverge across jurisdictions and
 over time~\citep{dworkin1986law,hart1961concept,berman2007pluralism};
 political actors contest responsibility
 and intent~\citep{bovens2007accountability,hood2011blame};
 analytic frameworks disagree about
 causation and attribution~\citep{woodward2003making}.
-These disagreements are not anomalies to be resolved prior to data representation;
-they are structural features of institutional environments
-that accountability-oriented systems must accommodate
-while maintaining stable reference to shared entities.
+These disagreements are not anomalies to be resolved prior to data representation.
+They are structural features of institutional environments
+that data systems must accommodate
+while maintaining stable reference to shared
+entities, occurrences, and institutional artifacts.
 
-Accountability, in this context,
-requires more than the collection of records or
+Accountability is one motivating setting in which this requirement
+becomes especially visible.
+Accountability requires more than the collection of records or
 the publication of datasets~\citep{fox2007transparency,bovens2014oxford}.
-It requires the ability to refer stably to entities, occurrences, and
-institutional artifacts~\citep{gruber1993translation,smith2010ontology},
+It requires the ability to refer stably to entities,
+occurrences, and institutional artifacts~\citep{gruber1993translation,smith2010ontology}
 while allowing competing explanations, evaluations, and judgments to coexist.
-A system that collapses disagreement by embedding a single interpretation
-into its foundational representations restricts accountability
-in settings characterized by persistent interpretive disagreement,
-as it forecloses contestation and
-revision~\citep{bowker1999sorting,winner1980artifacts}.
+A system that collapses disagreement by embedding a single
+causal or normative interpretation into its foundational
+representation restricts accountability in settings characterized
+by persistent interpretive disagreement,
+because it forecloses contestation, comparison, and
+framework-relative evaluation~\citep{bowker1999sorting,winner1980artifacts}.
 
-This paper adopts a different framing of the design challenge:
-rather than enforcing interpretive agreement or
-mediating semantic heterogeneity,
-the goal is to maintain stable shared reference
-across incompatible interpretations.
+This paper adopts a different framing of the design challenge.
+Rather than enforcing interpretive agreement,
+or treating disagreement primarily as semantic heterogeneity
+to be resolved through alignment,
+the goal is to identify the structural constraints
+under which an ontology can function as a neutral substrate:
+a shared representational base that maintains stable reference
+across incompatible interpretive frameworks.
 
 \subsection*{Design Problems in Shared Representation}
 
@@ -48,30 +53,33 @@ a translation problem addressed through alignment,
 mapping, or mediation mechanisms.
 
 The problem considered in this paper is different.
-Many accountability-oriented environments exhibit
+Many institutional and accountability-oriented environments exhibit
 \emph{persistent interpretive disagreement}.
-Legal, political, and analytic frameworks may
-reach incompatible conclusions about the same
-entities and events while continuing to operate
-over a shared representational base.
+An \emph{interpretive framework} is a coherent set of rules,
+principles, assumptions, methods, or norms used to evaluate,
+explain, classify, or assign meaning to shared referents.
+Legal, political, causal, analytic, and normative frameworks
+are examples of interpretive frameworks in this sense.
+Such frameworks may reach incompatible conclusions about the same
+entities, occurrences, or institutional artifacts while continuing
+to operate over a shared representational base.
 
-\noindent
-\textbf{Ontology Design Strategies Across Different Semantic Conditions}
-
-\vspace{3pt}
-
-{\centering
-{\small
-\begin{tabular}{@{}p{0.29\textwidth} p{0.28\textwidth} p{0.35\textwidth}@{}}
+\begin{table}[h!]
+\centering
+\small
+\caption{Ontology Design Strategies Across Distinct Semantic Conditions}
+\label{tab:ontology_strategies}
+\vspace{0.5em}
+\begin{tabular}{lll}
+\toprule
 \textbf{Setting} & \textbf{Ontology Structure} & \textbf{Mechanism} \\
-Shared interpretation & shared ontology & unified interpretation \\
-Semantic heterogeneity & multiple ontologies & alignment / mediation \\
-Persistent disagreement & neutral substrate & multiple frameworks
+\midrule
+Shared interpretation  & Shared ontology    & Unified interpretation \\
+Semantic heterogeneity & Multiple ontologies & Alignment / Mediation \\
+Persistent disagreement & Neutral substrate  & Multiple frameworks \\
+\bottomrule
 \end{tabular}
-}
-\par}
-
-\vspace{3pt}
+\end{table}
 
 Traditional ontology frameworks regulate
 how agreement is structured across systems.
@@ -86,17 +94,23 @@ can function as a \emph{neutral substrate} for accountability:
 a shared representational layer that supports stable reference to
 entities, occurrences, and institutional artifacts while allowing
 multiple incompatible interpretive frameworks to coexist.
-Under this conception of neutrality, the substrate must remain
-usable across divergent legal, political, and analytic frameworks
-without requiring revision of the substrate itself.
+Under this conception of neutrality, the substrate must remain usable
+across divergent interpretive frameworks without requiring revision
+of the substrate itself.
 A neutral substrate, in this sense, is a foundational representation
 that supports such coexistence without embedding the causal or
 normative conclusions on which those frameworks may disagree.
 
 In this paper, a \emph{substrate ontology} is an ontology that serves
 as the shared representational base across interpretive frameworks.
-Its foundational layer provides the entities and relations over which
-interpretive frameworks reason and derive conclusions.
+Its foundational layer provides entities, occurrences,
+institutional artifacts, provenance structures, and the stable
+referential structure over which interpretive frameworks reason
+and derive conclusions.
+Section~\ref{sec:requirements} formalizes this stable referential
+structure as a \emph{referential regime}: the substrate-level basis
+for individuating referents, determining co-reference, and tracking
+persistence across time, records, jurisdictions, or interpretive contexts.
 For brevity, this ontology may be referred to as the \emph{substrate}.
 
 This requires a careful selection of the
@@ -107,45 +121,32 @@ observables it makes available for representation.
 In an ontological substrate, these observables correspond
 to the predicate symbols available in the foundational vocabulary.
 For a substrate to remain neutral,
-it must operate at an LoA whose vocabulary excludes
-explanatory or evaluative predicates.
+its foundational assertions must provide stable shared reference
+without settling the causal or normative questions
+on which admissible interpretive frameworks may disagree.
+Section~\ref{sec:requirements} states this assertion-level constraint
+formally.
 
-Conceptually, the architecture considered here distinguishes
-between several representational roles, defined precisely in
-Section~\ref{sec:requirements}.
-\emph{Logical propositions} are the representational contents
-under consideration: statements about entities, events,
-causal relations, and normative attributions.
-An \emph{ontology} asserts a subset of those propositions as
-\emph{commitments}: claims that hold at the substrate layer
-independently of any particular interpretive framework.
-An \emph{interpretive framework} is a set of rules or
-principles that reasons over substrate commitments and derives
-\emph{conclusions}: causal attributions, responsibility
-assignments, or normative evaluations that are not
-asserted by the substrate itself.
+Conceptually, the architecture considered here separates three roles.
+The substrate provides shared referents and framework-invariant
+referential structure.
+Interpretive frameworks reason over that structure using their own
+rules, assumptions, methods, or norms.
+The conclusions produced by those frameworks may disagree without
+requiring revision of the substrate.
+Section~\ref{sec:requirements} formalizes these roles.
 
-A \emph{neutral substrate} constrains which propositions may
-be asserted as commitments so that multiple frameworks may
-derive incompatible conclusions from the same substrate
-without requiring revision of the substrate.
-The key design question is therefore which propositions
-may be safely asserted as substrate-layer commitments without
-committing the substrate to any particular interpretive framework.
+The key design question is therefore what the substrate may assert
+while remaining usable across incompatible interpretive frameworks.
 
 This form of neutrality imposes strict design constraints.
-In particular, ontologies that assert causal or normative commitments
-at the foundational layer cannot satisfy the requirements
-of interpretive non-commitment and extension stability that neutrality
-demands.
-This constraint is consistent with prior observations that
-classification systems and representational structures
-embed normative and interpretive commitments
-~\citep{bowker1999sorting,hacking1999social}.
-Causal and normative conclusions may be derived by
-interpretive frameworks, but embedding such conclusions
-as substrate-layer commitments commits the substrate to a particular framework
-and therefore violates neutrality.
+Causal and normative conclusions may be derived by interpretive
+frameworks, and causal or normative claims may be represented
+as attributed content.
+The substrate itself, however, must not settle those conclusions
+as its own.
+The formal requirements that make this constraint precise
+are introduced in Section~\ref{sec:requirements}.
 
 This paper adopts the following design constraint.
 Under persistent disagreement, extensions to the substrate may
@@ -172,36 +173,37 @@ an impermissible mechanism for resolving interpretive conflict,
 this disagreement imposes
 structural constraints on ontology design,
 and to establish those constraints formally.
-Neutrality is formalized as two requirements:
-\textit{interpretive non-commitment} and \textit{extension stability}.
-The central result is a biconditional.
-In the necessity direction,
-any substrate that embeds causal or normative commitments
-at the foundational layer will be inconsistent
-with some admissible interpretive framework,
-violating both requirements.
-In the sufficiency direction,
-a substrate that restricts its foundational layer
-to framework-invariant referential structure with explicit
-identity and persistence conditions can satisfy both requirements simultaneously,
-without introducing hidden commitments through
-role predicates or contextual typing.
-Neutrality is therefore possible if and only if the substrate
-is pre-causal and pre-normative.
-Causal and normative propositions may not be
-asserted as substrate commitments but may be introduced
-within interpretive frameworks layered above the substrate.
+
+The central result is a biconditional:
+under the stated contestability assumption and referential-invariance
+scope condition, a substrate ontology satisfies neutrality if and only if
+its foundational layer is restricted to framework-invariant referential
+structure and does not assert causal or normative conclusions as
+substrate-layer facts.
+
+Neutrality is therefore possible,
+under the stated assumptions and scope conditions,
+if and only if the substrate is pre-causal and pre-normative.
+Pre-causal and pre-normative do not mean acausal,
+norm-denying, or unable to represent causal or normative discourse.
+They mean that the substrate makes no causal or normative commitments.
+Such propositions may be represented as reified, attributed,
+provenance-bearing content or introduced within interpretive frameworks
+layered above the substrate.
 The precise conditions under which extensions may be introduced
 are stated in Section~\ref{sec:requirements}.
 
 The remainder of the paper proceeds as follows.
 Section~\ref{sec:related} reviews related work in ontology design,
 legal informatics, and causal modeling, situating the present contribution.
-Section~\ref{sec:requirements} defines the notion of a neutral substrate and
-specifies the two neutrality requirements relevant to accountability systems.
+Section~\ref{sec:requirements} defines the notion of a neutral substrate,
+the referential-invariance scope condition, and the two neutrality
+requirements.
 Section~\ref{sec:formal-dev} establishes the central result:
 a neutral substrate satisfies both requirements if and only if
-its foundational layer excludes causal and normative commitments.
+its foundational layer is restricted to framework-invariant
+referential structure and
+does not assert causal or normative conclusions as substrate-layer facts.
 Section~\ref{sec:implications} discusses the implications of this result for ontology design,
 clarifying the substrate-level exclusions and requirements,
 and what may be externalized to interpretive frameworks.

@@ -19,7 +19,7 @@
 
 ## Repository Structure
 
-```
+```text
 .github/         # CI workflows
 .vscode/         # Editor settings
 bibliography/    # BibTeX references
@@ -28,6 +28,8 @@ tools/           # Scripts
 ```
 
 ## Building Locally
+
+- On Windows, install Strawberry Perl and MiKTeX.
 
 <!--
 On Windows (MiKTeX):
@@ -83,4 +85,3 @@ See [CITATION.cff](./CITATION.cff).
 ## SE Manifest
 
 [SE_MANIFEST](./SE_MANIFEST.toml)
-

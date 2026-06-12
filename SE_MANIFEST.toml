@@ -1,28 +1,34 @@
 # ============================================================
-# SE_MANIFEST.toml (Repository Intent, Scope, and Role)
+# SE_MANIFEST.toml (Repository Declaration)
 # ============================================================
 
-schema = "se-manifest-1"
-schema_url = "https://github.com/structural-explainability/spec-se/blob/main/manifests/se-manifest-1.md"
+schema = "se-manifest-schema"
+schema_version = "0.5.0"
+schema_url = "https://raw.githubusercontent.com/structural-explainability/se-manifest-schema/main/manifest-schema.toml"
+
+# === Framework Context ===
 
 [meta]
-# Non-normative contextual information
 framework = "Structural Explainability"
 framework_url = "https://github.com/structural-explainability"
-framework_note = "Provides definitions and conventions for SE_MANIFEST semantics."
-description = "Declarative claim of repository intent, scope, and role."
-purpose = "To make explicit the boundaries, responsibilities, and expectations of this repository relative to others."
+purpose = "Declares this repository's role in the Structural Explainability ecosystem."
 
-[repo]
+# === Repository Identity ===
+
+[repository]
+organization = "structural-explainability"
 name = "paper-100-neutral-substrate"
 org  = "structural-explainability"
+class = "paper"
 kind = "paper"
 status = "under-review"
 since = "2026"
 summary = "Applied ontology paper establishing the Ontological Neutrality Theorem and characterizing neutrality as interpretive non-commitment with extension stability under persistent disagreement."
 
+# === Layer Position ===
+
 [layer]
-space = "SE"
+space = "structural-explainability"
 role  = "justification-neutrality"
 
 [result]
@@ -30,9 +36,13 @@ type = "theorem"
 name = "Ontological Neutrality Theorem"
 object = "neutral ontological substrates"
 
+# === Dependency Declarations ===
+
 [depends]
 required = []
 optional = []
+
+# === Provided Artifacts ===
 
 [provides]
 artifacts = [
@@ -44,6 +54,8 @@ artifacts = [
     "paper/*.tex",
     "glossary/*.tex"
 ]
+
+# === Scope ===
 
 [scope]
 includes = [
@@ -64,7 +76,6 @@ excludes = [
 [citation]
 cff = "CITATION.cff"
 preferred = "paper"
-bib_hint = "case2026neutrality"
 
 [traceability]
 identifier_map = "none"
