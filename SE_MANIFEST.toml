@@ -21,9 +21,9 @@ name = "paper-100-neutral-substrate"
 org  = "structural-explainability"
 class = "paper"
 kind = "paper"
-status = "under-review"
+status = "draft"
 since = "2026"
-summary = "Applied ontology paper establishing the Ontological Neutrality Theorem and characterizing neutrality as interpretive non-commitment with extension stability under persistent disagreement."
+summary = "Paper defining neutral substrates as shared representational layers that provide stable reference while avoiding substrate-layer causal or normative commitments under persistent interpretive disagreement."
 
 # === Layer Position ===
 
@@ -32,9 +32,9 @@ space = "structural-explainability"
 role  = "justification-neutrality"
 
 [result]
-type = "theorem"
-name = "Ontological Neutrality Theorem"
-object = "neutral ontological substrates"
+type = "constraint"
+name = "Robust Neutrality"
+object = "neutral substrates for shared accountability records"
 
 # === Dependency Declarations ===
 
@@ -59,18 +59,25 @@ artifacts = [
 
 [scope]
 includes = [
-  "formal definition of ontological neutrality",
-  "interpretive non-commitment at the substrate layer",
-  "extension stability under incompatible interpretations",
-  "structural constraint excluding causal and normative commitments at the substrate layer",
-  "illustrative example of persistent interpretive disagreement",
-  "glossary of key terms"
+  "definition of neutral substrates",
+  "substrate-layer commitments",
+  "interpretive non-commitment",
+  "extension stability",
+  "framework-invariant referential structure",
+  "referential common ground",
+  "contestability of causal or normative propositions",
+  "robust neutrality by design",
+  "reification of interpretive claims",
+  "boundary condition for contested referential regimes",
+  "worked example of attributed causal and normative claims"
 ]
 excludes = [
   "identity-regime derivations",
   "normative specification text",
   "implementation requirements",
-  "domain ontology design"
+  "domain ontology design",
+  "adjudication among admissible frameworks",
+  "general theory of accountability"
 ]
 
 [citation]
