@@ -141,7 +141,7 @@ Assert-Command "latexmk"
 
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $PaperDir = $RepoRoot
-$PaperTex = "se100_the_ontological_neutrality_theorem.tex"
+$PaperTex = "se100-neutral-substrates-v3.tex"
 $null = Resolve-ExistingPath (Join-Path $PaperDir $PaperTex) "paper TeX file"
 
 # -----------------------------------------------------------------------------
@@ -158,8 +158,8 @@ if (-not $NoClean) {
 # Build Standard (fail-fast)
 # -----------------------------------------------------------------------------
 
-Invoke-OrStop { Build-Paper -PaperDir $PaperDir -TexFile $PaperTex -Name "Paper 00: Neutral Ontology" -RepoRoot $RepoRoot } `
-    "Stopping: Paper 00 standard build failed."
+Invoke-OrStop { Build-Paper -PaperDir $PaperDir -TexFile $PaperTex -Name "Paper: Neutral Substrates" -RepoRoot $RepoRoot } `
+    "Stopping: Paper standard build failed."
 
 Write-Ok ""
 Write-Ok "ALL BUILDS SUCCEEDED."
