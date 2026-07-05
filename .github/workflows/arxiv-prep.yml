@@ -24,7 +24,7 @@ jobs:
       # WHY: Install TeX Live in CI in a maintainable way
       # OBS: This action installs tlmgr, but does not install TeX packages unless specified
       - name: A2) Setup TeX Live
-        uses: TeX-Live/setup-texlive-action@v3
+        uses: TeX-Live/setup-texlive-action@v4
         with:
           package-file: .github/tl_packages
           cache: true
