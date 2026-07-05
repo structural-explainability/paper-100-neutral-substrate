@@ -1,4 +1,4 @@
-# The Ontological Neutrality Theorem
+# Neutral Substrates
 
 <!-- CUSTOM: arXiv badge is static by design to avoid Shields/arXiv API lag and cache failures -->
 
@@ -9,23 +9,8 @@
 [![ArXiv Prep](https://github.com/structural-explainability/paper-100-neutral-substrate/actions/workflows/arxiv-prep.yml/badge.svg?branch=main)](https://github.com/structural-explainability/paper-100-neutral-substrate/actions/workflows/arxiv-prep.yml)
 [![DOI](https://img.shields.io/badge/DOI-10.48550/arXiv.2601.14271-blue)](https://doi.org/10.48550/arXiv.2601.14271)
 
-> This paper derives necessary structural constraints for ontological substrates
-> intended to support stable reference under persistent disagreement.
-
-## Paper
-
-- [PDF](./se100_the_ontological_neutrality_theorem.pdf)
-- Status: Submitted to journal; under review.
-
-## Repository Structure
-
-```text
-.github/         # CI workflows
-.vscode/         # Editor settings
-bibliography/    # BibTeX references
-glossary/        # Term definitions
-tools/           # Scripts
-```
+> This paper derives necessary structural constraints for substrates
+> designed to support stable reference under persistent disagreement.
 
 ## Building Locally
 
@@ -45,29 +30,15 @@ On Windows (MiKTeX):
 Requires a LaTeX distribution with `latexmk` (MiKTeX, TeX Live, or MacTeX):
 
 ```bash
-latexmk -pdf se100_the_ontological_neutrality_theorem.tex
+latexmk -pdf se100-neutral-substrates-v3.tex
 
-texcount -inc -sum -total se100_the_ontological_neutrality_theorem.tex
+texcount -inc -sum -total se100-neutral-substrates-v3.tex
 ```
 
 Windows:
 
 ```pwsh
 .\tools\build\build.ps1
-```
-
-## Stats
-
-```text
-Sum count: 10939
-Words in text: 10624
-Words in headers: 170
-Words outside text (captions, etc.): 9
-Number of headers: 46
-Number of floats/tables/figures: 1
-Number of math inlines: 136
-Number of math displayed: 0
-Files: 11
 ```
 
 ## Annotations
