@@ -1,0 +1,537 @@
+% !TeX root = se100_the_ontological_neutrality_theorem.tex
+
+\section{Formal Development of the Ontological Neutrality Theorem}
+\label{sec:formal-dev}
+
+Section~\ref{sec:requirements} defined the neutrality
+requirements governing a substrate ontology:
+interpretive non-commitment and extension stability.
+It also introduced the scope assumptions under which those requirements apply:
+causal and normative propositions are contestable across admissible frameworks,
+while the substrate's framework-invariant referential structure,
+including its referential regime,
+is assumed to be invariant
+across the admissible frameworks under consideration.
+
+This section establishes the relationship between those requirements
+and the structure of the substrate layer.
+Specifically, it proves that the two neutrality requirements
+place a structural constraint on the substrate layer:
+under the contestability assumption and
+the referential-invariance scope condition,
+a substrate satisfies interpretive non-commitment and extension stability
+if and only if its foundational layer is
+restricted to framework-invariant referential structure and
+makes no causal or normative commitments.
+
+The argument is structural and logical rather than empirical.
+It follows from the interaction between interpretive disagreement
+and substrate-layer assertion.
+All necessity and sufficiency claims in this section
+are relative to the definitions, assumptions, and scope conditions introduced in
+Section~\ref{sec:requirements}.
+
+%-------------------------------------------------------
+\subsection{Neutrality as Compatibility Across Admissible Frameworks}
+\label{subsec:compatibility}
+%-------------------------------------------------------
+
+By definition, a neutral substrate must remain compatible
+with multiple admissible interpretive frameworks,
+even when those frameworks disagree.
+Compatibility here is understood in the sense of extension stability:
+the substrate must remain logically consistent
+when extended by each admissible interpretive framework,
+without revision or retraction of substrate-layer assertions.
+
+Admissible frameworks may disagree about
+causal or normative conclusions concerning the same referents
+while remaining internally consistent.
+For example, an admissible framework may correspond to
+a recognized legal jurisdiction, an established causal modeling tradition,
+or a coherent institutional or normative charter.
+Admissibility is not mutual compatibility.
+Two admissible frameworks may contradict one another,
+as when two jurisdictions reach opposite legal conclusions
+or two causal models attribute responsibility differently.
+The set $\mathbb{F}$ is therefore characterized by domain-governed
+admissibility and internal consistency,
+not by global agreement among its members.
+
+This neutrality requirement immediately constrains
+what the substrate may assert as foundational fact.
+If the substrate asserts a proposition whose truth depends
+on a particular causal or normative interpretation,
+then that assertion may conflict with an admissible framework
+that rejects the proposition.
+Because neutrality requires the substrate to remain consistent
+when extended by every admissible framework,
+such an assertion violates the neutrality requirements.
+
+This restriction does not prohibit the representation of
+causal or normative concepts.
+A neutral substrate may record
+causal or normative claims as reified assertions
+carrying attribution and provenance
+without asserting their content as substrate-layer facts.
+For example, the substrate may assert
+$\mathsf{Asserts}(\mathcal{F}, \varphi)$,
+where $\varphi$ is a causal or normative claim,
+without asserting $\varphi$ itself.
+What neutrality excludes is the substrate committing to
+causal or normative propositions about substrate individuals.
+
+%-------------------------------------------------------
+\subsection{Framework-Contestability and Substrate Incompatibility}
+\label{subsec:general-lemma}
+%-------------------------------------------------------
+
+The arguments in the following subsections share a common structure,
+stated here as a general lemma.
+
+\begin{lemma}[Framework-Contestability Lemma]
+  \label{lem:contestability}
+  Let $\mathcal{S}$ be a substrate ontology intended to satisfy the neutrality requirements,
+  and let $p$ be a framework-variant proposition
+  with respect to $\mathbb{F}$.
+  If $\mathcal{S}$ commits to $p$,
+  then $\mathcal{S}$ violates both interpretive non-commitment
+  and extension stability.
+\end{lemma}
+
+\begin{proof}
+  Since $p$ is framework-variant with respect to $\mathbb{F}$,
+  there exist admissible frameworks
+  $\mathcal{F}_1,\mathcal{F}_2 \in \mathbb{F}$
+  such that
+  $\mathcal{S}\cup\mathcal{F}_1 \vdash p$
+  and
+  $\mathcal{S}\cup\mathcal{F}_2 \vdash \neg p$.
+
+  Since $\mathcal{S}$ commits to $p$,
+  Definition~\ref{def:substrate-layer-commitment}
+  gives $\mathcal{S}\vdash p$.
+  Thus $\mathcal{S}$ asserts a framework-variant proposition,
+  violating interpretive non-commitment
+  (Definition~\ref{def:interpretive-non-commitment}).
+
+  Moreover, because $\mathcal{S}\vdash p$,
+  every extension of $\mathcal{S}$ preserves $p$.
+  In particular,
+  $\mathcal{S}\cup\mathcal{F}_2 \vdash p$.
+  But by framework-variance,
+  $\mathcal{S}\cup\mathcal{F}_2 \vdash \neg p$.
+  Hence
+  \[
+    \mathcal{S}\cup\mathcal{F}_2 \vdash \bot .
+  \]
+  Thus $\mathcal{S}$ also violates extension stability
+  (Definition~\ref{def:extension-stability}).
+\end{proof}
+
+The lemma identifies the general failure mode:
+a substrate loses neutrality when it commits to
+a proposition that admissible frameworks may contest.
+The next two subsections instantiate this structure
+for normative and causal commitments.
+
+%-------------------------------------------------------
+\subsection{Normative Commitments}
+\label{subsec:normative}
+%-------------------------------------------------------
+
+Normative conclusions are framework-dependent
+in the sense of Lemma~\ref{lem:contestability}.
+Their truth conditions depend on legal regimes,
+institutional authorities, temporal scope, governing rules, and interpretive stance.
+It is therefore a routine and expected feature of accountability systems
+that admissible frameworks disagree about normative conclusions.
+
+By Assumption~\ref{asm:contestability},
+if $\mathcal{S}$ commits to a normative proposition $n$,
+then $n$ is not guaranteed invariant across admissible frameworks:
+there exists some $\mathcal{F} \in \mathbb{F}$ such that
+$\mathcal{S} \cup \mathcal{F} \vdash \neg n$.
+Since $\mathcal{S} \vdash n$,
+the proposition is framework-variant in the sense relevant
+to the neutrality requirements.
+By Lemma~\ref{lem:contestability},
+the substrate violates interpretive non-commitment
+and extension stability.
+
+The point is not that normative judgment is illegitimate
+or irrelevant to accountability.
+Rather, normative judgment belongs to interpretive frameworks.
+If the substrate asserts that an action was permitted, prohibited,
+obligatory, compliant, noncompliant, justified, or violative,
+it embeds a framework-dependent conclusion
+as a substrate-layer fact.
+Any admissible framework that rejects that conclusion
+cannot be layered atop the substrate without contradiction
+or substrate revision.
+Such a substrate no longer functions as a neutral substrate
+for the relevant framework space.
+
+%-------------------------------------------------------
+\subsection{Causal Commitments}
+\label{subsec:causal}
+%-------------------------------------------------------
+
+Causal attributions are likewise framework-dependent
+in the sense relevant to Lemma~\ref{lem:contestability}.
+Claims such as $\mathsf{Caused}(e_1,e_2)$
+depend on background assumptions about causal mechanisms,
+variable selection, counterfactual reasoning,
+temporal scope, intervention conditions, and model boundaries.
+Distinct causal frameworks may be admissible
+while disagreeing about specific causal relationships.
+
+By Assumption~\ref{asm:contestability},
+if $\mathcal{S}$ commits to a causal proposition $c$,
+then $c$ is not guaranteed invariant across admissible frameworks:
+there exists some $\mathcal{F} \in \mathbb{F}$ such that
+$\mathcal{S} \cup \mathcal{F} \vdash \neg c$.
+Since $\mathcal{S} \vdash c$,
+the proposition is framework-variant in the sense relevant
+to the neutrality requirements.
+By Lemma~\ref{lem:contestability},
+the substrate violates
+interpretive non-commitment and extension stability.
+
+This argument does not rely on the presence
+of an active dispute over a specific event.
+It concerns the status of causal attribution
+as a substrate-layer assertion.
+As soon as a substrate asserts
+$\mathsf{Caused}(e_1,e_2)$
+as a foundational fact,
+it commits to a particular causal interpretation
+of the relation between $e_1$ and $e_2$.
+An admissible framework that treats the two occurrences
+as merely correlated,
+as effects of a common cause,
+or as causally related only under different model assumptions
+cannot be layered atop the substrate without conflict.
+
+To be clear, \textit{pre-causal does not mean acausal}.
+The substrate does not deny that causation exists
+nor does it deny that causal reasoning is necessary.
+Rather, it refrains from embedding causal conclusions
+as foundational commitments.
+Causation is externalized to interpretive layers
+where causal propositions are explicit,
+contestable, and attributable.
+Causation is externalized, not eliminated.
+
+%-------------------------------------------------------
+\subsection{Example: Incident Investigation}
+\label{subsec:incident}
+%-------------------------------------------------------
+
+The following example illustrates the distinction between
+substrate-layer referential structure,
+framework-level conclusions,
+and reified assertions about claims.
+
+\begin{example}[Interpretive Disagreement in Incident Investigation]
+  \label{ex:incident}
+
+  Consider a substrate $\mathcal{S}$ representing a workplace incident.
+  The substrate asserts only framework-invariant referential structure,
+  including a referential regime for the relevant agents and occurrences.
+
+  For example, the substrate may assert:
+
+  \begin{itemize}
+    \item $\mathsf{Agent}(a)$: $a$ is an agent;
+    \item $\mathsf{Occurrence}(e_1)$ and $\mathsf{Occurrence}(e_2)$:
+          $e_1$ and $e_2$ are occurrences;
+    \item $\mathsf{Participant}(a,e_1)$:
+          $a$ participated in $e_1$;
+    \item $\mathsf{Before}(e_1,e_2)$:
+          occurrence $e_1$ preceded occurrence $e_2$;
+    \item referential-regime assertions fixing the individuation,
+          co-reference, and persistence conditions for $a$, $e_1$, and $e_2$.
+  \end{itemize}
+
+  The substrate does not assert
+  $\mathsf{Caused}(e_1,e_2)$,
+  $\mathsf{Responsible}(a,e_2)$,
+  or any normative conclusion about whether $a$ violated,
+  satisfied, or breached an obligation.
+
+  Two admissible interpretive frameworks extend $\mathcal{S}$:
+
+  \medskip
+
+  \noindent
+  $\mathcal{F}_1$,
+  an engineering analysis,
+  applies a mechanistic causal model and derives
+  $\mathsf{Caused}(e_1,e_2)$
+  and
+  $\mathsf{Responsible}(a,e_2)$.
+
+  \noindent
+  $\mathcal{F}_2$,
+  a legal framework,
+  applies jurisdiction-specific standards of responsibility
+  and derives
+  $\neg\mathsf{Responsible}(a,e_2)$.
+
+  \medskip
+  The two frameworks are mutually inconsistent with respect to
+  the responsibility conclusion:
+  $\mathcal{F}_1 \cup \mathcal{F}_2 \vdash \bot$.
+  However, each is separately consistent with the substrate:
+  $\mathcal{S} \cup \mathcal{F}_1 \not\vdash \bot$
+  and
+  $\mathcal{S} \cup \mathcal{F}_2 \not\vdash \bot$.
+  The substrate remains neutral because it provides a stable referential base
+  without asserting either framework's conclusion as a substrate-layer fact.
+
+  \medskip
+  \noindent
+  \textbf{Violation case.}
+  Suppose instead that $\mathcal{S}$ asserts
+  $\mathsf{Responsible}(a,e_2)$
+  as a substrate-layer fact.
+  Then $\mathcal{S} \cup \mathcal{F}_2$
+  entails both
+  $\mathsf{Responsible}(a,e_2)$
+  and
+  $\neg\mathsf{Responsible}(a,e_2)$.
+  Thus
+  $\mathcal{S} \cup \mathcal{F}_2 \vdash \bot$,
+  and the substrate violates extension stability.
+  The failure is not that responsibility is irrelevant.
+  The failure is that the substrate asserted a framework-level conclusion
+  as a substrate-layer fact.
+
+  Similarly, if $\mathcal{S}$ asserts
+  $\mathsf{Caused}(e_1,e_2)$
+  as a substrate-layer fact,
+  then any admissible framework that rejects that causal attribution
+  cannot extend the substrate without contradiction.
+  The substrate has embedded a causal interpretation
+  rather than merely providing the referential structure
+  over which causal interpretations may be made.
+
+  \medskip
+  \noindent
+  \textbf{Reification case.}
+  Now suppose $\mathcal{S}$ neither asserts nor denies
+  $\mathsf{Caused}(e_1,e_2)$
+  or
+  $\mathsf{Responsible}(a,e_2)$,
+  but instead represents the engineering framework's conclusions
+  as reified assertions:
+
+  \[
+    \mathsf{Asserts}(\mathcal{F}_1, \mathsf{Caused}(e_1,e_2))
+  \]
+
+  and
+
+  \[
+    \mathsf{Asserts}(\mathcal{F}_1, \mathsf{Responsible}(a,e_2))
+  \]
+
+  These are substrate-layer facts about the existence,
+  source, and attribution of claims.
+  They are not substrate-layer commitments to the truth
+  of the claims' contents.
+  Both $\mathcal{F}_1$ and $\mathcal{F}_2$
+  can be layered atop $\mathcal{S}$ without contradiction:
+  each framework reasons over the same referents
+  while deriving its own conclusions.
+
+  This is the structurally neutral pattern.
+  The substrate records discourse about the world
+  without asserting contested conclusions about the world.
+\end{example}
+
+%-------------------------------------------------------
+\subsection{Reification and Contextual Modeling}
+\label{subsec:reification}
+%-------------------------------------------------------
+
+The reification case in Example~\ref{ex:incident} illustrates
+a broader point about contextual modeling approaches.
+Representing causal or normative claims as reified assertions
+attributed to agents,
+institutions, documents, or frameworks,
+is consistent with neutrality,
+provided the substrate does not also assert the reified content
+as a substrate-layer fact.
+
+This pattern is compatible with DOLCE/DUL-style modeling of
+situations and descriptions~\citep{borgo2022dolce}.
+In such approaches, a description or situation may be represented
+as an entity in the ontology,
+with attribution, provenance, temporal scope,
+and other metadata.
+The substrate may assert that a description exists,
+that it was made by a particular source,
+or that it concerns particular referents.
+It need not assert that the description is true.
+
+Reification preserves interpretive non-commitment
+only if the substrate refrains from simultaneously
+asserting the reified content as a substrate-layer truth.
+If a causal or normative relation is asserted
+as a substrate-layer fact and also represented as a reified claim,
+neutrality is already lost.
+The reified representation does not cure
+the substrate-layer assertion.
+It merely duplicates it.
+
+Thus, reification and contextual modeling do not circumvent
+the theorem's constraint.
+They satisfy it when they externalize interpretive commitments
+rather than embedding them under a different representational form.
+The constraint concerns what is asserted as foundational fact,
+not the representational mechanism through which
+interpretive discourse is recorded.
+
+%-------------------------------------------------------
+\subsection{The Ontological Neutrality Theorem}
+\label{subsec:formal-proof}
+%-------------------------------------------------------
+
+The preceding observations yield the central result of this work.
+
+\begin{theorem}[Ontological Neutrality Theorem]
+  \label{thm:neutrality}
+  Let $\mathcal{S}$ be a substrate ontology intended to function
+  as a neutral substrate across admissible interpretive frameworks,
+  and let $\mathbb{F}$ be the set of all admissible frameworks.
+  Suppose the domain satisfies the contestability assumption
+  for causal and normative propositions
+  and the referential-invariance scope condition
+  that the substrate's framework-invariant referential structure,
+  including its referential regime,
+  is not contested
+  across the admissible frameworks under consideration.
+  Then $\mathcal{S}$ satisfies the neutrality requirements
+  of interpretive non-commitment and extension stability
+  if and only if its foundational layer
+  is restricted to framework-invariant referential structure and
+  does not assert causal or normative conclusions as substrate-layer facts.
+\end{theorem}
+
+Here a \emph{causal or normative commitment} means the assertion
+of a causal relation or normative proposition as a substrate-layer fact,
+for example that one event caused another,
+that an actor was responsible for an occurrence,
+or that an action was permitted, prohibited,
+obligatory, compliant, noncompliant, justified, or violative.
+It does not include the representation of such propositions
+as attributed, provenance-bearing, reified assertions.
+
+\begin{proof}
+
+  \noindent
+  \textbf{Necessity.}
+  Suppose $\mathcal{S}$ satisfies the neutrality requirements.
+  Assume, for contradiction, that $\mathcal{S}$
+  commits to a causal or normative proposition $p$.
+  By Definition~\ref{def:substrate-layer-commitment},
+  $\mathcal{S} \vdash p$.
+  By Assumption~\ref{asm:contestability},
+  there exists an admissible framework
+  $\mathcal{F} \in \mathbb{F}$
+  such that
+  $\mathcal{S} \cup \mathcal{F} \vdash \neg p$.
+  Since $\mathcal{S} \vdash p$,
+  it follows that
+  $\mathcal{S} \cup \mathcal{F} \vdash p$.
+  Therefore
+  $\mathcal{S} \cup \mathcal{F} \vdash p \land \neg p$,
+  so
+  $\mathcal{S} \cup \mathcal{F} \vdash \bot$.
+  This contradicts extension stability.
+  Moreover, because $p$ is rejected by an admissible framework
+  while asserted by the substrate,
+  $p$ is framework-variant in the relevant sense,
+  so asserting it also violates interpretive non-commitment.
+  Therefore, no neutral substrate may make
+  causal or normative commitments.
+
+  It remains to identify what may remain in the foundational layer.
+  By the referential-invariance scope condition,
+  the substrate may assert framework-invariant referential structure:
+  the referential regimes by which entities, occurrences,
+  and institutional artifacts are individuated,
+  co-referred, and tracked across time,
+  together with structural relations that assert neither causal efficacy
+  nor normative force.
+  Thus, under the stated scope condition,
+  a neutral substrate's foundational layer must be restricted
+  to framework-invariant referential structure
+  and must exclude
+  causal and normative commitments.
+
+  \medskip
+  \noindent
+  \textbf{Sufficiency.}
+  Suppose $\mathcal{S}$ is restricted at the foundational layer
+  to framework-invariant referential structure
+  and makes no causal or normative commitments.
+  Let $\mathcal{F} \in \mathbb{F}$ be any admissible framework.
+
+  Because the assertions of $\mathcal{S}$ are, by hypothesis,
+  framework-invariant referential assertions, and because the
+  framework-invariant referential structure $\mathcal{S}$ asserts,
+  including its referential regime, is, by the scope condition,
+  not contested across admissible frameworks, no assertion of
+  $\mathcal{S}$ is contradicted by $\mathcal{F}$.
+  Therefore
+  $\mathcal{S} \cup \mathcal{F} \not\vdash \bot$.
+  Since $\mathcal{F}$ was arbitrary,
+  $\mathcal{S}$ satisfies extension stability.
+
+  It remains to show interpretive non-commitment.
+  Since $\mathcal{S}$ asserts only framework-invariant referential structure,
+  there is no proposition $p$ such that
+  $\mathcal{S} \vdash p$
+  and $p$ is framework-variant with respect to $\mathbb{F}$.
+  Causal and normative propositions may appear only as
+  reified, attributed, provenance-bearing content.
+  The substrate may assert that a framework made a claim;
+  it does not assert the claim's truth.
+  Thus $\mathcal{S}$ satisfies interpretive non-commitment.
+
+  Therefore $\mathcal{S}$ satisfies both neutrality requirements:
+  interpretive non-commitment and extension stability.
+
+  \medskip
+  \noindent
+  \textit{Scope note.}
+  The sufficiency direction depends on the referential-invariance
+  scope condition.
+  If admissible frameworks disagree about individuation,
+  co-reference, or persistence---for example,
+  whether two records denote the same entity,
+  whether an occurrence is one event or many,
+  or whether an institutional artifact persists across legal change---then
+  the substrate cannot be neutral with respect to those frameworks
+  until the referential contestation is resolved or scoped out.
+  The theorem applies to domains in which the substrate's
+  framework-invariant referential structure,
+  including its referential regime,
+  can be fixed prior to interpretive extension.
+  It does not claim that all domains admit neutral substrates.
+\end{proof}
+
+This result is not contingent on a particular ontology,
+syntax, protocol, or implementation technology.
+It follows directly from the functional role
+the substrate is required to play under persistent interpretive disagreement.
+Neutrality across disagreement is structurally incompatible
+with substrate-layer causal or normative commitments.
+
+The next section considers the implications of this result for ontology design,
+clarifying the permitted and excluded substrate-layer commitments
+and the mechanisms by which interpretation, evaluation,
+and explanation may be externalized without loss of accountability.

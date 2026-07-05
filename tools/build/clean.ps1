@@ -18,6 +18,4 @@ function Remove-DirectoryIfExists([string]$Path) {
 }
 # Clean build/ directory
 Remove-DirectoryIfExists -Path "build"
-# Clean build_annotated/ directory
-Remove-DirectoryIfExists -Path "build_annotated"
 Write-Ok "Clean completed."
