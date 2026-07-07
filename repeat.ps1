@@ -1,6 +1,12 @@
 $tex = ".\se100-neutral-substrates-v1.tex"
 
 Select-String -LiteralPath $tex `
+  -SimpleMatch "boundary condition" `
+  -Context 3,3
+
+Exit 0
+
+Select-String -LiteralPath $tex `
   -SimpleMatch "object-level" `
   -Context 3,3
 

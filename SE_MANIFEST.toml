@@ -53,13 +53,17 @@ artifacts = [
 [scope]
 includes = [
     "attribution propositions",
-    "boundary condition for contested referential regimes",
+    "boundary condition for contested reference or attributional basis",
+    "checkable substrate-layer constraint",
     "contestability of causal or normative propositions",
     "definition of neutral substrates",
+    "design-time guarantee for neutrality",
     "extension stability",
     "framework-compatible commitment sets",
     "interpretive non-commitment",
     "neutrality by design",
+    "permitted attribution propositions",
+    "permitted foundational-layer commitments",
     "prohibition of object-level causal or normative commitments",
     "referential commitments",
     "referential common ground",
@@ -70,6 +74,7 @@ includes = [
 
 excludes = [
     "adjudication among admissible frameworks",
+    "data format specification",
     "domain ontology design",
     "general theory of accountability",
     "identity-regime derivations",
