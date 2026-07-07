@@ -10,10 +10,11 @@
 
 cff-version: "1.2.0"
 type: article
+message: "If you use this work, please cite it as below."
 
 title: "Neutral Substrates: A Design Constraint for Shared Records Under Persistent Interpretive Disagreement"
-version: "v0.2.1"
-date-released: "2026-06-12"
+version: "v1.0.0"
+date-released: "2026-07-07"
 
 authors:
   - family-names: Case
@@ -25,45 +26,29 @@ repository-code: "https://github.com/structural-explainability/paper-100-neutral
 url: "https://github.com/structural-explainability/paper-100-neutral-substrate"
 license: "CC-BY-4.0"
 
-abstract: >
-  Shared accountability records are often used
-  by parties who do not, and may never,
-  agree about causation, responsibility, or normative interpretation.
-  In such settings, a shared record cannot remain neutral
-  by omitting contested information,
-  because accountability requires preserving what parties
-  claimed, believed, inferred, or relied on.
-  Nor can it remain neutral
-  by asserting one contested interpretation as the shared factual base.
-  This paper defines a neutral substrate as a shared representational layer
-  that provides stable reference
-  while making no substrate-layer causal or normative commitments.
-  The central design constraint is that,
-  when causal and normative propositions are
-  contestable across admissible frameworks and
-  the substrate's referential commitments
-  are common ground among those frameworks,
-  a substrate is robustly neutral by design
-  if and only if its foundational layer is restricted to
-  framework-invariant referential structure.
-  Causal and normative content may still be represented,
-  but only as attributed, provenance-bearing assertions
-  made by some framework, source, agent, institution, or document.
-  The representational machinery used here is standard:
-  reification, attribution, and provenance.
-  The contribution is the constraint itself:
-  a precise, checkable condition on the foundational layer of a shared record,
-  stated together with the assumptions it depends on and the boundary condition
-  under which it fails.
-  A neutral substrate says enough to preserve accountability,
-  but it does not turn one party's interpretation into substrate fact.
-  Neutrality is unavailable when the referential regime itself is
-  contested among the frameworks in play.
+abstract: >-
+  This paper defines neutral substrates for shared records
+  under persistent interpretive disagreement.
+  A neutral substrate provides stable reference while avoiding object-level
+  substrate-layer commitments to causal or normative propositions.
+  The central constraint is that,
+  when causal and normative propositions are contestable across admissible
+  frameworks and the substrate's referential commitments are common ground
+  among those frameworks,
+  neutrality by design holds exactly when the foundational layer is restricted
+  to those referential commitments and attribution propositions whose
+  attributional basis is fixed by those referential commitments.
+  Causal and normative content may be preserved as attributed,
+  provenance-bearing assertions,
+  but not as object-level substrate-layer commitments.
+  Neutrality at that layer is unavailable when the referential regime itself is
+  contested.
 
 keywords:
   - formal ontology
   - ontological neutrality
   - neutral substrates
+  - shared records
   - accountable records
   - referential regimes
   - interpretive non-commitment
@@ -71,7 +56,3 @@ keywords:
   - persistent interpretive disagreement
   - reification
   - provenance
-  - pre-causal
-  - pre-normative
-
-message: "If using this work, please cite it as described in this file."

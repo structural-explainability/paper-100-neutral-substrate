@@ -141,7 +141,7 @@ Assert-Command "latexmk"
 
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $PaperDir = $RepoRoot
-$PaperTex = "se100-neutral-substrates-v3.tex"
+$PaperTex = "se100-neutral-substrates-v1.tex"
 $null = Resolve-ExistingPath (Join-Path $PaperDir $PaperTex) "paper TeX file"
 
 # -----------------------------------------------------------------------------

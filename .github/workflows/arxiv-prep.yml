@@ -48,18 +48,13 @@ jobs:
           mkdir -p arxiv_src
 
           # WHY: Copy main tex file
-          cp se100_the_ontological_neutrality_theorem.tex arxiv_src/
+          cp se100-neutral-substrates-v1.tex arxiv_src/
 
-          # WHY: Copy content directories
-          cp -r sections arxiv_src/
-          cp -r glossary arxiv_src/
-          cp -r bibliography arxiv_src/
-
-          # WHY: Include .bbl if present to reduce arXiv bibliography failures
-          # OBS: This is a no-op if file does not exist
-          if [ -f se100_the_ontological_neutrality_theorem.bbl ]; then
-            cp se100_the_ontological_neutrality_theorem.bbl arxiv_src/
-          fi
+          # # WHY: Include .bbl if present to reduce arXiv bibliography failures
+          # # OBS: This is a no-op if file does not exist
+          # if [ -f se100-neutral-substrates-v1.bbl ]; then
+          #   cp se100-neutral-substrates-v1.bbl arxiv_src/
+          # fi
 
       # WHY: arXiv builds from source - doesn't need build artifacts
       - name: D2) Clean auxiliary files
@@ -73,43 +68,45 @@ jobs:
             -name "*.fls" -o -name "*.fdb_latexmk" -o -name "*.synctex.gz" \
           \) -delete
 
+      # WHY: Debugging step to verify contents of staging area before zipping
+      - name: D3) Debug list arXiv source files
+        shell: bash
+        run: |
+          set -e
+          echo "Staged arXiv source:"
+          find arxiv_src -maxdepth 2 -type f -print | sort
+
       # WHY: arXiv requires submission as zip file
-      - name: D3) Create arXiv source zip
+      - name: D4) Create arXiv source zip
         run: |
           cd arxiv_src
           zip -r ../arxiv-source.zip .
 
       # WHY: Download this artifact to upload to arxiv.org
-      # OBS: Artifact available for download from Actions tab after workflow runs
-      - name: D4) Upload arXiv source artifact
+      - name: D5) Upload arXiv source artifact
         uses: actions/upload-artifact@v7
         with:
           name: arxiv-source
           path: arxiv-source.zip
-          if-no-files-found: error # WHY: Fail if packaging didn't work
+          if-no-files-found: error
 
-      # WHY: Debugging step to verify contents of staging area
-      - name: D5) Debug list files
-        shell: bash
+      # WHY: Build PDF from the staged arXiv source for manual verification
+      # OBS: Runs after zip creation so the PDF is not included in arxiv-source.zip
+      - name: D6) Build PDF for verification
+        working-directory: arxiv_src
         run: |
           set -e
-          echo "PWD: $(pwd)"
-          echo "Top-level:"
-          ls -la
-          echo
-          echo "Recursive listing (first 200 lines):"
-          ls -R | sed -n '1,200p'
-          echo
-          echo "Find PDFs:"
-          find . -type f -name "*.pdf" -print
+          rm -f se100-neutral-substrates-v1.pdf
+          latexmk -g -pdf -interaction=nonstopmode -halt-on-error \
+            se100-neutral-substrates-v1.tex
+          test -f se100-neutral-substrates-v1.pdf
 
       # WHY: Provide a compiled PDF for manual verification before arXiv submission
       # OBS: This PDF is NOT included in the arXiv source zip
-      # OBS: Allows manual confirmation that the staged bundle compiles as expected
-      - name: D6) Upload compiled PDF (CI check)
+      - name: D7) Upload compiled PDF
         uses: actions/upload-artifact@v7
         with:
           name: compiled-pdf
-          path: ./*.pdf
+          path: arxiv_src/se100-neutral-substrates-v1.pdf
           retention-days: 7
           if-no-files-found: error
