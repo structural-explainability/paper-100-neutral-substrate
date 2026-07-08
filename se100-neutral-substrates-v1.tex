@@ -637,6 +637,10 @@ if parties cannot share enough reference to identify what is being interpreted,
 they cannot reliably disagree about causes, norms, explanations, or obligations
 concerning that thing.
 
+Subsequent work will analyze which referential regimes yield commitments
+that hold as common ground across admissible frameworks, and which fail
+at the boundary described in \SecRef{sec:boundary}.
+
 \begin{definition}[Referential Commitments]
   \label{se100.def.ReferentialCommitments}
   Let $\SubstrateRef$ denote the \emph{referential commitments} of $\Substrate$.
@@ -716,8 +720,14 @@ not as a substrate-layer commitment.
   provenance, and content reference needed to identify what was asserted,
   by whom, and under what record basis.
 
-  A permitted attribution proposition commits the substrate
-  to the attribution by $x$, not to the asserted proposition $\varphi$.
+  Because its attributional basis is fixed by $\SubstrateRef$,
+  a permitted attribution proposition $\Asserts(x,\varphi)$ is itself among the
+  substrate-layer commitments determined by $\SubstrateRef$; that is,
+  \[
+    \SubstrateRef \entails \Asserts(x,\varphi) .
+  \]
+  Committing to it commits the substrate to the attribution by $x$,
+  not to the asserted proposition $\varphi$.
 \end{definition}
 
 \begin{definition}[Framework-Variant Proposition]
@@ -851,26 +861,35 @@ They are not exceptions to the restriction on substrate-layer commitment.
   (\DefRef{se100.def.ReferentialCommitments}{Referential Commitments}).
   For every admissible framework $\Framework$,
   \[
-    \SubstrateRef \cup \Framework \notentails \bot
+    \SubstrateRef \cup \Framework \notentails \bot .
   \]
-  and this holds for every admissible framework,
+  Moreover, for every permitted attribution proposition
+  $\Asserts(x,\varphi)$,
+  \[
+    \SubstrateRef \cup \{\Asserts(x,\varphi)\} \cup \Framework
+    \notentails \bot .
+  \]
+  Both conditions hold for every admissible framework,
   including admissible frameworks not known when $\Substrate$ is designed.
 \end{assumption}
 
 \AssumpRef{se100.assump.ReferentialCommonGround}{Referential Common Ground}
-states that $\SubstrateRef$ is a framework-compatible commitment set.
+states that $\SubstrateRef$ is a framework-compatible commitment set and
+that permitted attribution propositions whose attributional bases are fixed
+by $\SubstrateRef$ remain compatible with every admissible framework.
 It formalizes the scope condition on which neutrality depends:
-the frameworks in play contest interpretation, not reference.
-The assumption requires the substrate's referential commitments to be compatible
-with every admissible framework as a set, not just one by one.
+the frameworks in play contest interpretation, not reference or
+attributional basis.
+The assumption requires the substrate's referential commitments,
+together with permitted attribution propositions,
+to be compatible with every admissible framework as a set,
+not just one by one.
 
 This is an assumption, not a general property of records.
 It can fail.
 \SecRef{sec:boundary} treats its failure as the condition under which
 neutrality is unavailable.
 
-% permitted attribution is a structural restriction on the foundational layer,
-% Referential common ground handles the common ground requirement
 \begin{remark}[Attribution and Common Ground]
   \label{se100.remark.AttributionCommonGround}
   A permitted attribution proposition
@@ -880,26 +899,30 @@ neutrality is unavailable.
   An admissible framework may reject $\varphi$ without rejecting that
   $x$ asserted it.
 
-  A permitted attribution proposition need not be entailed by $\SubstrateRef$.
-  It is a permitted foundational-layer commitment
-  because its attributional basis is fixed by $\SubstrateRef$.
-  Under
-  \AssumpRef{se100.assump.ReferentialCommonGround}{Referential Common Ground},
-  attributional bases fixed by $\SubstrateRef$ are common ground among
-  admissible frameworks.
-  Therefore, adding the permitted attribution proposition does not introduce
-  a contested attributional basis into the foundational layer:
-  for every admissible framework $\Framework$ compatible with
-  $\SubstrateRef$,
+  A permitted attribution proposition satisfies
+  $\SubstrateRef \entails \Asserts(x,\varphi)$
+  by definition
+  (\DefRef{se100.def.PermittedAttributionProposition}{Permitted Attribution Proposition}).
+  Hence adjoining it to the foundational layer adds no independent commitment
+  beyond what is already determined by $\SubstrateRef$: for every admissible
+  framework $\Framework$,
   \[
-    \SubstrateRef \cup \{\Asserts(x,\varphi)\} \cup \Framework
+    \SubstrateRef \cup {\Asserts(x,\varphi)} \cup \Framework
+    \entails \bot
+    \quad\text{iff}\quad
+    \SubstrateRef \cup \Framework \entails \bot .
+  \]
+  Therefore, by
+  \AssumpRef{se100.assump.ReferentialCommonGround}{Referential Common Ground},
+  \[
+    \SubstrateRef \cup {\Asserts(x,\varphi)} \cup \Framework
     \notentails \bot .
   \]
 
   If an admissible framework rejects $\varphi$,
-  that does not by itself contest the attribution proposition $\Asserts(x,\varphi)$.
-  But if admissible frameworks contest whether the attributional basis is
-  fixed by $\SubstrateRef$, for example, who asserted the claim, what was
+  that does not alone contest the attribution proposition $\Asserts(x,\varphi)$.
+  But if admissible frameworks contest whether the attributional basis,
+  for example, who asserted the claim, what was
   asserted, or what provenance identifies the assertion occurrence,
   then the attribution proposition is not permitted at the foundational layer.
   That is a boundary case, not an exception to the neutrality constraint.
@@ -1111,24 +1134,32 @@ $p$ is not a referential commitment;
 otherwise it would fall within $\SubstrateRef$.
 There are two cases.
 
-\emph{Case 1: $p \in C_{cn}$ and $p$ is not an attribution proposition.}
+\emph{Case 1: $p$ is an object-level causal or normative proposition
+  in $C_{cn}$.}
 By
 \AssumpRef{se100.assump.Contestability}{Contestability},
-$p$ is not guaranteed framework-invariant at design time.
-Thus the assumptions do not certify its compatibility
+$p$ is not guaranteed framework-invariant at design time,
+so the assumptions do not certify its compatibility
 with every admissible framework.
 
-\emph{Case 2: $p$ lies outside $C_{cn}$ or is an attribution proposition
-  whose attributional basis is not fixed by $\SubstrateRef$.}
-If $p$ is an attribution proposition
-whose attributional basis is not fixed by $\SubstrateRef$, then
+\emph{Case 2: $p$ is not an object-level causal or normative proposition
+  in $C_{cn}$.}
+Then $p$ is not certified by
+\AssumpRef{se100.assump.Contestability}{Contestability},
+and two subcases exhaust the possibilities.
+If $p$ is an attribution proposition that is not permitted at the foundational
+layer, then its attributional basis is not fixed by $\SubstrateRef$ in a way
+that determines the attribution proposition
+(\DefRef{se100.def.PermittedAttributionProposition}{Permitted Attribution Proposition}).
+Thus,
 \AssumpRef{se100.assump.ReferentialCommonGround}{Referential Common Ground}
-does not certify its compatibility with every admissible framework.
-If the attributional basis is contested,
-the boundary condition applies (\SecRef{sec:boundary}).
-
-If $p$ is not an attribution proposition and not a referential commitment,
-then its compatibility with every admissible framework is supplied by neither
+does not certify its compatibility with every admissible framework;
+if the attributional basis is contested, the boundary condition applies
+(\SecRef{sec:boundary}).
+Otherwise $p$ is neither an attribution proposition nor a referential commitment,
+including the case where $p$ is an object-level causal or normative proposition
+not in $C_{cn}$,
+and its compatibility with every admissible framework is supplied by neither
 \AssumpRef{se100.assump.ReferentialCommonGround}{Referential Common Ground}
 nor \AssumpRef{se100.assump.Contestability}{Contestability}.
 
