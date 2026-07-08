@@ -31,7 +31,7 @@ jobs:
 
       - name: A1) Checkout repository code
         # WHY: Needed to access files for checks.
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       # WHY: Install TeX Live in CI in a maintainable way.
       # OBS: This action installs tlmgr and packages listed in .github/tl_packages.
