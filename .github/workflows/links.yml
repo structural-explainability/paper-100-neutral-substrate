@@ -40,7 +40,8 @@ jobs:
         uses: actions/checkout@v7
         # WHY: Required so Lychee can inspect repository files.
 
-      - name: 2) Run Lychee
+      - name: 2) Check links with Lychee
+        id: lychee
         uses: lycheeverse/lychee-action@v2.8.0
         with:
           args: >
