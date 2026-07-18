@@ -78,80 +78,69 @@ uvx se-manifest-schema validate-manifest --path SE_MANIFEST.toml --strict
 
 ## References
 
-1. \bibitem[Carroll et~al.(2005)]{carroll2005named}
-   Carroll, J.~J., Bizer, C., Hayes, P., and Stickler, P. (2005).
-   Named graphs, provenance and trust.
-   In \emph{Proceedings of the 14th International Conference on World Wide Web
-   (WWW 2005)}, pages 613--622. ACM.
+1. Carroll, J. J., Bizer, C., Hayes, P., and Stickler, P. (2005).
+   "Named graphs, provenance and trust."
+   In _Proceedings of the 14th International Conference on World Wide Web
+   (WWW 2005)_, pages 613–622. ACM.
    <https://lists.w3.org/Archives/Public/www-archive/2004Apr/att-0081/PID-FAFPGYHS-1081860211.pdf>
 
-1. \bibitem[de~Kleer(1986)]{dekleer1986atms}
-   de~Kleer, J. (1986).
-   An assumption-based TMS.
-   \emph{Artificial Intelligence}, 28(2):127--162.
+1. de Kleer, J. (1986).
+   "An assumption-based TMS."
+   _Artificial Intelligence_, 28(2):127–162.
    <https://www.semanticscholar.org/paper/An-Assumption-Based-TMS-Kleer/ed3f9263e936a879092ad7a2bf27e0f94089ccd8>
 
-1. \bibitem[Dung(1995)]{dung1995}
-   Dung, P.~M. (1995).
-   On the acceptability of arguments and its fundamental role in nonmonotonic
-   reasoning, logic programming and $n$-person games.
-   \emph{Artificial Intelligence}, 77(2):321--357.
+1. Dung, P. M. (1995).
+   "On the acceptability of arguments and its fundamental role in nonmonotonic
+   reasoning, logic programming and _n_-person games."
+   _Artificial Intelligence_, 77(2):321–357.
    <https://www.ijcai.org/Proceedings/93-2/Papers/003.pdf>
 
-1. \bibitem[Floridi(2008)]{floridi2008loa}
-   Floridi, L. (2008).
-   The method of levels of abstraction.
-   \emph{Minds and Machines}, 18(3), 303--329.
-   doi:10.1007/s11023-008-9113-7.
-   <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3182086>
+1. Floridi, L. (2008).
+   "The method of levels of abstraction."
+   _Minds and Machines_, 18(3):303–329.
+   <https://doi.org/10.1007/s11023-008-9113-7>
 
-1. \bibitem[Guarino(1998)]{guarino1998}
-   Guarino, N. (1998).
-   Formal ontology and information systems.
-   In \emph{Formal Ontology in Information Systems (FOIS~'98)}, pages 3--15.
+1. Gangemi, A., and Mika, P. (2003).
+   "Understanding the Semantic Web through descriptions and situations."
+   In R. Meersman, Z. Tari, and D. C. Schmidt (Eds.),
+   _On the Move to Meaningful Internet Systems 2003:
+   CoopIS, DOA, and ODBASE_,
+   Lecture Notes in Computer Science, vol. 2888.
+   Springer.
+   <https://doi.org/10.1007/978-3-540-39964-3_44>
+
+1. Guarino, N. (1998).
+   "Formal ontology and information systems."
+   In _Formal Ontology in Information Systems (FOIS ’98)_, pages 3–15.
    IOS Press.
    <https://www.loa-cnr.it/Papers/FOIS98.pdf>
 
-1. \bibitem[Gangemi and Mika(2003)]{gangemi2003descriptions}
-   Gangemi, A., and Mika, P. (2003).
-   Understanding the Semantic Web through descriptions and situations.
-   In R. Meersman, Z. Tari, and D. C. Schmidt (Eds.),
-   \emph{On the Move to Meaningful Internet Systems 2003:
-   CoopIS, DOA, and ODBASE},
-   Lecture Notes in Computer Science, vol. 2888.
-   Springer.
-   doi:10.1007/978-3-540-39964-3_44.
-   <https://www.loa-cnr.it/Papers/ODBASE-CONTEXT.pdf>
-
-1. \bibitem[Hayes(2004)]{hayes2004rdf}
-   Hayes, P. (2004).
-   \emph{RDF Semantics}.
+1. Hayes, P. (2004).
+   _RDF Semantics_.
    W3C Recommendation, World Wide Web Consortium.
    <https://www.w3.org/2001/sw/RDFCore/TR/WD-rdf-mt-20030117/>
 
-1. \bibitem[Lebo et~al.(2013)]{lebo2013prov}
-   Lebo, T., Sahoo, S., and McGuinness, D.~L., editors (2013).
-   \emph{PROV-O: The PROV Ontology}.
+1. Lebo, T., Sahoo, S., and McGuinness, D. L., editors (2013).
+   _PROV-O: The PROV Ontology_.
    W3C Recommendation, World Wide Web Consortium.
    <https://www.w3.org/TR/prov-o/>
 
-1. \bibitem[McCarthy(1993)]{mccarthy1993}
-   McCarthy, J. (1993).
-   Notes on formalizing context.
-   In \emph{Proceedings of the 13th International Joint Conference on Artificial
-   Intelligence (IJCAI-93)}, pages 555--560.
+1. McCarthy, J. (1993).
+   "Notes on formalizing context."
+   In _Proceedings of the 13th International Joint Conference on Artificial
+   Intelligence (IJCAI-93)_, pages 555–560.
    <https://www.ijcai.org/Proceedings/93-1/Papers/078.pdf>
 
-1. \bibitem[Searle(1969)]{searle1969}
-   Searle, J.~R. (1969).
-   \emph{Speech Acts: An Essay in the Philosophy of Language}.
+1. Searle, J. R. (1969).
+   _Speech Acts: An Essay in the Philosophy of Language_.
    Cambridge University Press.
    <https://doi.org/10.1017/CBO9781139173438>
 
-## Related
+## Related and Adjacent Work
 
-Key related papers from
-[Harvard's SciX](https://ui.adsabs.harvard.edu/abs/2026arXiv260114271C/similar).
+Selected papers from the
+[Harvard's SciX similar-papers search](https://ui.adsabs.harvard.edu/abs/2026arXiv260114271C/similar)
+for _Neutral Substrates_.
 
 ### Identity and Equivalence
 
