@@ -139,12 +139,12 @@ uvx se-manifest-schema validate-manifest --path SE_MANIFEST.toml --strict
 ## Related and Adjacent Work
 
 Selected papers from the
-[Harvard's SciX similar-papers search](https://ui.adsabs.harvard.edu/abs/2026arXiv260114271C/similar)
+[Harvard SciX similar-papers search](https://ui.adsabs.harvard.edu/abs/2026arXiv260114271C/similar)
 for _Neutral Substrates_.
 
 ### Identity and Equivalence
 
-- [Representing Identity and Equivalence for Scientific Data](https://ui.adsabs.harvard.edu/abs/2026arXiv260500778R/abstract)
+- [Representing Identity and Equivalence for Scientific Data](https://ui.adsabs.harvard.edu/abs/2012AGUFMIN22A..04W/abstract)
 
 ### Provenance
 
@@ -159,14 +159,14 @@ for _Neutral Substrates_.
 ### Contradiction, Disagreement, and Ambiguity
 
 - [ECO/CPO-DAG: A Contradiction-Based Accountability Layer for Adversarial Supply Chains](https://ui.adsabs.harvard.edu/abs/2026arXiv260326324Z/abstract)
-- [Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal](https://ui.adsabs.harvard.edu/abs/2026arXiv260619116B/abstract)
+- [Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal](https://ui.adsabs.harvard.edu/abs/2026arXiv260604223W/abstract)
 - [Ambiguity Collapse by LLMs: A Taxonomy of Epistemic Risks](https://ui.adsabs.harvard.edu/abs/2026arXiv260517169H/abstract)
 
 ### Assertibility
 
-- [No Certificate, No Categorical Speech Act: A Brouwerian Assertibility Constraint for Public Reason](https://ui.adsabs.harvard.edu/abs/2022Senso..22.1271M/abstract)
+- [No Certificate, No Categorical Speech Act: A Brouwerian Assertibility Constraint for Public Reason](https://ui.adsabs.harvard.edu/abs/2026arXiv260303971J/abstract)
 
 ### Operational Records and Auditable Agents
 
-- [The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems](https://ui.adsabs.harvard.edu/abs/2026arXiv260525002Z/abstract)
-- [Auditable Agents](https://ui.adsabs.harvard.edu/abs/2026arXiv260210166O/abstract)
+- [The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems](https://ui.adsabs.harvard.edu/abs/2026arXiv260521997N/abstract)
+- [Auditable Agents](https://ui.adsabs.harvard.edu/abs/2026arXiv260405485N/abstract)

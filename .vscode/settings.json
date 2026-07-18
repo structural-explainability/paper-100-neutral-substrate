@@ -38,5 +38,12 @@
   "latex-workshop.view.pdf.viewer": "tab",
 
   // OBS: YAML formatting - for workflows and configs
-  "yaml.format.enable": true
+  "yaml.format.enable": true,
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.parquet": "duckdb.dataFileViewer",
+    "*.csv": "duckdb.dataFileViewer",
+    "*.tsv": "duckdb.dataFileViewer",
+    "*.xlsx": "duckdb.dataFileViewer"
+  }
 }
