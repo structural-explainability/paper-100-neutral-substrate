@@ -148,19 +148,19 @@ for _Neutral Substrates_.
 
 ### Provenance
 
-- [Provenance-Enhanced Statements in Knowledge Graphs](https://ui.adsabs.harvard.edu/abs/2025arXiv251005107K/abstract)
-- [Responsible Agentic AI Requires Explicit Provenance](https://ui.adsabs.harvard.edu/abs/2026AIPA...16d5126A/abstract)
-- [From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents](https://ui.adsabs.harvard.edu/abs/2026arXiv260522842A/abstract)
+- [Provenance-Enhanced Statements in Knowledge Graphs](https://ui.adsabs.harvard.edu/abs/2026arXiv260615246V/abstract)
+- [Responsible Agentic AI Requires Explicit Provenance](https://ui.adsabs.harvard.edu/abs/2026arXiv260517169H/abstract)
+- [From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents](https://ui.adsabs.harvard.edu/abs/2026arXiv260604990W/abstract)
 
 ### Responsibility Attribution
 
-- [Mapping Responsibility Attribution in the Grenfell Tower Inquiry: A Network Analysis](https://ui.adsabs.harvard.edu/abs/2026arXiv260403434M/abstract)
+- [Mapping Responsibility Attribution in the Grenfell Tower Inquiry: A Network Analysis](https://ui.adsabs.harvard.edu/abs/2025arXiv251021681D/abstract)
 
 ### Contradiction, Disagreement, and Ambiguity
 
-- [ECO/CPO-DAG: A Contradiction-Based Accountability Layer for Adversarial Supply Chains](https://ui.adsabs.harvard.edu/abs/2026arXiv260326324Z/abstract)
+- [ECO/CPO-DAG: A Contradiction-Based Accountability Layer for Adversarial Supply Chains](https://ui.adsabs.harvard.edu/abs/2026arXiv260706804C/abstract)
 - [Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal](https://ui.adsabs.harvard.edu/abs/2026arXiv260604223W/abstract)
-- [Ambiguity Collapse by LLMs: A Taxonomy of Epistemic Risks](https://ui.adsabs.harvard.edu/abs/2026arXiv260517169H/abstract)
+- [Ambiguity Collapse by LLMs: A Taxonomy of Epistemic Risks](https://ui.adsabs.harvard.edu/abs/2026arXiv260305801G/abstract)
 
 ### Assertibility
 
