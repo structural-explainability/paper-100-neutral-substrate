@@ -99,11 +99,11 @@ uvx se-manifest-schema validate-manifest --path SE_MANIFEST.toml --strict
    <https://www.ijcai.org/Proceedings/93-2/Papers/003.pdf>
 
 1. \bibitem[Floridi(2008)]{floridi2008loa}
-  Floridi, L. (2008).
-  The method of levels of abstraction.
-  \emph{Minds and Machines}, 18(3), 303--329.
-  doi:10.1007/s11023-008-9113-7.
-  <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3182086>
+   Floridi, L. (2008).
+   The method of levels of abstraction.
+   \emph{Minds and Machines}, 18(3), 303--329.
+   doi:10.1007/s11023-008-9113-7.
+   <https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3182086>
 
 1. \bibitem[Guarino(1998)]{guarino1998}
    Guarino, N. (1998).
@@ -113,15 +113,15 @@ uvx se-manifest-schema validate-manifest --path SE_MANIFEST.toml --strict
    <https://www.loa-cnr.it/Papers/FOIS98.pdf>
 
 1. \bibitem[Gangemi and Mika(2003)]{gangemi2003descriptions}
-  Gangemi, A., and Mika, P. (2003).
-  Understanding the Semantic Web through descriptions and situations.
-  In R. Meersman, Z. Tari, and D. C. Schmidt (Eds.),
-  \emph{On the Move to Meaningful Internet Systems 2003:
-    CoopIS, DOA, and ODBASE},
-  Lecture Notes in Computer Science, vol. 2888.
-  Springer.
-  doi:10.1007/978-3-540-39964-3\_44.
-  <https://www.loa-cnr.it/Papers/ODBASE-CONTEXT.pdf>
+   Gangemi, A., and Mika, P. (2003).
+   Understanding the Semantic Web through descriptions and situations.
+   In R. Meersman, Z. Tari, and D. C. Schmidt (Eds.),
+   \emph{On the Move to Meaningful Internet Systems 2003:
+   CoopIS, DOA, and ODBASE},
+   Lecture Notes in Computer Science, vol. 2888.
+   Springer.
+   doi:10.1007/978-3-540-39964-3_44.
+   <https://www.loa-cnr.it/Papers/ODBASE-CONTEXT.pdf>
 
 1. \bibitem[Hayes(2004)]{hayes2004rdf}
    Hayes, P. (2004).
@@ -147,3 +147,37 @@ uvx se-manifest-schema validate-manifest --path SE_MANIFEST.toml --strict
    \emph{Speech Acts: An Essay in the Philosophy of Language}.
    Cambridge University Press.
    <https://doi.org/10.1017/CBO9781139173438>
+
+## Related
+
+Key related papers from
+[Harvard's SciX](https://ui.adsabs.harvard.edu/abs/2026arXiv260114271C/similar).
+
+### Identity and Equivalence
+
+- [Representing Identity and Equivalence for Scientific Data](https://ui.adsabs.harvard.edu/abs/2026arXiv260500778R/abstract)
+
+### Provenance
+
+- [Provenance-Enhanced Statements in Knowledge Graphs](https://ui.adsabs.harvard.edu/abs/2025arXiv251005107K/abstract)
+- [Responsible Agentic AI Requires Explicit Provenance](https://ui.adsabs.harvard.edu/abs/2026AIPA...16d5126A/abstract)
+- [From Agent Traces to Trust: A Survey of Evidence Tracing and Execution Provenance in LLM Agents](https://ui.adsabs.harvard.edu/abs/2026arXiv260522842A/abstract)
+
+### Responsibility Attribution
+
+- [Mapping Responsibility Attribution in the Grenfell Tower Inquiry: A Network Analysis](https://ui.adsabs.harvard.edu/abs/2026arXiv260403434M/abstract)
+
+### Contradiction, Disagreement, and Ambiguity
+
+- [ECO/CPO-DAG: A Contradiction-Based Accountability Layer for Adversarial Supply Chains](https://ui.adsabs.harvard.edu/abs/2026arXiv260326324Z/abstract)
+- [Consensus is Strategically Insufficient: Reasoning-Trace Disagreement as a Knowledge-Representation Signal](https://ui.adsabs.harvard.edu/abs/2026arXiv260619116B/abstract)
+- [Ambiguity Collapse by LLMs: A Taxonomy of Epistemic Risks](https://ui.adsabs.harvard.edu/abs/2026arXiv260517169H/abstract)
+
+### Assertibility
+
+- [No Certificate, No Categorical Speech Act: A Brouwerian Assertibility Constraint for Public Reason](https://ui.adsabs.harvard.edu/abs/2022Senso..22.1271M/abstract)
+
+### Operational Records and Auditable Agents
+
+- [The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems](https://ui.adsabs.harvard.edu/abs/2026arXiv260525002Z/abstract)
+- [Auditable Agents](https://ui.adsabs.harvard.edu/abs/2026arXiv260210166O/abstract)
