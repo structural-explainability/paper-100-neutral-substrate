@@ -1,8 +1,8 @@
 $tex = ".\se100-neutral-substrates-v1.tex"
 
 Select-String -LiteralPath $tex `
-  -SimpleMatch "boundary condition" `
-  -Context 3,3
+  -SimpleMatch "\label{se100." `
+  -Context 1,1
 
 Exit 0
 
