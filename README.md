@@ -14,6 +14,11 @@
 > Defines neutral substrates that preserve shared reference
 > without adopting contested interpretations.
 
+## Paper Overview
+
+- [arXiv](https://arxiv.org/abs/2601.14271)
+- [SciX](https://scixplorer.org/abs/2026arXiv260114271C/abstract)
+
 ## Main Contribution
 
 This project defines a design constraint for shared accountability records.
