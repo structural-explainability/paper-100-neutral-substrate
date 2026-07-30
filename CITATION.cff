@@ -9,14 +9,11 @@
 # USAGE: See https://citation-file-format.github.io/ for details.
 
 cff-version: "1.2.0"
-type: article
 message: "If you use this work, please cite it as below."
 
-title: "Neutral Substrates: A Design Constraint for Shared Records Under Persistent Interpretive Disagreement"
+title: "Neutral Substrates paper repository"
 version: "v1.0.0"
 date-released: "2026-07-07"
-doi: "10.48550/arXiv.2601.14271"
-url: "https://doi.org/10.48550/arXiv.2601.14271"
 
 authors:
   - family-names: Case
@@ -28,22 +25,9 @@ repository-code: "https://github.com/structural-explainability/paper-100-neutral
 license: "CC-BY-4.0"
 
 abstract: >-
-  This paper defines neutral substrates for shared records
-  under persistent interpretive disagreement.
-  A neutral substrate provides stable reference while avoiding object-level
-  substrate-layer commitments to causal or normative propositions.
-  The central constraint is that,
-  when causal and normative propositions are contestable across admissible
-  frameworks and the substrate's referential commitments are common ground
-  among those frameworks,
-  neutrality by design holds exactly when the foundational layer is restricted
-  to those referential commitments and attribution propositions whose
-  attributional basis is fixed by those referential commitments.
-  Causal and normative content may be preserved as attributed,
-  provenance-bearing assertions,
-  but not as object-level substrate-layer commitments.
-  Neutrality at that layer is unavailable when the referential regime itself is
-  contested.
+  This repository contains the paper Neutral Substrates:
+  A Design Constraint for Shared Records Under Persistent
+  Interpretive Disagreement.
 
 keywords:
   - formal ontology
@@ -57,3 +41,15 @@ keywords:
   - persistent interpretive disagreement
   - reification
   - provenance
+
+preferred-citation:
+  type: article
+  title: "Neutral Substrates: A Design Constraint for Shared Records Under Persistent Interpretive Disagreement"
+  authors:
+    - family-names: Case
+      given-names: Denise M.
+      orcid: "https://orcid.org/0000-0001-6165-7389"
+      affiliation: "Northwest Missouri State University, School of Computer Science and Information Systems, Maryville, MO, USA"
+  doi: "10.48550/arXiv.2601.14271"
+  url: "https://doi.org/10.48550/arXiv.2601.14271"
+  year: 2026
