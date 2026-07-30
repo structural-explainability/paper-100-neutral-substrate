@@ -30,6 +30,11 @@ Causal and normative content may be represented,
 but only as attributed, provenance-bearing assertions,
 not as object-level substrate-layer commitments.
 
+## Formalization
+
+- [Lean 4 formalization](https://github.com/structural-explainability/se-theory-neutral-substrate) - machine-checked
+  formalization of the neutral-substrate definitions and results.
+
 ## Building Locally
 
 - On Windows, install Strawberry Perl and MiKTeX.
