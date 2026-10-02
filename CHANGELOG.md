@@ -28,10 +28,10 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ### Changed
 
-- `se100.def.FrameworkInvariant`: "no admissible framework refutes `p`" is now
-  stated as a consequence of the definition, with a reference to the new remark,
-  not as an equivalent restatement.
-- `CITATION.cff` now describes the repository; the paper is cited through
+- `se100.def.FrameworkInvariant`: removed the clause presenting "no admissible
+  framework refutes `p`" as equivalent to the definition; the relationship is
+  stated in `se100.remark.FrameworkInvariantRefutation`.
+- `CITATION.cff` describes the repository; the paper is cited through
   `preferred-citation`.
 - README: added a paper overview section.
 - Rebuilt `se100-neutral-substrates-v1.pdf`.
@@ -55,8 +55,8 @@ Released before this changelog existed. See the
 ## Notes on versioning and releases
 
 - We use **SemVer**:
-  - **MAJOR** - breaking changes to formal surface or validation semantics
-  - **MINOR** - backward-compatible additions to theory vocabulary or artifacts
+  - **MAJOR** - breaking changes, removes or renames a se100.* id
+  - **MINOR** - backward-compatible additions
   - **PATCH** - fixes, documentation, tooling
 - Versions are driven by git tags. Tag `vX.Y.Z` to release.
 
@@ -134,7 +134,7 @@ git push origin :refs/tags/vX.Z.Y
 
 ## Links
 
-[Unreleased]: https://github.com/structural-explainability/se-theory-transformation/compare/v1.1.0...HEAD
-[1.1.0]: https://github.com/structural-explainability/se-theory-transformation/releases/tag/v1.1.0
-[1.0.0]: https://github.com/structural-explainability/se-theory-transformation/releases/tag/v1.0.0
-[0.1.0]: https://github.com/structural-explainability/se-theory-transformation/releases/tag/v0.1.0
+[Unreleased]: https://github.com/structural-explainability/paper-100-neutral-substrate/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/compare/v1.0.0...v1.1.0
+[1.0.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/releases/tag/v1.0.0
+[0.1.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/releases/tag/v0.1.0

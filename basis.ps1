@@ -484,6 +484,4 @@ foreach ($KindName in $KindOrder) {
     }
 }
 
-Write-Host ""
-
 Exit 0
