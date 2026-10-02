@@ -20,6 +20,9 @@ on:
 
   workflow_dispatch:
 
+permissions:
+  contents: read # WHY: Required to checkout repository files for link inspection.
+
 jobs:
   build-pdf:
     runs-on: ubuntu-latest
@@ -30,13 +33,15 @@ jobs:
       # ============================================================
 
       - name: A1) Checkout repository code
-        # WHY: Needed to access files for checks.
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+        # WHY: Make repository files available so their links can be inspected.
 
       # WHY: Install TeX Live in CI in a maintainable way.
       # OBS: This action installs tlmgr and packages listed in .github/tl_packages.
       - name: A2) Setup TeX Live
-        uses: TeX-Live/setup-texlive-action@v4
+        uses: TeX-Live/setup-texlive-action@eb78d21f41941476d9121e3a0abcab73265c876f # v4
         with:
           package-file: .github/tl_packages
           cache: true

@@ -8,6 +8,9 @@ name: Prepare arXiv Source
 on:
   workflow_dispatch: # WHY: Manual trigger only
 
+permissions:
+  contents: read # WHY: Required to checkout repository files for link inspection.
+
 jobs:
   arxiv-source:
     runs-on: ubuntu-latest
@@ -18,13 +21,15 @@ jobs:
       # ============================================================
 
       - name: A1) Checkout repository code
-        # WHY: Needed to access files for checks.
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+        # WHY: Make repository files available so their links can be inspected.
 
       # WHY: Install TeX Live in CI in a maintainable way
       # OBS: This action installs tlmgr, but does not install TeX packages unless specified
       - name: A2) Setup TeX Live
-        uses: TeX-Live/setup-texlive-action@v4
+        uses: TeX-Live/setup-texlive-action@eb78d21f41941476d9121e3a0abcab73265c876f # v4
         with:
           package-file: .github/tl_packages
           cache: true
@@ -84,7 +89,7 @@ jobs:
 
       # WHY: Download this artifact to upload to arxiv.org
       - name: D5) Upload arXiv source artifact
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: arxiv-source
           path: arxiv-source.zip
@@ -104,7 +109,7 @@ jobs:
       # WHY: Provide a compiled PDF for manual verification before arXiv submission
       # OBS: This PDF is NOT included in the arXiv source zip
       - name: D7) Upload compiled PDF
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: compiled-pdf
           path: arxiv_src/se100-neutral-substrates-v1.pdf

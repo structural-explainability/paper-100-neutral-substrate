@@ -500,6 +500,7 @@ referential commitments.
 % =============================================================================
 
 \begin{definition}[Substrate]
+  % RR.DEFINES: se100.def.Substrate
   \label{se100.def.Substrate}
   A \emph{substrate} $\Substrate$ is a shared representational base providing
   stable reference for entities, occurrences, and institutional artifacts
@@ -761,8 +762,7 @@ not suitable as an unqualified substrate-layer commitment.
   \]
   Equivalently,
   $p$ can be added to the substrate and
-  remain compatible with every admissible framework:
-  no admissible framework refutes $p$ on the shared base.
+  remain compatible with every admissible framework.
 \end{definition}
 
 Framework variance
@@ -776,6 +776,22 @@ $\Substrate \cup \Framework \entails \neg p$.
 Adding $p$ to that same base yields
 $\Substrate \cup \Framework \cup \{p\} \entails \bot$,
 so $p$ is not framework-invariant.
+
+\begin{remark}[Framework Invariance and Refutation]
+  \label{se100.remark.FrameworkInvariantRefutation}
+  Say that an admissible framework $\Framework$ \emph{refutes} $p$
+  if $\Substrate \cup \Framework \entails \neg p$.
+  Framework invariance implies that no admissible framework refutes $p$:
+  if $\Substrate \cup \Framework \entails \neg p$,
+  then $\Substrate \cup \Framework \cup \{p\}$ entails both $p$ and $\neg p$,
+  hence $\bot$.
+
+  The converse requires negation introduction:
+  if $T \cup \{q\} \entails \bot$, then $T \entails \neg q$.
+  This paper does not assume it.
+  Framework invariance is therefore defined by consistency,
+  not by non-refutation.
+\end{remark}
 
 \begin{definition}[Framework-Compatible Commitment Set]
   \label{se100.def.FrameworkCompatibleCommitmentSet}

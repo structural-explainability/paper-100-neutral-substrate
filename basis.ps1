@@ -65,6 +65,7 @@ $ExpectedLabels = @(
     "se100.def.PermittedAttributionProposition"
     "se100.def.FrameworkVariant"
     "se100.def.FrameworkInvariant"
+    "se100.remark.FrameworkInvariantRefutation"
     "se100.def.FrameworkCompatibleCommitmentSet"
     "se100.def.ContestedCausalNormative"
     "se100.assump.Contestability"

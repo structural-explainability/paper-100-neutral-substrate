@@ -30,6 +30,19 @@ Causal and normative content may be represented,
 but only as attributed, provenance-bearing assertions,
 not as object-level substrate-layer commitments.
 
+## Basis
+
+```text
+26 labeled environments
+
+definition   16
+note          2
+assumption    3
+remark        3
+constraint    1
+example       1
+```
+
 ## Formalization
 
 - [Lean 4 formalization](https://github.com/structural-explainability/se-theory-neutral-substrate) - machine-checked
@@ -61,29 +74,18 @@ texcount -inc -sum -total se100-neutral-substrates-v1.tex
 Windows:
 
 ```pwsh
+# build
 .\tools\build\build.ps1
+
+# calculate the basis (defs, etc.)
+.\basis.ps1
 ```
-
-## Annotations
-
-[ANNOTATIONS.md](./ANNOTATIONS.md)
-
-## Citation
-
-See [CITATION.cff](./CITATION.cff).
-
-## License
-
-[CC BY 4.0](./LICENSE)
-
-## SE Manifest
-
-[SE_MANIFEST](./SE_MANIFEST.toml)
 
 Validate with:
 
 ```shell
-uvx se-manifest-schema validate-manifest --path SE_MANIFEST.toml --strict
+uvx cffconvert --validate
+uvx se-manifest-schema validate-manifest --strict
 ```
 
 ## References
@@ -180,3 +182,23 @@ for _Neutral Substrates_.
 
 - [The Log is the Agent: Event-Sourced Reactive Graphs for Auditable, Forkable Agentic Systems](https://ui.adsabs.harvard.edu/abs/2026arXiv260521997N/abstract)
 - [Auditable Agents](https://ui.adsabs.harvard.edu/abs/2026arXiv260405485N/abstract)
+
+## Annotations
+
+[ANNOTATIONS.md](./ANNOTATIONS.md)
+
+## Changelog
+
+[CHANGELOG.md](./CHANGELOG.md)
+
+## Citation
+
+[CITATION.cff](./CITATION.cff)
+
+## License
+
+[CC BY 4.0](./LICENSE)
+
+## Repository Manifest
+
+[SE_MANIFEST.toml](./SE_MANIFEST.toml)

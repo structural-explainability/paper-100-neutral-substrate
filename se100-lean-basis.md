@@ -1,65 +1,67 @@
 # SE-100 Lean Formalization Basis
 
-> Exact labeled mathematical environments extracted from the Paper 100 LaTeX source.
+> Exact labeled mathematical environments extracted from the authoritative Paper 100 LaTeX source.
 
 - Source: `se100-neutral-substrates-v1.tex`
-- Extracted: 2026-07-29T05:37:26-05:00
-- Labeled items: 25
+- Extracted: 2026-10-02T12:55:42-05:00
+- Labeled items: 26
 
 Each item contains the exact LaTeX environment from its opening `\begin{...}` through its matching `\end{...}`.
 
-The items remain in paper order.
+The items remain in paper order. No mathematical text inside an extracted environment has been rewritten.
 
 ## Summary
 
-| Kind       | Count |
-| ---------- | ----: |
-| definition |    16 |
-| note       |     2 |
-| assumption |     3 |
-| remark     |     2 |
-| constraint |     1 |
-| example    |     1 |
+| Kind | Count |
+| --- | ---: |
+| definition | 16 |
+| note | 2 |
+| assumption | 3 |
+| remark | 3 |
+| constraint | 1 |
+| example | 1 |
 
 ## Paper-Order Index
 
-|   # | Paper ID                                         | Kind       | Title                                                     | Source lines |
-| --: | ------------------------------------------------ | ---------- | --------------------------------------------------------- | -----------: |
-|   1 | `se100.def.Substrate`                            | definition | Substrate                                                 |      502-508 |
-|   2 | `se100.def.SubstrateCommitment`                  | definition | Substrate-Layer Commitment                                |      530-536 |
-|   3 | `se100.note.CausalNormative`                     | note       | Causal and Normative Content as Primitive Classifications |      542-562 |
-|   4 | `se100.def.AttributionProposition`               | definition | Attribution Proposition                                   |      568-578 |
-|   5 | `se100.def.ObjectLevelInterpretiveProposition`   | definition | Object-Level Interpretive Proposition                     |      584-596 |
-|   6 | `se100.def.ObjectLevelCausalNormativeCommitment` | definition | Object-Level Causal or Normative Commitment               |      606-611 |
-|   7 | `se100.def.ReferentialRegime`                    | definition | Referential Regime                                        |      618-628 |
-|   8 | `se100.def.ReferentialCommitments`               | definition | Referential Commitments                                   |      644-653 |
-|   9 | `se100.def.AdmissibleFramework`                  | definition | Admissible Framework                                      |      659-672 |
-|  10 | `se100.note.FrameworkClass`                      | note       | The Framework Class $\Frameworks$                         |      694-710 |
-|  11 | `se100.def.PermittedAttributionProposition`      | definition | Permitted Attribution Proposition                         |      712-731 |
-|  12 | `se100.def.FrameworkVariant`                     | definition | Framework-Variant Proposition                             |      733-744 |
-|  13 | `se100.def.FrameworkInvariant`                   | definition | Framework-Invariant Proposition                           |      754-766 |
-|  14 | `se100.def.FrameworkCompatibleCommitmentSet`     | definition | Framework-Compatible Commitment Set                       |      780-788 |
-|  15 | `se100.def.ContestedCausalNormative`             | definition | Contested Causal or Normative Proposition                 |      827-836 |
-|  16 | `se100.assump.Contestability`                    | assumption | Contestability                                            |      838-841 |
-|  17 | `se100.assump.ReferentialCommonGround`           | assumption | Referential Common Ground                                 |      858-874 |
-|  18 | `se100.remark.AttributionCommonGround`           | remark     | Attribution and Common Ground                             |      893-929 |
-|  19 | `se100.def.InterpretiveNonCommitment`            | definition | Interpretive Non-Commitment                               |      932-941 |
-|  20 | `se100.def.ExtensionStability`                   | definition | Extension Stability                                       |      947-954 |
-|  21 | `se100.assump.SubstrateConsistency`              | assumption | Substrate Consistency                                     |      964-968 |
-|  22 | `se100.remark.PropertyRelation`                  | remark     | Relation Between the Two Properties                       |     980-1017 |
-|  23 | `se100.def.NeutralityByDesign`                   | definition | Neutrality by Design                                      |    1024-1041 |
-|  24 | `se100.constraint.Neutrality`                    | constraint | Neutrality                                                |    1050-1067 |
-|  25 | `se100.example.ReificationFragment`              | example    | Reification Fragment                                      |    1219-1225 |
+| # | Paper ID | Kind | Title | Source lines |
+| ---: | --- | --- | --- | ---: |
+| 1 | `se100.def.Substrate` | definition | Substrate | 502-509 |
+| 2 | `se100.def.SubstrateCommitment` | definition | Substrate-Layer Commitment | 531-537 |
+| 3 | `se100.note.CausalNormative` | note | Causal and Normative Content as Primitive Classifications | 543-563 |
+| 4 | `se100.def.AttributionProposition` | definition | Attribution Proposition | 569-579 |
+| 5 | `se100.def.ObjectLevelInterpretiveProposition` | definition | Object-Level Interpretive Proposition | 585-597 |
+| 6 | `se100.def.ObjectLevelCausalNormativeCommitment` | definition | Object-Level Causal or Normative Commitment | 607-612 |
+| 7 | `se100.def.ReferentialRegime` | definition | Referential Regime | 619-629 |
+| 8 | `se100.def.ReferentialCommitments` | definition | Referential Commitments | 645-654 |
+| 9 | `se100.def.AdmissibleFramework` | definition | Admissible Framework | 660-673 |
+| 10 | `se100.note.FrameworkClass` | note | The Framework Class $\Frameworks$ | 695-711 |
+| 11 | `se100.def.PermittedAttributionProposition` | definition | Permitted Attribution Proposition | 713-732 |
+| 12 | `se100.def.FrameworkVariant` | definition | Framework-Variant Proposition | 734-745 |
+| 13 | `se100.def.FrameworkInvariant` | definition | Framework-Invariant Proposition | 755-766 |
+| 14 | `se100.remark.FrameworkInvariantRefutation` | remark | Framework Invariance and Refutation | 780-794 |
+| 15 | `se100.def.FrameworkCompatibleCommitmentSet` | definition | Framework-Compatible Commitment Set | 796-804 |
+| 16 | `se100.def.ContestedCausalNormative` | definition | Contested Causal or Normative Proposition | 843-852 |
+| 17 | `se100.assump.Contestability` | assumption | Contestability | 854-857 |
+| 18 | `se100.assump.ReferentialCommonGround` | assumption | Referential Common Ground | 874-890 |
+| 19 | `se100.remark.AttributionCommonGround` | remark | Attribution and Common Ground | 909-945 |
+| 20 | `se100.def.InterpretiveNonCommitment` | definition | Interpretive Non-Commitment | 948-957 |
+| 21 | `se100.def.ExtensionStability` | definition | Extension Stability | 963-970 |
+| 22 | `se100.assump.SubstrateConsistency` | assumption | Substrate Consistency | 980-984 |
+| 23 | `se100.remark.PropertyRelation` | remark | Relation Between the Two Properties | 996-1033 |
+| 24 | `se100.def.NeutralityByDesign` | definition | Neutrality by Design | 1040-1057 |
+| 25 | `se100.constraint.Neutrality` | constraint | Neutrality | 1066-1083 |
+| 26 | `se100.example.ReificationFragment` | example | Reification Fragment | 1235-1241 |
 
 ## Extracted Basis
 
 ## 01. `se100.def.Substrate` — Substrate
 
 - Kind: `definition`
-- Source lines: `502-508`
+- Source lines: `502-509`
 
 ```latex
 \begin{definition}[Substrate]
+  % RR.DEFINES: se100.def.Substrate
   \label{se100.def.Substrate}
   A \emph{substrate} $\Substrate$ is a shared representational base providing
   stable reference for entities, occurrences, and institutional artifacts
@@ -71,7 +73,7 @@ The items remain in paper order.
 ## 02. `se100.def.SubstrateCommitment` — Substrate-Layer Commitment
 
 - Kind: `definition`
-- Source lines: `530-536`
+- Source lines: `531-537`
 
 ```latex
 \begin{definition}[Substrate-Layer Commitment]
@@ -86,7 +88,7 @@ The items remain in paper order.
 ## 03. `se100.note.CausalNormative` — Causal and Normative Content as Primitive Classifications
 
 - Kind: `note`
-- Source lines: `542-562`
+- Source lines: `543-563`
 
 ```latex
 \begin{note}[Causal and Normative Content as Primitive Classifications]
@@ -115,7 +117,7 @@ The items remain in paper order.
 ## 04. `se100.def.AttributionProposition` — Attribution Proposition
 
 - Kind: `definition`
-- Source lines: `568-578`
+- Source lines: `569-579`
 
 ```latex
 \begin{definition}[Attribution Proposition]
@@ -134,7 +136,7 @@ The items remain in paper order.
 ## 05. `se100.def.ObjectLevelInterpretiveProposition` — Object-Level Interpretive Proposition
 
 - Kind: `definition`
-- Source lines: `584-596`
+- Source lines: `585-597`
 
 ```latex
 \begin{definition}[Object-Level Interpretive Proposition]
@@ -155,7 +157,7 @@ The items remain in paper order.
 ## 06. `se100.def.ObjectLevelCausalNormativeCommitment` — Object-Level Causal or Normative Commitment
 
 - Kind: `definition`
-- Source lines: `606-611`
+- Source lines: `607-612`
 
 ```latex
 \begin{definition}[Object-Level Causal or Normative Commitment]
@@ -169,7 +171,7 @@ The items remain in paper order.
 ## 07. `se100.def.ReferentialRegime` — Referential Regime
 
 - Kind: `definition`
-- Source lines: `618-628`
+- Source lines: `619-629`
 
 ```latex
 \begin{definition}[Referential Regime]
@@ -188,7 +190,7 @@ The items remain in paper order.
 ## 08. `se100.def.ReferentialCommitments` — Referential Commitments
 
 - Kind: `definition`
-- Source lines: `644-653`
+- Source lines: `645-654`
 
 ```latex
 \begin{definition}[Referential Commitments]
@@ -206,7 +208,7 @@ The items remain in paper order.
 ## 09. `se100.def.AdmissibleFramework` — Admissible Framework
 
 - Kind: `definition`
-- Source lines: `659-672`
+- Source lines: `660-673`
 
 ```latex
 \begin{definition}[Admissible Framework]
@@ -228,7 +230,7 @@ The items remain in paper order.
 ## 10. `se100.note.FrameworkClass` — The Framework Class $\Frameworks$
 
 - Kind: `note`
-- Source lines: `694-710`
+- Source lines: `695-711`
 
 ```latex
 \begin{note}[The Framework Class $\Frameworks$]
@@ -253,7 +255,7 @@ The items remain in paper order.
 ## 11. `se100.def.PermittedAttributionProposition` — Permitted Attribution Proposition
 
 - Kind: `definition`
-- Source lines: `712-731`
+- Source lines: `713-732`
 
 ```latex
 \begin{definition}[Permitted Attribution Proposition]
@@ -281,7 +283,7 @@ The items remain in paper order.
 ## 12. `se100.def.FrameworkVariant` — Framework-Variant Proposition
 
 - Kind: `definition`
-- Source lines: `733-744`
+- Source lines: `734-745`
 
 ```latex
 \begin{definition}[Framework-Variant Proposition]
@@ -301,7 +303,7 @@ The items remain in paper order.
 ## 13. `se100.def.FrameworkInvariant` — Framework-Invariant Proposition
 
 - Kind: `definition`
-- Source lines: `754-766`
+- Source lines: `755-766`
 
 ```latex
 \begin{definition}[Framework-Invariant Proposition]
@@ -314,15 +316,37 @@ The items remain in paper order.
   \]
   Equivalently,
   $p$ can be added to the substrate and
-  remain compatible with every admissible framework:
-  no admissible framework refutes $p$ on the shared base.
+  remain compatible with every admissible framework.
 \end{definition}
 ```
 
-## 14. `se100.def.FrameworkCompatibleCommitmentSet` — Framework-Compatible Commitment Set
+## 14. `se100.remark.FrameworkInvariantRefutation` — Framework Invariance and Refutation
+
+- Kind: `remark`
+- Source lines: `780-794`
+
+```latex
+\begin{remark}[Framework Invariance and Refutation]
+  \label{se100.remark.FrameworkInvariantRefutation}
+  Say that an admissible framework $\Framework$ \emph{refutes} $p$
+  if $\Substrate \cup \Framework \entails \neg p$.
+  Framework invariance implies that no admissible framework refutes $p$:
+  if $\Substrate \cup \Framework \entails \neg p$,
+  then $\Substrate \cup \Framework \cup \{p\}$ entails both $p$ and $\neg p$,
+  hence $\bot$.
+
+  The converse requires negation introduction:
+  if $T \cup \{q\} \entails \bot$, then $T \entails \neg q$.
+  This paper does not assume it.
+  Framework invariance is therefore defined by consistency,
+  not by non-refutation.
+\end{remark}
+```
+
+## 15. `se100.def.FrameworkCompatibleCommitmentSet` — Framework-Compatible Commitment Set
 
 - Kind: `definition`
-- Source lines: `780-788`
+- Source lines: `796-804`
 
 ```latex
 \begin{definition}[Framework-Compatible Commitment Set]
@@ -336,10 +360,10 @@ The items remain in paper order.
 \end{definition}
 ```
 
-## 15. `se100.def.ContestedCausalNormative` — Contested Causal or Normative Proposition
+## 16. `se100.def.ContestedCausalNormative` — Contested Causal or Normative Proposition
 
 - Kind: `definition`
-- Source lines: `827-836`
+- Source lines: `843-852`
 
 ```latex
 \begin{definition}[Contested Causal or Normative Proposition]
@@ -354,10 +378,10 @@ The items remain in paper order.
 \end{definition}
 ```
 
-## 16. `se100.assump.Contestability` — Contestability
+## 17. `se100.assump.Contestability` — Contestability
 
 - Kind: `assumption`
-- Source lines: `838-841`
+- Source lines: `854-857`
 
 ```latex
 \begin{assumption}[Contestability]
@@ -366,10 +390,10 @@ The items remain in paper order.
 \end{assumption}
 ```
 
-## 17. `se100.assump.ReferentialCommonGround` — Referential Common Ground
+## 18. `se100.assump.ReferentialCommonGround` — Referential Common Ground
 
 - Kind: `assumption`
-- Source lines: `858-874`
+- Source lines: `874-890`
 
 ```latex
 \begin{assumption}[Referential Common Ground]
@@ -391,10 +415,10 @@ The items remain in paper order.
 \end{assumption}
 ```
 
-## 18. `se100.remark.AttributionCommonGround` — Attribution and Common Ground
+## 19. `se100.remark.AttributionCommonGround` — Attribution and Common Ground
 
 - Kind: `remark`
-- Source lines: `893-929`
+- Source lines: `909-945`
 
 ```latex
 \begin{remark}[Attribution and Common Ground]
@@ -436,10 +460,10 @@ The items remain in paper order.
 \end{remark}
 ```
 
-## 19. `se100.def.InterpretiveNonCommitment` — Interpretive Non-Commitment
+## 20. `se100.def.InterpretiveNonCommitment` — Interpretive Non-Commitment
 
 - Kind: `definition`
-- Source lines: `932-941`
+- Source lines: `948-957`
 
 ```latex
 \begin{definition}[Interpretive Non-Commitment]
@@ -454,10 +478,10 @@ The items remain in paper order.
 \end{definition}
 ```
 
-## 20. `se100.def.ExtensionStability` — Extension Stability
+## 21. `se100.def.ExtensionStability` — Extension Stability
 
 - Kind: `definition`
-- Source lines: `947-954`
+- Source lines: `963-970`
 
 ```latex
 \begin{definition}[Extension Stability]
@@ -470,10 +494,10 @@ The items remain in paper order.
 \end{definition}
 ```
 
-## 21. `se100.assump.SubstrateConsistency` — Substrate Consistency
+## 22. `se100.assump.SubstrateConsistency` — Substrate Consistency
 
 - Kind: `assumption`
-- Source lines: `964-968`
+- Source lines: `980-984`
 
 ```latex
 \begin{assumption}[Substrate Consistency]
@@ -483,10 +507,10 @@ The items remain in paper order.
 \end{assumption}
 ```
 
-## 22. `se100.remark.PropertyRelation` — Relation Between the Two Properties
+## 23. `se100.remark.PropertyRelation` — Relation Between the Two Properties
 
 - Kind: `remark`
-- Source lines: `980-1017`
+- Source lines: `996-1033`
 
 ```latex
 \begin{remark}[Relation Between the Two Properties]
@@ -529,10 +553,10 @@ The items remain in paper order.
 \end{remark}
 ```
 
-## 23. `se100.def.NeutralityByDesign` — Neutrality by Design
+## 24. `se100.def.NeutralityByDesign` — Neutrality by Design
 
 - Kind: `definition`
-- Source lines: `1024-1041`
+- Source lines: `1040-1057`
 
 ```latex
 \begin{definition}[Neutrality by Design]
@@ -555,10 +579,10 @@ The items remain in paper order.
 \end{definition}
 ```
 
-## 24. `se100.constraint.Neutrality` — Neutrality
+## 25. `se100.constraint.Neutrality` — Neutrality
 
 - Kind: `constraint`
-- Source lines: `1050-1067`
+- Source lines: `1066-1083`
 
 ```latex
 \begin{constraint}[Neutrality]
@@ -581,10 +605,10 @@ The items remain in paper order.
 \end{constraint}
 ```
 
-## 25. `se100.example.ReificationFragment` — Reification Fragment
+## 26. `se100.example.ReificationFragment` — Reification Fragment
 
 - Kind: `example`
-- Source lines: `1219-1225`
+- Source lines: `1235-1241`
 
 ```latex
 \begin{example}[Reification Fragment]
@@ -595,3 +619,4 @@ The items remain in paper order.
   a claim asserted by source framework $\Framework$.
 \end{example}
 ```
+
