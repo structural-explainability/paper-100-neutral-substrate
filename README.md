@@ -77,7 +77,7 @@ Windows:
 # build
 .\tools\build\build.ps1
 
-# calculate the basis (defs, etc.)
+# update ps1 as needed and calculate the basis (defs, etc.)
 .\basis.ps1
 ```
 

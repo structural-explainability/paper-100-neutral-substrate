@@ -54,6 +54,7 @@ $ErrorActionPreference = "Stop"
 $ExpectedLabels = @(
     "se100.def.Substrate"
     "se100.def.SubstrateCommitment"
+    "se100.note.ConsequenceSystem"
     "se100.note.CausalNormative"
     "se100.def.AttributionProposition"
     "se100.def.ObjectLevelInterpretiveProposition"
@@ -77,6 +78,7 @@ $ExpectedLabels = @(
     "se100.remark.PropertyRelation"
     "se100.def.NeutralityByDesign"
     "se100.constraint.Neutrality"
+    "se100.remark.CharacterizationHypothesis"
     "se100.example.ReificationFragment"
 )
 
