@@ -68,5 +68,5 @@ jobs:
           mkdir -p artifacts
           latexmk -g -pdf -interaction=nonstopmode -halt-on-error \
             -auxdir=artifacts -outdir=artifacts \
-            se100-neutral-substrates-v1.tex
-          test -f artifacts/se100-neutral-substrates-v1.pdf
+            se100-neutral-substrates.tex
+          test -f artifacts/se100-neutral-substrates.pdf

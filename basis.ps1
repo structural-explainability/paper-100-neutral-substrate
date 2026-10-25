@@ -25,12 +25,12 @@
 # Optional:
 #
 #   .\basis.ps1 `
-#     -TexPath ".\se100-neutral-substrates-v1.tex" `
+#     -TexPath ".\se100-neutral-substrates.tex" `
 #     -OutputPath ".\se100-lean-basis.md"
 # ============================================================
 
 param(
-    [string] $TexPath = ".\se100-neutral-substrates-v1.tex",
+    [string] $TexPath = ".\se100-neutral-substrates.tex",
     [string] $OutputPath = ".\se100-lean-basis.md"
 )
 

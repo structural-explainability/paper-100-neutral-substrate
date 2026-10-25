@@ -13,6 +13,67 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ---
 
+## [Unreleased]
+
+---
+
+## [2.0.0] - 2026-10-25
+
+### Added
+
+- `se100.note.ConsequenceSystem`: explicitly identifies the structural
+  consequence properties used in the arguments, without requiring
+  explosion, excluded middle, completeness, or other stronger logical laws.
+- `se100.remark.CharacterizationHypothesis`: records the proposed
+  characterization of neutrality by design as an explicit hypothesis
+  on realizations rather than an established theorem.
+- A conditional sufficiency argument establishing semantic neutrality
+  from the foundational-layer restriction and Referential Common Ground.
+- An explicit distinction between semantic neutrality and neutrality
+  established through a permitted design-time guarantee.
+- A formalized discriminating example with admissible frameworks that
+  disagree about a contested proposition, a neutral substrate, and a
+  non-neutral substrate.
+- Expanded discussion of the assumptions, justification requirements,
+  and limits of the neutrality result.
+
+### Changed
+
+- **Breaking:** `se100.constraint.Neutrality` now states conditional
+  sufficiency for semantic neutrality, not an unconditional equivalence
+  or a complete characterization of neutrality by design.
+- Revised `se100.def.NeutralityByDesign` to distinguish satisfaction
+  of the semantic neutrality properties from possession of a permitted
+  design-time basis establishing those properties.
+- Clarified that Referential Common Ground concerns joint consistency
+  of the complete referential commitment theory with each admissible
+  framework, not merely compatibility of individual propositions.
+- Clarified that extension stability requires compatibility with each
+  admissible framework separately, not collective consistency among
+  mutually incompatible frameworks.
+- Updated the paper's definitions, explanations, and justification
+  to align with the corresponding Lean 4 formalization.
+- Updated the extracted Lean formalization basis to 28 labeled
+  mathematical environments.
+
+### Clarified
+
+- The sufficiency result does not, by itself, establish neutrality
+  by design.
+- The necessity of the foundational-layer restriction is not proved
+  from Contestability and Referential Common Ground alone.
+- A permitted design-time guarantee requires independent justification
+  of its permitted basis and the guarantee it establishes.
+- Referential Common Ground is an assumption whose adequacy must be
+  established for concrete referential realizations.
+- The formal results do not independently establish semantic or
+  empirical grounding for referents, referential commitments, or
+  attributed assertion records.
+- The framework class is defined by intrinsic admissibility and does
+  not depend on enumeration or design-time knowledge of frameworks.
+
+---
+
 ## [1.1.0] - 2026-10-02
 
 ### Added
@@ -34,7 +95,7 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 - `CITATION.cff` describes the repository; the paper is cited through
   `preferred-citation`.
 - README: added a paper overview section.
-- Rebuilt `se100-neutral-substrates-v1.pdf`.
+- Rebuilt the pdf.
 
 ---
 
@@ -55,7 +116,8 @@ Released before this changelog existed. See the
 ## Notes on versioning and releases
 
 - We use **SemVer**:
-  - **MAJOR** - breaking changes, removes or renames a se100.* id
+  - **MAJOR** - breaking changes to the meaning, assumptions, or conclusions
+    of existing paper items, or removal or renaming of their identifiers
   - **MINOR** - backward-compatible additions
   - **PATCH** - fixes, documentation, tooling
 - Versions are driven by git tags. Tag `vX.Y.Z` to release.
@@ -77,6 +139,7 @@ uvx gha-tools autoupdate --pin=all --write .github/workflows
 
 # Audit the resulting GitHub configuration for security findings.
 uvx zizmor@latest .github/
+# some suppressed is still okay
 
 # Validate.
 uvx cffconvert --validate
@@ -86,10 +149,10 @@ uvx se-manifest-schema validate-manifest --strict
 npx markdownlint-cli2 --fix
 
 # Build and inspect
-latexmk -pdf se100-neutral-substrates-v1.tex
+latexmk -pdf se100-neutral-substrates.tex
 .\tools\build\build.ps1
 
-texcount -inc -sum -total se100-neutral-substrates-v1.tex
+texcount -inc -sum -total se100-neutral-substrates.tex
 .\basis.ps1
 ```
 
@@ -134,7 +197,8 @@ git push origin :refs/tags/vX.Z.Y
 
 ## Links
 
-[Unreleased]: https://github.com/structural-explainability/paper-100-neutral-substrate/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/structural-explainability/paper-100-neutral-substrate/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/compare/v1.0.0...v2.0.0
 [1.1.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/releases/tag/v1.0.0
 [0.1.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/releases/tag/v0.1.0

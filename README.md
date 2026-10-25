@@ -33,12 +33,12 @@ not as object-level substrate-layer commitments.
 ## Basis
 
 ```text
-26 labeled environments
+28 labeled environments
 
 definition   16
-note          2
+note          3
 assumption    3
-remark        3
+remark        4
 constraint    1
 example       1
 ```
@@ -66,9 +66,9 @@ On Windows (MiKTeX):
 Requires a LaTeX distribution with `latexmk` (MiKTeX, TeX Live, or MacTeX):
 
 ```bash
-latexmk -pdf se100-neutral-substrates-v1.tex
+latexmk -pdf se100-neutral-substrates.tex
 
-texcount -inc -sum -total se100-neutral-substrates-v1.tex
+texcount -inc -sum -total se100-neutral-substrates.tex
 ```
 
 Windows:
@@ -92,8 +92,7 @@ uvx se-manifest-schema validate-manifest --strict
 
 1. Carroll, J. J., Bizer, C., Hayes, P., and Stickler, P. (2005).
    "Named graphs, provenance and trust."
-   In _Proceedings of the 14th International Conference on World Wide Web
-   (WWW 2005)_, pages 613–622. ACM.
+   In _Proceedings of the 14th International Conference on World Wide Web (WWW 2005)_, pages 613–622. ACM.
    <https://lists.w3.org/Archives/Public/www-archive/2004Apr/att-0081/PID-FAFPGYHS-1081860211.pdf>
 
 1. de Kleer, J. (1986).
@@ -115,11 +114,17 @@ uvx se-manifest-schema validate-manifest --strict
 1. Gangemi, A., and Mika, P. (2003).
    "Understanding the Semantic Web through descriptions and situations."
    In R. Meersman, Z. Tari, and D. C. Schmidt (Eds.),
-   _On the Move to Meaningful Internet Systems 2003:
-   CoopIS, DOA, and ODBASE_,
+   _On the Move to Meaningful Internet Systems 2003: CoopIS, DOA, and ODBASE_,
    Lecture Notes in Computer Science, vol. 2888.
    Springer.
    <https://doi.org/10.1007/978-3-540-39964-3_44>
+
+1. Gomez Alvarez, L., and Rudolph, S. (2021).
+   Standpoint logic: Multi-perspective knowledge representation.
+   In _Formal Ontology in Information Systems (FOIS 2021)_,
+   Frontiers in Artificial Intelligence and Applications, 3--17.
+   IOS Press.
+   <https://asau.ru/files/pdf/3166661.pdf#page=19>
 
 1. Guarino, N. (1998).
    "Formal ontology and information systems."
@@ -139,8 +144,8 @@ uvx se-manifest-schema validate-manifest --strict
 
 1. McCarthy, J. (1993).
    "Notes on formalizing context."
-   In _Proceedings of the 13th International Joint Conference on Artificial
-   Intelligence (IJCAI-93)_, pages 555–560.
+   In _Proceedings of the 13th International Joint Conference on Artificial Intelligence (IJCAI-93)_,
+   pages 555–560.
    <https://www.ijcai.org/Proceedings/93-1/Papers/078.pdf>
 
 1. Searle, J. R. (1969).

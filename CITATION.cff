@@ -10,8 +10,8 @@ cff-version: "1.2.0"
 message: "If you use this work, please cite it using the metadata in CITATION.cff."
 
 title: "Neutral Substrates paper repository"
-version: "v1.1.0"
-date-released: "2026-10-02"
+version: "v2.0.0"
+date-released: "2026-10-25"
 
 authors:
   - family-names: Case

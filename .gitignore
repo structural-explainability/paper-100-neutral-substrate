@@ -122,6 +122,6 @@ dist/
 
 # === Project-Specific ===
 # WHY: Include key PDF in the repository root
-!se100-neutral-substrates-v1.pdf
+!se100-neutral-substrates.pdf
 !tools/build/
 !tools/build/**
