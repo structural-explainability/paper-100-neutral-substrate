@@ -3,7 +3,7 @@
 > Exact labeled mathematical environments extracted from the authoritative Paper 100 LaTeX source.
 
 - Source: `se100-neutral-substrates.tex`
-- Extracted: 2026-10-25T08:09:21-05:00
+- Extracted: 2026-10-25T09:32:15-05:00
 - Labeled items: 28
 
 Each item contains the exact LaTeX environment from its opening `\begin{...}` through its matching `\end{...}`.
@@ -288,8 +288,8 @@ The items remain in paper order. No mathematical text inside an extracted enviro
   provenance, and content reference needed to identify what was asserted,
   by whom, and under what record basis.
 
-  Because its attributional basis is fixed by $\SubstrateRef$,
-  a permitted attribution proposition $\Asserts(x,\varphi)$ is itself among the
+  Here, fixed by $\SubstrateRef$ means determined by it:
+  a permitted attribution proposition $\Asserts(x,\varphi)$ is among the
   substrate-layer commitments determined by $\SubstrateRef$; that is,
   \[
     \SubstrateRef \entails \Asserts(x,\varphi) .
