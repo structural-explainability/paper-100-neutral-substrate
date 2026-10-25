@@ -27,25 +27,28 @@ Under Persistent Interpretive Disagreement
 This paper addresses a practical problem in shared records
 where parties persistently disagree about interpretation.
 
-Neutrality cannot come from omitting contested information,
-because accountability requires preserving each party's claims
-along with their provenance.
-It also cannot come from adopting one contested interpretation as the base.
+Simply omitting contested information can undermine accountability,
+because records should preserve what parties claim
+along with the provenance of those claims.
+But adopting one contested interpretation as the shared foundation
+can compromise neutrality.
 
-The paper shows a sufficient condition for neutrality.
-If the shared referential information, taken as a whole,
-is compatible with every admissible framework,
-then limiting the foundation to that information
-and to properly attributed assertions is enough to preserve neutrality.
+The paper establishes a sufficient condition for semantic neutrality.
+If the shared referential commitments, taken as a whole,
+are compatible with every admissible framework,
+then limiting the foundation to those commitments
+and to attribution statements grounded in them
+is enough to preserve neutrality.
 
-Causal and normative content can still be represented,
-but only as attributed assertions
-tied to an identified framework, source, agent, or record.
+Contested causal and normative claims can still be represented
+as attributed assertions tied to an identified framework,
+source, agent, or record.
 The shared system records who asserted what, with provenance,
-without endorsing the claim.
+without endorsing the asserted claim.
 
 Guaranteeing neutrality by design requires additional justification.
-This is one sufficient approach, not the only way to build a neutral system.
+The paper establishes one sufficient approach to semantic neutrality,
+not the only possible way to build a neutral system.
 
 ## Scope
 
@@ -116,7 +119,7 @@ uvx se-manifest-schema validate-manifest --strict
    "On the acceptability of arguments and its fundamental role in nonmonotonic
    reasoning, logic programming and _n_-person games."
    _Artificial Intelligence_, 77(2):321–357.
-   <https://www.ijcai.org/Proceedings/93-2/Papers/003.pdf>
+   <https://doi.org/10.1016/0004-3702(94)00041-X>
 
 1. Floridi, L. (2008).
    "The method of levels of abstraction."
@@ -131,12 +134,12 @@ uvx se-manifest-schema validate-manifest --strict
    Springer.
    <https://doi.org/10.1007/978-3-540-39964-3_44>
 
-1. Gomez Alvarez, L., and Rudolph, S. (2021).
-   Standpoint logic: Multi-perspective knowledge representation.
+1. Gómez Álvarez, L., and Rudolph, S. (2021).
+   "Standpoint logic: Multi-perspective knowledge representation."
    In _Formal Ontology in Information Systems (FOIS 2021)_,
-   Frontiers in Artificial Intelligence and Applications, 3--17.
+   Frontiers in Artificial Intelligence and Applications, pages 3–17.
    IOS Press.
-   <https://asau.ru/files/pdf/3166661.pdf#page=19>
+   <https://doi.org/10.3233/FAIA210367>
 
 1. Guarino, N. (1998).
    "Formal ontology and information systems."
@@ -147,7 +150,7 @@ uvx se-manifest-schema validate-manifest --strict
 1. Hayes, P. (2004).
    _RDF Semantics_.
    W3C Recommendation, World Wide Web Consortium.
-   <https://www.w3.org/2001/sw/RDFCore/TR/WD-rdf-mt-20030117/>
+   <https://www.w3.org/TR/2004/REC-rdf-mt-20040210/>
 
 1. Lebo, T., Sahoo, S., and McGuinness, D. L., editors (2013).
    _PROV-O: The PROV Ontology_.

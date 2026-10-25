@@ -15,6 +15,12 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ## [2.0.0] - 2026-10-25
 
+### Summary
+
+Revised neutrality result as conditional sufficiency;
+distinguished semantic neutrality from design-time guarantees;
+clarified assumptions and limits; aligned with Lean 4 formalization.
+
 ### Added
 
 - `se100.note.ConsequenceSystem`: explicitly identifies the structural
@@ -67,6 +73,12 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
   attributed assertion records.
 - The framework class is defined by intrinsic admissibility and does
   not depend on enumeration or design-time knowledge of frameworks.
+- The boundary-condition section is retitled "Boundary Condition: When
+  Neutrality Is Not Certified".
+  Failure of Referential Common Ground means the construction
+  does not certify neutrality, not that neutrality is impossible.
+- The worked example fixes the source and its assertion occurrences
+  as the attributional basis of its attribution propositions.
 
 ---
 
@@ -169,7 +181,8 @@ Verify that all required GitHub Actions complete successfully.
 1. Run the **Prepare arXiv Source** workflow manually.
 2. Download `arxiv-source.zip` and the compiled PDF artifact; check the PDF.
 3. Replace the existing arXiv submission (2601.14271) with the new source.
-4. Summarize the change in the arXiv Comments field.
+4. Update the arXiv abstract field to match the paper's abstract.
+5. Summarize the change in the arXiv Comments field.
 
 Verify the updated arxiv step
 BEFORE tagging.
