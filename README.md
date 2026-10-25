@@ -16,37 +16,49 @@
 
 ## Paper Overview
 
+Neutral Substrates: A Design Constraint for Shared Records
+Under Persistent Interpretive Disagreement
+
 - [arXiv](https://arxiv.org/abs/2601.14271)
 - [SciX](https://scixplorer.org/abs/2026arXiv260114271C/abstract)
 
 ## Main Contribution
 
-This project defines a design constraint for shared accountability records.
-When causal and normative propositions are contestable across admissible frameworks,
-and the substrate's referential commitments are common ground among those frameworks,
-**neutrality by design** requires the foundational layer
-to be restricted to those referential commitments and attribution propositions.
-Causal and normative content may be represented,
-but only as attributed, provenance-bearing assertions,
-not as object-level substrate-layer commitments.
+This paper addresses a practical problem in shared records
+where parties persistently disagree about interpretation.
+
+Neutrality cannot come from omitting contested information,
+because accountability requires preserving each party's claims
+along with their provenance.
+It also cannot come from adopting one contested interpretation as the base.
+
+The paper shows a sufficient condition for neutrality.
+If the shared referential information, taken as a whole,
+is compatible with every admissible framework,
+then limiting the foundation to that information
+and to properly attributed assertions is enough to preserve neutrality.
+
+Causal and normative content can still be represented,
+but only as attributed assertions
+tied to an identified framework, source, agent, or record.
+The shared system records who asserted what, with provenance,
+without endorsing the claim.
+
+Guaranteeing neutrality by design requires additional justification.
+This is one sufficient approach, not the only way to build a neutral system.
+
+## Scope
+
+The result does not apply when the shared referential information,
+or the basis for attributing claims to sources,
+conflicts with an admissible framework.
+Disagreement about interpretation alone does not trigger this.
 
 ## Basis
 
-```text
-28 labeled environments
-
-definition   16
-note          3
-assumption    3
-remark        4
-constraint    1
-example       1
-```
-
-## Formalization
-
-- [Lean 4 formalization](https://github.com/structural-explainability/se-theory-neutral-substrate) - machine-checked
-  formalization of the neutral-substrate definitions and results.
+- [Lean basis summary](se100-lean-basis.md)
+- Lean 4 formalization:
+  [se-theory-neutral-substrate](https://github.com/structural-explainability/se-theory-neutral-substrate)
 
 ## Building Locally
 
@@ -190,7 +202,7 @@ for _Neutral Substrates_.
 
 ## Annotations
 
-[ANNOTATIONS.md](./ANNOTATIONS.md)
+[Annotations](./.annotations/annotations.md)
 
 ## Changelog
 

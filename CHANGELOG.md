@@ -13,10 +13,6 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ---
 
-## [Unreleased]
-
----
-
 ## [2.0.0] - 2026-10-25
 
 ### Added
@@ -156,7 +152,6 @@ texcount -inc -sum -total se100-neutral-substrates.tex
 .\basis.ps1
 ```
 
-Update the basis on `README.md`.
 Review all generated and modified files before committing.
 
 ### Task 3. Commit and Push
@@ -198,7 +193,7 @@ git push origin :refs/tags/vX.Z.Y
 ## Links
 
 [Unreleased]: https://github.com/structural-explainability/paper-100-neutral-substrate/compare/v2.0.0...HEAD
-[2.0.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/compare/v1.0.0...v2.0.0
-[1.1.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/compare/v1.0.0...v1.1.0
+[2.0.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/releases/tag/v2.0.0
+[1.1.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/releases/tag/v1.1.0
 [1.0.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/releases/tag/v1.0.0
 [0.1.0]: https://github.com/structural-explainability/paper-100-neutral-substrate/releases/tag/v0.1.0

@@ -1,7 +1,7 @@
 # ============================================================
 # .github/lychee.toml (ALL-REPOS)
 # ============================================================
-# Updated: 2026-10-11
+# Updated: 2026-10-25
 #
 # WHAT: A configuration file for automated link checking.
 #       Lychee checks links in project documentation and other files.
@@ -54,6 +54,9 @@ verbose = "info"
 no_progress = true
 
 # === Request reliability ===
+
+# WHY: Some publishers reject HEAD requests even when their pages are accessible.
+method = "get"
 
 # WHY: Limit parallel requests so CI does not overwhelm external servers.
 max_concurrency = 6
