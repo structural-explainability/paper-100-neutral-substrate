@@ -33,16 +33,22 @@ jobs:
       # ============================================================
 
       - name: A1) Checkout repository code
+        # WHY: Needed to access files for checks.
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        # WHY: Install TeX Live in CI in a maintainable way.
+        # OBS: This action installs tlmgr and packages listed in .github/tl_packages.
         with:
           persist-credentials: false
-        # WHY: Make repository files available so their links can be inspected.
+          # WHY: Make repository files available so their links can be inspected.
 
-      # WHY: Install TeX Live in CI in a maintainable way.
-      # OBS: This action installs tlmgr and packages listed in .github/tl_packages.
+      # WHY: Install TeX Live in CI in a maintainable way
+      # OBS: This action installs tlmgr, but does not install TeX packages unless specified
       - name: A2) Setup TeX Live
         uses: TeX-Live/setup-texlive-action@eb78d21f41941476d9121e3a0abcab73265c876f # v4
         with:
+          # WHY: At minimum, install a scheme so pdflatex/latexmk exist
+          # OBS: scheme-basic is the recommended minimum in the action docs
+          # ALT: Use scheme-medium if you want fewer missing .sty surprises
           package-file: .github/tl_packages
           cache: true
 

@@ -11,15 +11,22 @@ and this project adheres to **[Semantic Versioning](https://semver.org/spec/v2.0
 
 ## [Unreleased]
 
+### Planned
+
+Contestability Clarification - explain why neither
+the absence of demonstrated framework variance
+nor membership in the undetermined middle
+establishes foundational permissibility.
+
 ---
 
 ## [2.0.0] - 2026-10-25
 
-### Summary
+### Summary / arXiv Comments field
 
-Revised neutrality result as conditional sufficiency;
-distinguished semantic neutrality from design-time guarantees;
-clarified assumptions and limits; aligned with Lean 4 formalization.
+26 pages. Revised main result as conditional sufficiency for semantic neutrality;
+distinguished design-time guarantees; clarified assumptions and limits;
+aligned with Lean 4 formalization.
 
 ### Added
 
@@ -123,12 +130,19 @@ Released before this changelog existed. See the
 
 ## Notes on versioning and releases
 
-- We use **SemVer**:
-  - **MAJOR** - breaking changes to the meaning, assumptions, or conclusions
-    of existing paper items, or removal or renaming of their identifiers
-  - **MINOR** - backward-compatible additions
-  - **PATCH** - fixes, documentation, tooling
-- Versions are driven by git tags. Tag `vX.Y.Z` to release.
+We use SemVer for repository releases:
+
+- **MAJOR** - Breaking changes to the meaning, assumptions,
+  or conclusions of existing paper items, or removal or
+  renaming of their identifiers.
+- **MINOR** - Backward-compatible additions.
+- **PATCH** - Corrections, documentation, and tooling updates.
+
+Versions are driven by git tags.
+Tag `vX.Y.Z` to release.
+
+The Git repository version and the arXiv manuscript version
+are separate version histories.
 
 ## Release Procedure (Required)
 
@@ -178,14 +192,13 @@ Verify that all required GitHub Actions complete successfully.
 
 ### Task 4. Prepare and submit to arXiv
 
-1. Run the **Prepare arXiv Source** workflow manually.
-2. Download `arxiv-source.zip` and the compiled PDF artifact; check the PDF.
-3. Replace the existing arXiv submission (2601.14271) with the new source.
+1. As Needed: Run the **Prepare arXiv Source** workflow manually.
+2. As Needed: Download `arxiv-source.zip` and the compiled PDF artifact; check the PDF.
+3. Replace the existing arXiv submission with the new source.
 4. Update the arXiv abstract field to match the paper's abstract.
 5. Summarize the change in the arXiv Comments field.
 
-Verify the updated arxiv step
-BEFORE tagging.
+Verify the updated arxiv step BEFORE tagging.
 
 ### Task 5. Tag and Push the Release
 
